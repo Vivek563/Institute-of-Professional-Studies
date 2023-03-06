@@ -2,25 +2,20 @@
 
 <ul>
     <li>Follow MVC pattern only.<br/>
-        <b>In short : </b><br/>
-        <p>
+        <p> 
+            <b>In short : </b><br/>
             <b>Model:</b> Model represents the structure of data, the format and the constraints with which it is stored. It maintains the data of the application. Essentially, it is the database part of the application.<br/> 
             <b>View:</b> View is what is presented to the user. Views utilize the Model and present data in a form in which the user wants. A user can also be allowed to make changes to the data presented to the user. They consist of static and dynamic pages which are rendered or sent to the user when the user requests them.<br/> 
             <b>Controller:</b> Controller controls the requests of the user and then generates appropriate response which is fed to the viewer. Typically, the user interacts with the View, which in turn generates the appropriate request, this request will be handled by a controller.<br/>
             The controller renders the appropriate view with the model data as a response. So, to sum it up:
                 <ol>
-                    <li>Model is data part.</li>
-                    <li>View is User Interface part.</li>
-                    <li>Controller is request-response handler.</li>
+                    <li><i>Model</i> is data part.</li>
+                    <li><i>View</i> is User Interface part.</li>
+                    <li><i>Controller</i> is request-response handler.</li>
                 </ol>
-                <img src="https://blog.logrocket.com/wp-content/uploads/2021/09/Adding-passport-js-protect-js.png" style="height: 100px; width:100px;" alt="MVC-pattern files image"/>
+                <img src="https://blog.logrocket.com/wp-content/uploads/2021/09/Adding-passport-js-protect-js.png" style="height: 50%; width:50%;" alt="MVC-pattern files image"/>
         </p>
-        <pre>
-            For more :
-        </pre>
-        <a href="https://blog.logrocket.com/building-structuring-node-js-mvc-application/">
-            Link
-        </a>
+        For more :<a href="https://blog.logrocket.com/building-structuring-node-js-mvc-application/">Link</a>
     </li>
 </ul>
 
