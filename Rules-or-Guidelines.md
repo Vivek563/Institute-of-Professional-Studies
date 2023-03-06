@@ -1,7 +1,7 @@
 ### Rules
 
 <ol>
-    <li>Follow MVC pattern only.
+    <li><b>Follow MVC pattern only.</b>
         <p> 
             <b>In short : </b><br/>
             <b>Model:</b> Model represents the structure of data, the format and the constraints with which it is stored. It maintains the data of the application. Essentially, it is the database part of the application.<br/> 
