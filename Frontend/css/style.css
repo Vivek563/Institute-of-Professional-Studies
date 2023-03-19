@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #0e1924;
+}
+
+body {
+  font-family: "Open Sans", sans-serif", Figtree", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+/*----------------------- navbar --------------------------*/
+
+/*.................*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+}
+.navbar .logo img {
+  width: 100px;
+  padding: 20px;
+  position: sticky;
+}
+.navbar .mobile-list {
+  display: none;
+}
+.navbar .list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  position: sticky;
+  cursor: pointer;
+  padding: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  align-items: center;
+}
+
+.navbar .list .list-item:hover {
+  color: #eb2828;
+}
+.navbar .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .navbar .list {
+    list-style-type: none;
+    display: flex;
+    font-size: 12px;
+    gap: 40px;
+    padding: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    align-items: center;
+  }
+
+  .navbar .logo img {
+    width: 80px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .show-navbar {
+    display: flex !important;
+  }
+  .navbar .mobile {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar .list {
+    display: none;
+  }
+  .navbar {
+    position: relative;
+    padding: 0 20px;
+    height: 14vh;
+  }
+  .navbar .mobile-list {
+    align-items: center;
+    width: 100%;
+    background-color: var(--secondary);
+    gap: 20px;
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    color: #ffffff;
+    padding: 20px 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+  }
+}
+
+/*------------------------- hero section -----------------------*/
+
+.hero {
+  display: flex;
+  margin-top: 90px;
+  padding: 30px;
+  gap: 40px;
+}
+
+.hero .hero-left h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.hero .hero-left .pro {
+  color: #eb2828;
+  font-size: 4rem;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.hero .hero-left p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+}
+.hero .hero-left .trust {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.hero .hero-right {
+  margin-top: -80px;
+}
+.hero .hero-right img {
+  width: 650px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .hero .hero-left h1 {
+    font-size: 2.2rem;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero .hero-right img {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .hero .hero-right {
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  .hero {
+    justify-content: center;
+    margin-top: 120px;
+  }
+  .hero .hero-left {
+    width: 400px;
+  }
+  .hero .hero-left h1 {
+    font-size: 1.2rem;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero .hero-left {
+    padding: 0 20px;
+  }
+}
+
+/*........................slider section........................................*/
+
+/*................message form director..............*/
+
+.webdesign-wrapper {
+  background-color: #27496c;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.webdesign-wrapper h2 {
+  font-family: "Raleway";
+  font-size: 3.9rem;
+  text-align: center;
+  background-color: #27496c;
+  color: #ffffff;
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+.webdesign {
+  max-width: 78rem;
+  margin: 40px auto 0 auto;
+  display: flex;
+  background-color: #27496c;
+  justify-content: center;
+  gap: 90px;
+  color: #ffffff;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.webdesign .webdesign-left h4 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  padding-bottom: 30px;
+  background-color: #27496c;
+  font-weight: 700;
+  font-family: "Raleway";
+}
+.webdesign .webdesign-left p {
+  font-size: 1.2rem;
+  background-color: #27496c;
+  color: var(--text-gray);
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.webdesign-right .webdesign-img {
+  width: 34rem;
+  height: 600px;
+  overflow: hidden;
+}
+.webdesign-right .webdesign-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+@media only screen and (max-width: 1134px) {
+  .webdesign .webdesign-left h4 {
+    font-size: 1.8rem;
+  }
+  .webdesign .webdesign-left p {
+    font-size: 0.9rem;
+  }
+  .webdesign-right .webdesign-img {
+    width: 24rem;
+    height: 400px;
+  }
+}
+
+
+/*.......news card section......... */
+
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  margin-top: 130vh;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+
+/************************ 
+Generic layout (demo looks)
+**************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0;
+  padding: 48px 0;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-image: linear-gradient(45deg, #7c9885, #b5b682);
+  min-height: 100vh;
+} */
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
