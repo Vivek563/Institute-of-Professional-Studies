@@ -17,6 +17,14 @@
         </p>
         For more :<a href="https://blog.logrocket.com/building-structuring-node-js-mvc-application/">Link</a>
     </li>
+    <li><b>Avoid Conflicts:</b>
+        <ul>
+            <li>Only use class names to apply style.</li>
+            <li>Try to use single class name on any element.</li>
+            <li>Don't use inline styles.</li>
+            <li>Always style for mobile screen first and then style for higher screen sizes.</li>
+        </ul>
+    </li>
 </ol>
 
 
