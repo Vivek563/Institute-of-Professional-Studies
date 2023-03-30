@@ -3,7 +3,7 @@
         {
             "name": "Institute of Professional Studies",
             "title": "Institute of Professional Studies",
-            "path": "./",
+            "path": "../",
             "favicon": "faviconImage",
             "shortDescription": "This is a short description.",
             "about": "This is a detailed description.",

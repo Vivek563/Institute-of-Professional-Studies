@@ -17,7 +17,7 @@
       <div class="slideshowContainer">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <% for(let image of sliderImages) { %>
-        <div class="mySlides fade-in-image"><img src="./assets/<%= image %>" alt="image" ></div>
+        <div class="mySlides fade-in-image"><img src="<%= path %>assets/<%= image %>" alt="image" ></div>
         <% } %>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
