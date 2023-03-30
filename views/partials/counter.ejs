@@ -1,0 +1,11 @@
+<div class="count">
+  <% for(let counter of counterList) { %>
+    <div class="counter-container">
+    <img src="./assets/<%= counter.image %>" height="200px" width="200px">
+        <i class="counter-student"></i>
+        <div class="counter" data-target="<%= counter.count %>"></div>
+        <span><%= counter.name %></span>
+
+      </div>
+  <% } %>
+</div>

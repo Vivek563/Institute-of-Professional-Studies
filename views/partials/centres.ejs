@@ -1,0 +1,21 @@
+<section class="centres">
+  <div class="ag-format-container">
+    <div class="ag-courses_box">
+        <% for(let centre of centresList) { %>
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Centre of <%= centre.name %> 
+              </div>
+              <div class="ag-courses-item_date-box">
+                <img src="./assets/<%= centre.icon %>" height="80px" width="80px" />
+              </div>
+            </a>
+          </div>
+        <% } %>
+    </div>
+  </div>
+</section>
+  
