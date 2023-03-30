@@ -9,7 +9,6 @@ const morgan = require('morgan');
 app.use(morgan('tiny'));
 
 const pages = require('./pages.json'); //getting pages from pages.json
-const { Script } = require('vm');
 
 
 // const Centres = require('./models/centres');
@@ -52,10 +51,10 @@ app.get('/home/:centre',  async (req, res) =>{
     res.render('centre.ejs', { ...page, navbarItems})} //spreading the object so that we can access individual property in .ejs
 })
 
-app.get('*', (req, res) =>{
-    const { centre } = req.params;
-    res.render('notfound.ejs', {centre})
-})
+// app.get('*', (req, res) =>{
+//     const { centre } = req.params;
+//     res.render('notfound.ejs', {centre})
+// })
 
 // app.use((req, res) => {
 //     res.status(404).send('NOT FOUND!')
