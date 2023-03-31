@@ -158,5 +158,25 @@
             "gallery": "galleryImages",
             "style": "css/centre.css",
             "script": "js/centre.js"
+        },
+  "about":
+        {
+            "fake parameter": "fake data"
+        },
+"courses":
+        {
+            "fake parameter": "fake data"
+        },
+"faculty":
+        {
+            "fake parameter": "fake data"
+        },
+"gallery":
+        {
+            "fake parameter": "fake data"
+        },
+"notice":
+        {
+            "fake parameter": "fake data"
         }
 }
