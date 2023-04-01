@@ -14,8 +14,8 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
   
     <!-- custom css file link  -->
-    <link rel="stylesheet" type="text/css" href="<%= path  %><%- style %>" />
+    <link rel="stylesheet" type="text/css" href="<%= path  %><%= style %>" />
     <title><%= title %></title>
   </head>
 <body>
-    <%- include('navbar') %>  <!--navbar to be included in each file but navbar is in /partial/navbar.ejs-->
+    <%- include('navbar') %>  

@@ -13,41 +13,58 @@
             "script": "js/home.js",
             "navbarItems": [
                                 {
-                                "item": "Home",
-                                "subItems": []      
+                                    "item": "Home",
+                                    "link": "/",
+                                    "subItems": [],
+                                    "subLinks": []      
                                 },
                                 {
                                     "item": "About",
-                                    "subItems": []
+                                    "link": "/about",
+                                    "subItems": [],
+                                    "subLinks": []
                                 },
                                 {
                                     "item": "Centres",
+                                    "link": "#",   
                                     "subItems": ["Centre of Computer Education","Centre of Fashion & Design Technology", "Centre of Food Technology", "Centre of Media Studies"],
-                                    "links": ["cce", "cfdt", "cft", "cms"]
+                                    "subLinks": ["/home/cce", "/home/cfdt", "/home/cft", "/home/cms"]
                                 },
                                 {
                                     "item":  "Student",
-                                    "subItems": []
+                                    "link": "/student",   
+                                    "subItems": [],
+                                    "subLinks": []
                                 },
                                 {
                                     "item":  "Gallery",
-                                    "subItems": []
+                                    "link": "/gallery",
+                                    "subItems": [],
+                                    "subLinks": []   
                                 },
                                 {
                                     "item":  "Admission",
-                                    "subItems": []
+                                    "link": "/admission",
+                                    "subItems": [],
+                                    "subLinks": []   
                                 },
                                 {
                                     "item":  "Newsletter",
-                                    "subItems": []
+                                    "link": "/newsletter",
+                                    "subItems": [],
+                                    "subLinks": []   
                                 },
                                 {
                                     "item":  "Contact Us",
-                                    "subItems": []
+                                    "link": "/contactus",
+                                    "subItems": [],
+                                    "subLinks": []   
                                 },
                                 {
                                     "item":  "Alumni",
-                                    "subItems": []
+                                    "link": "/alumni",
+                                    "subItems": [],
+                                    "subLinks": []   
                                 }
                             ],
                             

@@ -37,10 +37,16 @@ function wrapAsync(fn){
 }
 
 
-app.get('/home', wrapAsync(async (req, res, next) => {
+app.get('/', wrapAsync(async (req, res, next) => {
         const home = await pages["home"];
         res.render('home.ejs', { ...home })
     }))
+
+app.get('/:template', wrapAsync(async (req, res, next) => {
+    const {template} = req.params;
+    const home = await pages["home"];
+    res.render(`template/${template}.ejs`, {...home})
+}))
 
 app.get('/home/:centre',  wrapAsync(async (req, res, next) =>{
     const navbarItems = await { ...pages["home"] }.navbarItems;
@@ -63,7 +69,7 @@ app.get('/home/:centre/about', wrapAsync(async (req, res, next) => {
     const {centre} = req.params;
     const page = await pages[centre];
     page.path = "../../"
-    res.render('centreTemplate/about.ejs', {...page, navbarItems})
+    res.render('template/about.ejs', {...page, navbarItems})
 }))
 
 app.get('/home/:centre/courses', wrapAsync(async (req, res, next) => {
@@ -72,7 +78,7 @@ app.get('/home/:centre/courses', wrapAsync(async (req, res, next) => {
     const {centre} = req.params;
     const page = await pages[centre];
     page.path = "../../"
-    res.render('centreTemplate/courses.ejs', {...page, navbarItems})
+    res.render('template/courses.ejs', {...page, navbarItems})
 }))
 
 app.get('/home/:centre/faculty', wrapAsync(async (req, res, next) => {
@@ -81,7 +87,7 @@ app.get('/home/:centre/faculty', wrapAsync(async (req, res, next) => {
     const {centre} = req.params;
     const page = await pages[centre];
     page.path = "../../"
-    res.render('centreTemplate/faculty.ejs', {...page, navbarItems})
+    res.render('template/faculty.ejs', {...page, navbarItems})
 }))
 
 app.get('/home/:centre/gallery', wrapAsync(async (req, res, next) => {
@@ -90,7 +96,7 @@ app.get('/home/:centre/gallery', wrapAsync(async (req, res, next) => {
     const {centre} = req.params;
     const page = await pages[centre];
     page.path = "../../"
-    res.render('centreTemplate/gallery.ejs', {...page, navbarItems})
+    res.render('template/gallery.ejs', {...page, navbarItems})
 }))
 
 app.get('/home/:centre/notice', wrapAsync(async (req, res, next) => {
@@ -99,7 +105,7 @@ app.get('/home/:centre/notice', wrapAsync(async (req, res, next) => {
     const {centre} = req.params;
     const page = await pages[centre];
     page.path = "../../"
-    res.render('centreTemplate/notice.ejs', {...page, navbarItems})
+    res.render('template/notice.ejs', {...page, navbarItems})
 }))
 
 
