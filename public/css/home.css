@@ -135,7 +135,7 @@ body {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 200px;
+  min-width: 250px;
   /* box-shadow: 0px 12px 16px 0px rgba(25, 239, 236, 0.963); */
   /* box-shadow: rgba(240, 46, 75, 0.4) 5px 5px, rgba(240, 46, 91, 0.3) 10px 10px, rgba(240, 46, 111, 0.2) 15px 15px, rgba(240, 46, 133, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
   box-shadow: rgba(248, 246, 246, 0.8) 0px 2px 4px, rgba(243, 232, 232, 0.6) 0px 7px 13px -3px, rgba(238, 228, 228, 0.4) 0px -3px 0px inset;
@@ -154,7 +154,7 @@ body {
 .dropdown-content a:hover {
   color: #f6f6f6c7;
   background-color: #2e368bc7;
-  padding-left: 18px;
+  padding-left: 15px;
   border-left: 4px solid #dc5252;
   transition: all 0.3s ease;
 }

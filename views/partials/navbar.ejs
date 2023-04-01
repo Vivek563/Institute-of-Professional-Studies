@@ -10,11 +10,13 @@
         <li class="list-item">
           <a class="list-item" aria-current="page" href="#"><%= navbarItem.item %></a>
           
-          <div class="dropdown-content">
+          <% if( navbarItem.subItems.length  !== 0) {%>
+              <div class="dropdown-content">
               <% for(let subItem of navbarItem.subItems){ %>         
                   <a href="<%= subItem %>"><%= subItem %></a>
-              <% } %>  
+              <% } %> 
           </div>
+          <% } %> 
         </li>
         <% } %>
       </ul>
@@ -31,12 +33,13 @@
           <li class="list-item">
             <a class="list-item" aria-current="page" href="#"><%= navbarItem.item %></a>
             
+            <% if( navbarItem.subItems.length  !== 0) {%>
               <div class="dropdown-content">
                 <% for(let subItem of navbarItem.subItems){ %>         
                     <a href="<%= subItem %>"><%= subItem %></a>
                 <% } %>  
               </div>
-  
+              <% } %> 
           </li>
           <% } %>
      </ul>

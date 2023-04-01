@@ -14,39 +14,40 @@
             "navbarItems": [
                                 {
                                 "item": "Home",
-                                "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]      
+                                "subItems": []      
                                 },
                                 {
                                     "item": "About",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "subItems": []
                                 },
                                 {
                                     "item": "Centres",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "subItems": ["Centre of Computer Education","Centre of Fashion & Design Technology", "Centre of Food Technology", "Centre of Media Studies"],
+                                    "links": ["cce", "cfdt", "cft", "cms"]
                                 },
                                 {
                                     "item":  "Student",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "subItems": []
                                 },
                                 {
                                     "item":  "Gallery",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "subItems": []
                                 },
                                 {
                                     "item":  "Admission",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "subItems": []
                                 },
                                 {
                                     "item":  "Newsletter",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "subItems": []
                                 },
                                 {
                                     "item":  "Contact Us",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "subItems": []
                                 },
                                 {
-                                    "item":  "Blog",
-                                    "subItems": ["Popular Files","Featured Files", "Top New Files", "Followed Feed", "Top Authors", "Top New Authors", "Public Collections", "View All Categories"]
+                                    "item":  "Alumni",
+                                    "subItems": []
                                 }
                             ],
                             
