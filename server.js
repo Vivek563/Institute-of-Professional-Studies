@@ -56,60 +56,60 @@ app.get('/home/:centre',  wrapAsync(async (req, res, next) =>{
         const path = "../"
         const style = "css/centre.css"
         const script = "js/centre.js"
-        const title = "error"
+        const title = "Error"
     res.render('notfound.ejs', {path, style, title,  script, navbarItems, centre })}
     else{
     res.render('centre.ejs', { ...page, navbarItems})} 
 }))
 
 
-app.get('/home/:centre/about', wrapAsync(async (req, res, next) => {
-    const about = await pages['about'];
-    const navbarItems = await { ...pages["home"] }.navbarItems;
-    const {centre} = req.params;
-    const page = await pages[centre];
-    page.path = "../../"
-    res.render('template/about.ejs', {...page, navbarItems})
-}))
+// app.get('/home/:centre/about', wrapAsync(async (req, res, next) => {
+//     const about = await pages['about'];
+//     const navbarItems = await { ...pages["home"] }.navbarItems;
+//     const {centre} = req.params;
+//     const page = await pages[centre];
+//     page.path = "../../"
+//     res.render('template/about.ejs', {...page, navbarItems})
+// }))
 
-app.get('/home/:centre/courses', wrapAsync(async (req, res, next) => {
-    const courses = await pages['courses'];
-    const navbarItems = await { ...pages["home"] }.navbarItems;
-    const {centre} = req.params;
-    const page = await pages[centre];
-    page.path = "../../"
-    res.render('template/courses.ejs', {...page, navbarItems})
-}))
+// app.get('/home/:centre/courses', wrapAsync(async (req, res, next) => {
+//     const courses = await pages['courses'];
+//     const navbarItems = await { ...pages["home"] }.navbarItems;
+//     const {centre} = req.params;
+//     const page = await pages[centre];
+//     page.path = "../../"
+//     res.render('template/courses.ejs', {...page, navbarItems})
+// }))
 
-app.get('/home/:centre/faculty', wrapAsync(async (req, res, next) => {
-    const faculty = await pages['faculty'];
-    const navbarItems = await { ...pages["home"] }.navbarItems;
-    const {centre} = req.params;
-    const page = await pages[centre];
-    page.path = "../../"
-    res.render('template/faculty.ejs', {...page, navbarItems})
-}))
+// app.get('/home/:centre/faculty', wrapAsync(async (req, res, next) => {
+//     const faculty = await pages['faculty'];
+//     const navbarItems = await { ...pages["home"] }.navbarItems;
+//     const {centre} = req.params;
+//     const page = await pages[centre];
+//     page.path = "../../"
+//     res.render('template/faculty.ejs', {...page, navbarItems})
+// }))
 
-app.get('/home/:centre/gallery', wrapAsync(async (req, res, next) => {
-    const gallery = await pages['gallery'];
-    const navbarItems = await { ...pages["home"] }.navbarItems;
-    const {centre} = req.params;
-    const page = await pages[centre];
-    page.path = "../../"
-    res.render('template/gallery.ejs', {...page, navbarItems})
-}))
+// app.get('/home/:centre/gallery', wrapAsync(async (req, res, next) => {
+//     const gallery = await pages['gallery'];
+//     const navbarItems = await { ...pages["home"] }.navbarItems;
+//     const {centre} = req.params;
+//     const page = await pages[centre];
+//     page.path = "../../"
+//     res.render('template/gallery.ejs', {...page, navbarItems})
+// }))
 
-app.get('/home/:centre/notice', wrapAsync(async (req, res, next) => {
-    const notice = await pages['notice'];
-    const navbarItems = await { ...pages["home"] }.navbarItems;
-    const {centre} = req.params;
-    const page = await pages[centre];
-    page.path = "../../"
-    res.render('template/notice.ejs', {...page, navbarItems})
-}))
+// app.get('/home/:centre/notice', wrapAsync(async (req, res, next) => {
+//     const notice = await pages['notice'];
+//     const navbarItems = await { ...pages["home"] }.navbarItems;
+//     const {centre} = req.params;
+//     const page = await pages[centre];
+//     page.path = "../../"
+//     res.render('template/notice.ejs', {...page, navbarItems})
+// }))
 
 
-app.get('/*', (req, res, next) => {
+app.get('*', (req, res, next) => {
   next(new ExpressError('Requested Page Not Found', 404));  
 })
 
