@@ -8,7 +8,7 @@ const morgan = require('morgan');
 
 // app.use(morgan('tiny'));
 
-const pages = require('./pages.json'); //getting pages from pages.json
+const pages = require('./pages.json'); 
 const ExpressError = require('./utils/ExpressError');
 
 // const Centres = require('./models/centres');
@@ -127,5 +127,5 @@ app.use((err, req, res, next) => {
 
 
 app.listen(3000, () => {
-    console.log("LISTENING ON PORT 3000") // setting the path so that it can run from outside of the folder
+    console.log("LISTENING ON PORT 3000") 
 })
