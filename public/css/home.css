@@ -725,3 +725,42 @@ body {
     padding: 40px 20px;
   }
 }
+
+
+/* -----------------------------newsletter page -----------------------------*/
+
+
+
+.newsletterContainter {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.newsletterContainter h1 {
+  text-align: center;
+  color: #333;
+}
+.newsletterContainter h2 {
+  color: #333;
+}
+.newsletterContainter p {
+  margin-bottom: 20px;
+}
+.article {
+  margin-bottom: 40px;
+}
+.article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.article h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.article p {
+  margin-top: 0;
+}
