@@ -11,6 +11,9 @@ hamburger.addEventListener("click", () => {
 //   myFunction();
 // };
 
+
+
+
 /*---------------------------------centre's new section------------------------------------------*/
 
 const menuOpen = document.querySelector(".menu-open");
