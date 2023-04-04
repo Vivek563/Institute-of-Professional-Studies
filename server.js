@@ -51,11 +51,7 @@ app.get('/home/:centre',  catchAsync(async (req, res) =>{
 ))
 
 
-<<<<<<< HEAD
-// app.get('/home/:centre/about', wrapAsync(async (req, res, next) => {
-=======
 // app.get('/home/:centre/about', catchAsync(async (req, res) => {
->>>>>>> 7cda4b751fd2b45f542eafd291e27cbc5d577164
 //     const about = await pages['about'];
 //     const navbarItems = await { ...pages["home"] }.navbarItems;
 //     const {centre} = req.params;
@@ -64,11 +60,7 @@ app.get('/home/:centre',  catchAsync(async (req, res) =>{
 //     res.render('template/about.ejs', {...page, navbarItems})
 // }))
 
-<<<<<<< HEAD
-// app.get('/home/:centre/courses', wrapAsync(async (req, res, next) => {
-=======
 // app.get('/home/:centre/courses', catchAsync(async (req, res) => {
->>>>>>> 7cda4b751fd2b45f542eafd291e27cbc5d577164
 //     const courses = await pages['courses'];
 //     const navbarItems = await { ...pages["home"] }.navbarItems;
 //     const {centre} = req.params;
@@ -77,11 +69,7 @@ app.get('/home/:centre',  catchAsync(async (req, res) =>{
 //     res.render('template/courses.ejs', {...page, navbarItems})
 // }))
 
-<<<<<<< HEAD
-// app.get('/home/:centre/faculty', wrapAsync(async (req, res, next) => {
-=======
 // app.get('/home/:centre/faculty', catchAsync(async (req, res) => {
->>>>>>> 7cda4b751fd2b45f542eafd291e27cbc5d577164
 //     const faculty = await pages['faculty'];
 //     const navbarItems = await { ...pages["home"] }.navbarItems;
 //     const {centre} = req.params;
@@ -90,11 +78,7 @@ app.get('/home/:centre',  catchAsync(async (req, res) =>{
 //     res.render('template/faculty.ejs', {...page, navbarItems})
 // }))
 
-<<<<<<< HEAD
-// app.get('/home/:centre/gallery', wrapAsync(async (req, res, next) => {
-=======
 // app.get('/home/:centre/gallery', catchAsync(async (req, res) => {
->>>>>>> 7cda4b751fd2b45f542eafd291e27cbc5d577164
 //     const gallery = await pages['gallery'];
 //     const navbarItems = await { ...pages["home"] }.navbarItems;
 //     const {centre} = req.params;
@@ -103,11 +87,7 @@ app.get('/home/:centre',  catchAsync(async (req, res) =>{
 //     res.render('template/gallery.ejs', {...page, navbarItems})
 // }))
 
-<<<<<<< HEAD
-// app.get('/home/:centre/notice', wrapAsync(async (req, res, next) => {
-=======
 // app.get('/home/:centre/notice', catchAsync(async (req, res) => {
->>>>>>> 7cda4b751fd2b45f542eafd291e27cbc5d577164
 //     const notice = await pages['notice'];
 //     const navbarItems = await { ...pages["home"] }.navbarItems;
 //     const {centre} = req.params;
