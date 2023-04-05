@@ -902,3 +902,23 @@ body {
 .aboutArticle p {
   margin-top: 0;
 }
+
+/*---------------------- alumni page -----------------------------*/
+
+
+.alumni {
+  display: flex;
+  padding: 20px 30px 40px ;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-height: 100%;
+}
+
+.text {
+  font-size: 20px;
+  color: #fff;
+  padding-left: 20px;
+}
