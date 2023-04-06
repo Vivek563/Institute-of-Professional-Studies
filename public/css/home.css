@@ -114,12 +114,12 @@ body {
   .navbar .mobile-list {
     align-items: center;
     width: 100%;
-    background-color: var(--secondary);
+    background-color: #fff;
+    opacity: 0.9;
     gap: 20px;
     display: none;
     flex-direction: column;
     list-style-type: none;
-    color: #ffffff;
     padding: 20px 0px;
     position: absolute;
     top: 80px;
@@ -127,6 +127,10 @@ body {
     right: 0;
     border-radius: 10px;
   }
+  .navbar .mobile-list li a {
+    color: #000;
+    opacity: 1;
+  } 
 }
 
 /* ............nav menu option............. */
