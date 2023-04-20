@@ -13,7 +13,7 @@
             "script": "js/home.js",
                             
         
-    "sliderImages": [ "img1.jpeg", "img2.jpeg", "img3.jpeg", "img4.jpeg", "img5.JPG" ],
+    "sliderImages": [ "img1.JPG", "img2.jpeg", "img3.jpeg", "img4.jpeg", "img5.JPG" ],
     "messageSection": 
     [
         { 
