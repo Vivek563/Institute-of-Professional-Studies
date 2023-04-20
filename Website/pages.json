@@ -13,13 +13,13 @@
             "script": "js/home.js",
                             
         
-    "sliderImages": [ "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg" ],
+    "sliderImages": [ "img1.jpeg", "img2.jpeg", "img3.jpeg", "img4.jpeg", "img5.JPG" ],
     "messageSection": 
     [
         { 
              "name": "Director",
              "inShort": "Effective Website Design\n and development.",
-             "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.\n Officiis ex eaque earum! Tempora, aut mollitia!\n Voluptate possimus illo quidem ab vitae aspernatur \n aperiam, fugiat eveniet vel corporis. Natus cupiditate, \n nihil ullam reiciendis nostrum harum explicabo \n quidem quo et? Totam doloremque nesciunt rem \n temporibus minus eligendi ducimus quidem iusto \n laborum ratione instructors, Healthycare helping \n individuals reach their goals and pursue their dreams.",
+             "message": "",
              "image": "director.jpg"
          }
      ],
@@ -27,19 +27,23 @@
     [   
         {
             "name": "Computer Education", 
-            "icon": "computer.png"
+            "icon": "computer.png",
+            "Centrepath": "./home/centre/cce"
         }, 
         {
             "name": "Media Studies", 
-            "icon": "media.png"
+            "icon": "media.png",
+            "Centrepath": "./home/centre/cms"
         }, 
         {
             "name": "Food Technology", 
-            "icon": "food.png"
+            "icon": "food.png",
+            "Centrepath": "./home/centre/cft"
         }, 
         {
             "name": "Fashion & Design Technology", 
-            "icon": "fashion.png"
+            "icon": "fashion.png",
+            "Centrepath": "./home/centre/cfdt"
         }
     ],
     "counterList":

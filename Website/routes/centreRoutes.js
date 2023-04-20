@@ -5,7 +5,6 @@ const pages = require('../controllers/pages');
 
 // const {validatePage} = require('../middleware');
 
-
 const catchAsync = require('../utils/catchAsync');
 
 
