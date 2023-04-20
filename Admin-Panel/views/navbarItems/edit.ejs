@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="col-8"> 
+        <h1 class="text-center">Edit this Navbar Item</h1>
+        <div class="col-6 offset-3">
+            <form action="/navbarItems/<%=navbarItem._id%>?_method=PUT" method="POST" novalidate class="validated-form"> 
+                <div class="mb-3">
+                    <label class="form-label" for="item">Item</label>
+                    <input class="form-control" type="text" id="item" name="navbarItem[item]" value="<%=navbarItem.item %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="link">Link</label>
+                    <input class="form-control" type="text" id="link" name="navbarItem[link]" value="<%=navbarItem.link %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <% if(navbarItem.subItems.length) {limit = navbarItem.subItems.length }%>
+                <% for(let i = 0; i<limit; i++) { %>
+                <div class="mb-3">
+                    <label class="form-label" for="subItems">Sub Item <%= i+1 %></label>
+                    <input class="form-control" type="text" id="subItems" name="navbarItem[subItems][<%= i %>]" value="<%- navbarItem.subItems[i] %>" novalidate>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="subLinks">Sub Link <%= i+1 %></label>
+                    <input class="form-control" type="text" id="subLinks" name="navbarItem[subLinks][<%= i %>]" value="<%- navbarItem.subLinks[i] %>" novalidate>
+                </div>
+                <% } %>
+                <div class="mb-3">
+                    <button class="btn btn-info">Save</button>
+                </div>
+            </form>
+            <a href="/navbarItems/<%= navbarItem._id%>">Go Back</a>
+        </div>
+    </div>

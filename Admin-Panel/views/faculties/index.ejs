@@ -1,0 +1,21 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="col-8"> 
+        <h1 class="text-center">All Faculties</h1>
+        <div>
+            <a href="/faculties/new">Add a Faculty</a>
+        </div>
+    
+        <% for (let c of faculties){%>
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="card-body ps-4">
+                        <h4 class="card-title"><%= c.name %></h4>
+                        <p class="card-text d-inline"><b>DESIGNATION : </b><%= c.designation %></p>
+                        <p class="card-text"><b>EMAIL : </b><%= c.emailId %></p>
+                        <a class="btn btn-primary" href="/faculties/<%=c._id%>">View more...</a>
+                    </div>   
+                </div>
+            </div>
+        <% }%>
+    </div>   

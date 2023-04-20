@@ -1,0 +1,27 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="col-8"> 
+            <div class="card mb-3">
+                <div class="card-body">
+                <h2 class="card-title"><%= faculty.name %></h2>
+                <br/>
+                <p class="card-text"><b>DESIGNATION: </b><%= faculty.designation %></p>
+                <p class="card-text"><b>EMAIL ID : </b><%= faculty.emailId %></p>
+                <p class="card-text"><b>EDUCATION : </b><%= faculty.education %></p>
+                <% if(!faculty.researchPaperCount) {%>
+                    <p class="card-text"><b>RESEARCH PAPER(S) PUBLISHED : </b> Not Applicable</p>
+                <% } else{ %>
+                    <p class="card-text"><b>RESEARCH PAPER(S) PUBLISHED : </b><%= faculty.researchPaperCount %></p>
+                <% } %>    
+                </div>
+                <div class="card-body">
+                    <a class="card-link btn btn-info" href="/faculties/<%=faculty._id%>/edit">Edit</a>             
+                    <form class="d-inline" action="/faculties/<%=faculty._id%>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+                <div class="card-footer" style="color: rgb(125 130 137 / 75%)!important;">
+                   <b> Last Updated : </b><%= faculty.updatedAt %>
+                </div>
+            </div>
+    </div>

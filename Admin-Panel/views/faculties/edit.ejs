@@ -1,0 +1,49 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="col-8"> 
+        <h1 class="text-center">Edit this Faculty Details</h1>
+        <div class="col-6 offset-3">
+            <form action="/faculties/<%=faculty._id%>?_method=PUT" method="POST" novalidate class="validated-form"> 
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="faculty[name]" value="<%=faculty.name %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="designation">Designation</label>
+                    <input class="form-control" type="text" id="designation" name="faculty[designation]" value="<%=faculty.designation %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="emailId">Email Id</label>
+                    <input class="form-control" type="email" id="emailId" name="faculty[emailId]" value="<%=faculty.emailId %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="faculty">Education</label>
+                    <textarea class="form-control" type="text" id="faculty" name="faculty[education]" required><%=faculty.education%></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="researchPaperCount">Number of Paper(s) Published</label>
+                    <input class="form-control" type="number" id="researchPaperCount" name="faculty[researchPaperCount]" value="<%= faculty.researchPaperCount %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-info">Save</button>
+                </div>
+            </form>
+            <a href="/faculties/<%= faculty._id%>">Go Back</a>
+        </div>
+    </div>

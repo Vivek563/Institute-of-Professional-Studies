@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="col-8"> 
+        <h1 class="text-center">Make a new Page</h1>
+        <div class="col-6 offset-3"> 
+            <form action="/pages" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="page[title]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="page">Short Description</label>
+                    <textarea class="form-control" type="text" id="page" name="page[shortDescription]" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="d-inline mb-3">
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+                <div class="d-inline mb-3">
+                    <a href="/pages" class="btn btn-success">Back to All Pages</a>
+                </div>
+            </form>
+               
+        </div>
+    </div>
+    

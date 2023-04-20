@@ -1,0 +1,40 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="col-8">
+        <h1 class="text-center">Make a new News</h1>
+        <div class="col-6 offset-3"> 
+            <form action="/news" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="aNews[title]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="aNews">Description</label>
+                    <textarea class="form-control" type="text" id="aNews" name="aNews[description]" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="pdfUrl">pdf Url</label>
+                    <input class="form-control" type="url" id="pdfUrl" name="aNews[pdfUrl]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+ 
+                <div class="d-inline mb-3">
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+                <div class="d-inline mb-3">
+                    <a href="/news" class="btn btn-success">Back to All News</a>
+                </div>
+            </form>
+               
+        </div>
+    </div>
+    
