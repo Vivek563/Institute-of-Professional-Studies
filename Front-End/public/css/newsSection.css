@@ -1,0 +1,117 @@
+
+.happiness {
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #27496c;
+    height: 80v;
+    justify-content: space-between;
+  }
+  .happiness .newsTitle .happyHead {
+    margin-top: -20px;
+    padding-bottom: 15px;
+  }
+  
+  .newsTitle ul li {
+    list-style-type: none;
+    font: 1.2em sans-serif;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+  }
+  
+  .newsTitle {
+    text-align: center;
+    padding-top: 50px;
+    height: 30rem;
+    width: 25rem;
+    z-index: 1;
+    margin: 50px 50px 50px 50px;
+    background-color: rgb(240, 248, 255);
+    border-radius: 25px;
+    box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  @media only screen and (max-width: 815px) {
+    .happiness{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  dialog {
+    border-radius: calc(2*var(--universal-border-radius));
+    border-color: var(--border-color);
+    border-width: 4px;
+    box-shadow: 0 0 24px var(--modal-close-color); 
+    padding: calc(2*var(--universal-padding)) calc(4*var(--universal-padding));
+    background-color: var(--modal-back-color);
+    max-width: 64ch;
+    margin: auto;
+    position: fixed;
+  }
+  ::backdrop {
+    background-color: var(--modal-overlay-color);
+    backdrop-filter: blur(2px);
+  }
+  
+  dialog .cross {
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0.4rem;
+  }
+  
+  dialog form {
+    border: 0
+  }
+  dialog #dialogActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn {
+    overflow: visible;
+    text-transform: none;
+    display: inline-block;
+    background: var(--button-back-color);
+    color: var(--button-fore-color);
+    border: 0.0625rem solid var(--button-border-color);
+    border-radius: var(--universal-border-radius);
+    padding: var(--universal-padding) calc(1.5 * var(--universal-padding));
+    margin: var(--universal-margin);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  
+  button.primary {
+    --button-back-color: #5e81ac;
+    --button-fore-color: #eceff4;
+  }
+  button.primary:hover, button.primary:focus {
+    --button-hover-back-color: #5e81ac;
+  }
+  
+  :root {
+    --fore-color: #2e3440;
+    --secondary-fore-color: #3b4252;
+    --back-color: #eceff4;
+    --secondary-back-color: #e5e9f0;
+    --border-color: #d8dee9;
+    --secondary-border-color: #e5e9f0;
+    --universal-margin: 0.5rem;
+    --universal-padding: 0.5rem;
+    --universal-border-radius: 0.25rem;
+    accent-color: #5e81ac;
+    --button-fore-color: #2e3440;
+    --button-border-color: transparent;
+    --button-hover-border-color: transparent;
+    --modal-overlay-color: rgba(0, 0, 0, 0.45);
+    --modal-close-color: #3b4252;
+    --modal-close-hover-color: #e5e9f0;
+    --modal-back-color: #fff;
+  }
+  

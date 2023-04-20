@@ -1,0 +1,35 @@
+<%- include('../partials/header')  %>
+
+
+
+  <% for(let i = 0; i<4; i++) {%>
+
+    <section class="gallery-section">
+      <h1 class="galleryTitle">this is a testing gallery image</h1>
+      <div class="grid-container">
+        
+        <% for(let i = 0; i<4; i++) {%>
+        
+          <div class="box">
+          <div class="imgBx">
+            <img src="../assets/director.jpg" alt="img">
+          </div>
+          <div class="content">
+            <div>
+              <h2>Image Title</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+              </p>
+            </div>
+          </div>
+          </div>
+        
+        <% } %>
+      
+      </div>
+    </section>
+  
+  <% } %>
+ 
+<%- include('../partials/footer')  %>
+</body>
+</html>

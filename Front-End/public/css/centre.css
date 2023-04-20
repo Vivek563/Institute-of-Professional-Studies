@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* text-transform: capitalize; */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+html {
+  font-size: 62.5%;
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* overflow: hidden; */
+  min-height: 100vh;
+  /* display: block; */
+  background: #0e1924;
+  /* padding: 5.5rem; */
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: center; */
+  /* gap: 2rem; */
+  
+}
+
+
+
+/*---------------centre's page new sections------------------*/
+
+.pageSection{
+  background:             
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),            
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5.5rem;
+  color: #fff;
+  padding-top: 120px;
+}
+@media only screen and (max-width: 1400px) {
+.pageSection{
+  padding-top: 72px;
+  }
+}
+@media only screen and (max-width: 900px) {
+.pageSection{
+  padding-top: 18px;
+  }
+}
+.home, .about, .skills, .projects {
+  padding: 1rem 7%;
+  min-height: 100%;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 0.7rem 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #555;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+.menu-open,
+.menu-close {
+  font-size: 3rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background: deeppink;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 2rem;
+  display: none;
+  z-index: 1;
+}
+
+.menu-close {
+  top: 0;
+  right: 0;
+}
+
+.sideHeader {
+  width: 35rem;
+  height: 58rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0.4rem);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.sideHeader .user {
+  padding-top: 2rem;
+}
+
+.sideHeader .user img {
+  margin: 1rem 0;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.2);
+}
+
+.sideHeader .user .name {
+  font-size: 3rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.sideHeader .user .post {
+  font-size: 1.8rem;
+  color: #eee;
+  font-weight: lighter;
+}
+
+.sideHeader .centreNavbar {
+  padding: 1rem 3rem;
+}
+
+.sideHeader .centreNavbar ul li {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.sideHeader .centreNavbar ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  transition: all 0.2s linear;
+}
+
+.sideHeader .centreNavbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #555;
+  transition: none;
+}
+
+.centreContainer {
+  height: 58rem;
+  width: 80rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0.4rem);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.centreContainer section {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.name{
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: #eee;
+}
+
+.lines{
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 0.5rem 0; 
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .menu-open,
+  .menu-close {
+    display: inline;
+  }
+
+  /* h3 {
+    text-align: center;
+  } */
+
+  /* body {
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+  } */
+  .pageSection {
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sideHeader {
+    position: absolute;
+    right: 2rem;
+    z-index: 99;
+    background: linear-gradient(deeppink, purple);
+    display: none;
+  }
+
+  .home, .about, .skills, .projects {
+    margin: 2rem 0;
+  }
+
+  .centreContainer {
+    width: 100%;
+    height: 85vh;
+    overflow-y: scroll;
+  }
+
+  .display {
+    display: inline;
+  }
+
+}
+
+
+
+

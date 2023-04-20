@@ -1,0 +1,165 @@
+{ 
+    "home":
+        {
+            "name": "Institute of Professional Studies",
+            "title": "Institute of Professional Studies",
+            "path": "../",
+            "favicon": "faviconImage",
+            "shortDescription": "This is a short description.",
+            "about": "This is a detailed description.",
+            "notification": "This is notification.",
+            "gallery": "galleryImages",
+            "style": "css/home.css",
+            "script": "js/home.js",
+                            
+        
+    "sliderImages": [ "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg" ],
+    "messageSection": 
+    [
+        { 
+             "name": "Director",
+             "inShort": "Effective Website Design\n and development.",
+             "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.\n Officiis ex eaque earum! Tempora, aut mollitia!\n Voluptate possimus illo quidem ab vitae aspernatur \n aperiam, fugiat eveniet vel corporis. Natus cupiditate, \n nihil ullam reiciendis nostrum harum explicabo \n quidem quo et? Totam doloremque nesciunt rem \n temporibus minus eligendi ducimus quidem iusto \n laborum ratione instructors, Healthycare helping \n individuals reach their goals and pursue their dreams.",
+             "image": "director.jpg"
+         }
+     ],
+    "centresList": 
+    [   
+        {
+            "name": "Computer Education", 
+            "icon": "computer.png"
+        }, 
+        {
+            "name": "Media Studies", 
+            "icon": "media.png"
+        }, 
+        {
+            "name": "Food Technology", 
+            "icon": "food.png"
+        }, 
+        {
+            "name": "Fashion & Design Technology", 
+            "icon": "fashion.png"
+        }
+    ],
+    "counterList":
+    [
+        {
+            "name": "Student", 
+            "count": "1200", 
+            "image": "student.png"
+        },
+        {
+            "name": "Faculty", 
+            "count": "500", 
+            "image": "faculty.png"
+        },
+        {
+            "name": "Staff", 
+            "count": "150", 
+            "image": "staff.png"
+        }
+    ]
+        },
+    "cce":
+        {
+            "name": "Centre of Computer Education",
+            "title": "Centre of Computer Education",
+            "path": "../",
+            "icon": "assets/computer.png",
+            "favicon": "faviconImage",
+            "shortDescription": "This is a short description.",
+            "about": "This is a detailed description.",
+            "notification": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nihil\nquisquam qui adipisci exercitationem, voluptas doloribus repudiandae\ndebitis magnam nobis rem asperiores voluptatem tempora pariatur\nullam veniam at inventore blanditiis, accusantium numquam? Nesciunt\nofficia dolore consequuntur magni. Exercitationem cumque sit placeat\naliquam incidunt error facilis sint, voluptatibus non pariatur\nvoluptate?",
+            "faculty": ["faculty member 1", "faculty member 2"],
+            "gallery": "galleryImages",
+            "style": "css/centre.css",
+            "script": "js/home.js"
+        },
+    "cfdt":
+        {
+            "name": "Centre of Fashion & Design Technology",
+            "title": "Centre of Fashion & Design Technology",
+            "path": "../",
+            "icon": "assets/fashion.png",
+            "favicon": "faviconImage",
+            "shortDescription": "This is a short description.",
+            "about": "This is a detailed description.",
+            "notification": "This is notification.",
+            "faculty": ["faculty member 1", "faculty member 2"],
+            "gallery": "galleryImages",
+            "style": "css/centre.css",
+            "script": "js/centre.js"
+        },
+    "cft":
+        {
+            "name": "Centre of Food Technology",
+            "title": "Centre of Food Technology",
+            "path": "../",
+            "icon": "assets/food.png",
+            "favicon": "faviconImage",
+            "shortDescription": "This is a short description.",
+            "about": "This is a detailed description.",
+            "notification": "This is notification.",
+            "faculty": ["faculty member 1", "faculty member 2"],
+            "gallery": "galleryImages",
+            "style": "css/centre.css",
+            "script": "js/centre.js"
+        },
+    "cms":
+        {
+            "name": "Centre of Media Studies",
+            "title": "Centre of Media Studies",
+            "path": "../",
+            "icon": "assets/media.png",
+            "favicon": "faviconImage",
+            "shortDescription": "This is a short description.",
+            "about": "This is a detailed description.",
+            "notification": "This is notification.",
+            "faculty": ["faculty member 1", "faculty member 2"],
+            "gallery": "galleryImages",
+            "style": "css/centre.css",
+            "script": "js/centre.js"
+        },
+  "about":
+        {   "code": "about",
+            "fake parameter": "fake data",
+            "path": "../../"
+        },
+"courses":
+        {
+            "fake parameter": "fake data",
+            "path": "../"
+        },
+"faculty":
+        {
+            "fake parameter": "fake data",
+            "path": "../"
+ 
+        },
+"gallery":
+        {   "code": "gallery",
+            "fake parameter": "fake data",
+            "path": "../../"
+
+        },
+"notice":
+        {
+            "fake parameter": "fake data",
+            "path": "../../",
+            "style": "css/centre.css",
+            "script": "js/centre.js"
+        },
+"student":
+        {
+            "code": "student",
+            "fake parameter": "fake data",
+            "path": "../../"
+        },
+"alumni":
+        {
+            "code": "alumni",
+            "fake parameter": "fake data",
+            "path": "../../"
+        }
+}

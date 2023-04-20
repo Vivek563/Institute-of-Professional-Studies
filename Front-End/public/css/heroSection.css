@@ -1,0 +1,170 @@
+
+.hero {
+    display: flex;
+    padding: 180px 90px 50px 80px;
+    gap: 20%;
+  }
+  
+  .hero .hero-left .Institute {
+    color: #ffffff;
+    
+    font-size: 2.5rem;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  .hero .hero-left .pro {
+    color: #eb2828;
+    font-size: 4rem;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  .hero .hero-left p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .hero .hero-left .trust {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  @media only screen and (max-width: 1400px) {
+    .hero{
+    padding: 100px 30px 40px 30px;
+    }
+  }
+  @media only screen and (max-width: 1110px) {
+    .hero{
+      margin-top: 0px;
+      padding: 100px 30px 40px 30px;
+    }
+  
+    .hero .hero-left .Institute {
+      font-size: 2.2rem;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+  
+    .hero .hero-right img {
+      width: 450px;
+    }
+  }
+  @media only screen and (max-width: 815px) {
+    .hero .hero-right {
+      opacity: 0.2;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+    }
+    .hero {
+      justify-content: center;
+      margin-top: 120px;
+    }
+    .hero .hero-left {
+      width: 400px;
+    }
+    .hero .hero-left .Institute {
+      font-size: 1.2rem;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .hero .hero-left {
+      padding: 0 20px;
+    }
+  }
+
+/*........................slider section........................................*/
+
+
+
+.hero .hero-right {
+  margin-top: -20vh;
+  overflow: hidden;
+  /* margin-left: 70px; */
+  margin-left: 4.375rem;
+  max-width: 95vh;
+  max-height: 90vh;
+}
+.slideshowContainer{
+  position: relative;
+  height: 95vh;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--------image section-------------------------*/
+.slideshowContainer div > img {
+  max-height: 100%;
+  max-width:  100%;
+  object-fit: contain;
+  object-position: bottom;
+  /* height: 300px;
+  width:  400px; */
+  display: block;
+  z-index: 1;
+}
+/*---------------------------------------------------left-right arrows---------------------------------------------------*/
+.prev, .next{
+  position: absolute;
+  z-index: 2;
+  color: rgb(255,255,255);
+  transition: 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  background-color: rgba(128, 128, 128, 0.61);
+}
+.prev{
+  left:0;
+  border-radius: 0 3em 3em 0;
+  /* padding-right: 25px; */
+  padding-right: 1.563rem;
+}
+.next{
+  right: 0;
+  border-radius: 3em 0 0 3em;
+  /* padding-left: 25px; */
+  padding-left: 1.563rem;
+}
+.prev:hover, .next:hover {
+  background-color: #eb2828c7;
+}
+/*----------------------------------------------Fading animation--------------------------------------------------------*/
+.fade-in-image {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  @-o-keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+  }
