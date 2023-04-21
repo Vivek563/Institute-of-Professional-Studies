@@ -2,7 +2,7 @@
 
 
     <div class="col-8"> 
-        <h1 class="text-center">Edit this Events</h1>
+        <h1 class="text-center">Edit this Event</h1>
         <div class="col-6 offset-3">
             <form action="/events/<%=event._id%>?_method=PUT" method="POST" novalidate class="validated-form"> 
                 <div class="mb-3">
@@ -26,10 +26,12 @@
                         Looks good!
                      </div>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 d-inline">
                     <button class="btn btn-info">Save</button>
                 </div>
+                <div class="mb-3 d-inline">
+                    <a class="btn btn-primary" href="/events/<%= event._id%>">Go Back</a>
+                </div>
             </form>
-            <a href="/events/<%= event._id%>">Go Back</a>
         </div>
     </div>

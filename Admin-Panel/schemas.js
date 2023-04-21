@@ -41,6 +41,15 @@ module.exports.newsSchema = Joi.object({
         
     }).required()
 });
+module.exports.notificationSchema = Joi.object({
+    notification: Joi.object({
+        title: Joi.string().required(),
+        description: Joi.string().required(),
+        pdfUrl: Joi.string().required(),
+        code: Joi.string().required()
+    }).required()
+});
+
 module.exports.pageSchema = Joi.object({
     page: Joi.object({
         name: Joi.string().required(),

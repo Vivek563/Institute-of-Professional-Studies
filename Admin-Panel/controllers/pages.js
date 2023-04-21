@@ -13,8 +13,7 @@ module.exports.createPage = async (req, res) => {
     res.redirect(`/pages/${newPage._id}`);
 };
 module.exports.showPage = async (req, res) => {
-    const { id } = req.params;
-    const page = await Pages.findById(id)
+    const page = await Pages.findById(req.params.id)
     res.render('pages/show', { page })
 };
 module.exports.renderEditForm = async (req, res) => {

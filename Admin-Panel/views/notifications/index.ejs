@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="col-8"> 
+        <h1 class="text-center">All Notifications</h1>
+        <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-danger" href="/notifications/new">Add a Notification</a>
+        </div>
+    
+        <% for (let c of notifications){%>
+            <div class="card mb-3">
+                <div class="row">
+                        <div class="card-body ps-4">
+                            <h5 class="card-title"><%= c.title %></h5>
+                            <% { let name = ''; %> 
+                            <% if(c.code === 'cfdt') { name = 'Fashion & Design Technology'; } %>
+                            <% if(c.code === 'cft') { name = 'Food Technology' } %>
+                            <% if(c.code === 'cms') { name = 'Media Studies' } %>
+                            <% if(c.code === 'cce') { name = 'Computer Education' } %>
+                            <p class="card-text d-inline"><b>Belong To : </b><i>Centre of <%= name %></i></p>
+                            <% } %>
+                            <p class="card-text"><b>Description : </b><%= c.description %></p>
+                            <a class="btn btn-outline-primary " href="/notifications/<%=c._id%>">View more...</a>
+                        </div>
+                    
+                </div>
+            </div>
+        <% }%>
+    </div>   

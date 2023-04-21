@@ -10,6 +10,7 @@ const eventsRoutes = require('./routes/events');
 const facultiesRoutes = require('./routes/faculties');
 const navbarItemsRoutes = require('./routes/navbarItems');
 const newsRoutes = require('./routes/news');
+const notificationsRoutes = require('./routes/notifications');
 const pagesRoutes = require('./routes/pages');
 
 
@@ -55,6 +56,10 @@ app.use('/navbarItems', navbarItemsRoutes)
 //------------------------------------------- News routes starts----------------------------------------
 app.use('/news', newsRoutes)
 //------------------------------------------- News routes ends----------------------------------------
+
+//------------------------------------------- Events routes starts----------------------------------------
+app.use('/notifications', notificationsRoutes)
+//------------------------------------------- Events routes ends----------------------------------------
 
 //------------------------------------------- Pages routes starts----------------------------------------
 app.use('/pages', pagesRoutes)
