@@ -145,9 +145,9 @@ const seedNavbarItems =[
     },
     {
         "item": "About",
-        "link": "/home/about",
-        "subItems": [],
-        "subLinks": []
+        "link": "#",
+        "subItems": ["About UOA","About IPS"],
+        "subLinks": ["/home/aboutUoA","/home/about"]
     },
     {
         "item": "Centres",
@@ -157,9 +157,9 @@ const seedNavbarItems =[
     },
     {
         "item":  "Student",
-        "link": "/home/student",   
-        "subItems": [],
-        "subLinks": []
+        "link": "#",   
+        "subItems": ["Syllubus","Library"],
+        "subLinks": ["/home/student","/home/Library"]
     },
     {
         "item":  "Gallery",

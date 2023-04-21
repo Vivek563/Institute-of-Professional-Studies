@@ -78,7 +78,7 @@
             "faculty": ["faculty member 1", "faculty member 2"],
             "gallery": "galleryImages",
             "style": "css/centre.css",
-            "script": "js/home.js"
+            "script": "js/centre.js"
         },
     "cfdt":
         {
@@ -127,6 +127,16 @@
         },
   "about":
         {   "code": "about",
+            "fake parameter": "fake data",
+            "path": "../../"
+        },
+  "aboutUoA":
+        {   "code": "aboutUoA",
+            "fake parameter": "fake data",
+            "path": "../../"
+        },
+  "Library":
+        {   "code": "Library",
             "fake parameter": "fake data",
             "path": "../../"
         },
