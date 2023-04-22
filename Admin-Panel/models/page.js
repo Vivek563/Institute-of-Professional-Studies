@@ -26,6 +26,12 @@ const pageSchema = new mongoose.Schema({
             type: Schema.Types.ObjectId,
             ref: 'Faculty'
         }
+    ],
+    notifications:[
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Notification'
+        }
     ]
   
 },{timestamps: true})

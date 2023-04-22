@@ -2,8 +2,8 @@
 
     <div class="col-8"> 
         <h1 class="text-center">All Pages</h1>
-        <div>
-            <a href="/pages/new">Add a Page</a>
+        <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-danger" href="/pages/new">Add a Page</a>
         </div>
     
         <% for (let c of pages){%>
@@ -12,7 +12,7 @@
                         <div class="card-body ps-4">
                             <h5 class="card-title"><%= c.title %></h5>
                             <p class="card-text"><b>DESCRIPTION : </b><%= c.shortDescription %></p>
-                            <a class="btn btn-primary" href="/pages/<%=c._id%>">View more...</a>
+                            <a class="btn btn-outline-primary" href="/pages/<%=c._id%>">View more...</a>
                         </div>
                     
                 </div>

@@ -1,0 +1,20 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="col-8"> 
+            <div class="card mb-3">
+                <div class="card-body">
+                <h2 class="card-title"><%= notification.title %></h2>
+                <p class="card-text"><b>Belong To : </b><i>Centre of <%= name %></i></p>
+                <p class="card-text"><b>DESCRIPTION : </b><%= notification.description %></p>
+                </div>
+                <div class="card-body">
+                    <a class="card-link btn btn-info" href="/notifications/<%=notification._id%>/edit">Edit</a>             
+                    <form class="d-inline" action="/notifications/<%=notification._id%>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+                <div class="card-footer" style="color: rgb(125 130 137 / 75%)!important;">
+                    <b> Last Updated : </b><%= notification.updatedAt %>
+                </div>
+            </div>
+    </div>

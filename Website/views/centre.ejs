@@ -31,10 +31,10 @@
   <div class="centreContainer">
     <section class="home" id="home">
       <h1 class="heading">Notification</h1>
-
-        <h3 class="name">Lorem ipsum dolor sit amet.</h3>
-          <p class="lines"><%= page.notification %></p>
-      
+      <% for(notification of page.notifications) {%>
+        <h3 class="name"><%= notification.title  %></h3>
+        <p class="lines"><%= notification.description %></p>
+      <% } %>
     </section>
 
     <!-- about section  -->

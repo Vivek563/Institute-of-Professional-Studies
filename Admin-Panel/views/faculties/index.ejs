@@ -2,8 +2,8 @@
 
     <div class="col-8"> 
         <h1 class="text-center">All Faculties</h1>
-        <div>
-            <a href="/faculties/new">Add a Faculty</a>
+        <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-danger" href="/faculties/new">Add a Faculty</a>
         </div>
     
         <% for (let c of faculties){%>
@@ -13,7 +13,7 @@
                         <h4 class="card-title"><%= c.name %></h4>
                         <p class="card-text d-inline"><b>DESIGNATION : </b><%= c.designation %></p>
                         <p class="card-text"><b>EMAIL : </b><%= c.emailId %></p>
-                        <a class="btn btn-primary" href="/faculties/<%=c._id%>">View more...</a>
+                        <a class="btn btn-outline-primary" href="/faculties/<%=c._id%>">View more...</a>
                     </div>   
                 </div>
             </div>

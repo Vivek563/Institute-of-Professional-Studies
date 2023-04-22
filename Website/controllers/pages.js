@@ -3,6 +3,7 @@ const Events = require('../models/Event');
 const Announcements = require('../models/announcement');
 const News = require('../models/News');
 const NavbarItems = require('../models/navbarItem');
+const Notifications = require('../models/notification');
 
 const JsonExtra = require('../pages.json');
 
@@ -29,8 +30,7 @@ module.exports.template = async (req, res) => {
 
 module.exports.renderCentre = async (req, res) =>{
     const {centre} = req.params;
-    const page = await Pages.findOne({code : `${centre}`});
+    const page = await Pages.findOne({code : `${centre}`}).populate('notifications')
     const navbarItems = await NavbarItems.find({});
-
     res.render('centre', {page, navbarItems})
 };

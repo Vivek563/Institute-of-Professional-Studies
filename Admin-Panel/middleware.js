@@ -4,6 +4,7 @@ const {
         facultySchema,
         navbarItemSchema,
         newsSchema,
+        notificationSchema,
         pageSchema
     } = require('./schemas');
 
@@ -47,6 +48,15 @@ module.exports.validateNavbarItem = (req, res, next) => {
 };
 module.exports.validateNews = (req, res, next) => {
     const { error } = newsSchema.validate(req.body);
+    if(error){ 
+        const msg = error.details.map(el => el.message).join(',')
+        throw new ExpressError(msg, 400)
+    }else{
+        next();
+    }
+};
+module.exports.validateNotification = (req, res, next) => {
+    const { error } = notificationSchema.validate(req.body);
     if(error){ 
         const msg = error.details.map(el => el.message).join(',')
         throw new ExpressError(msg, 400)

@@ -30,10 +30,12 @@
                     <input class="form-control" type="text" id="subLinks" name="navbarItem[subLinks][<%= i %>]" value="<%- navbarItem.subLinks[i] %>" novalidate>
                 </div>
                 <% } %>
-                <div class="mb-3">
+                <div class="mb-3 d-inline">
                     <button class="btn btn-info">Save</button>
                 </div>
+                <div class="mb-3 d-inline">
+                    <a class="btn btn-primary" href="/navbarItems/<%= navbarItem._id%>">Go Back</a>
+                </div>
             </form>
-            <a href="/navbarItems/<%= navbarItem._id%>">Go Back</a>
         </div>
     </div>
