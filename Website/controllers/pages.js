@@ -3,7 +3,8 @@ const Events = require('../models/Event');
 const Announcements = require('../models/announcement');
 const News = require('../models/News');
 const NavbarItems = require('../models/navbarItem');
-const Notifications = require('../models/notification');
+const notifications = require('../models/notification');
+const faculties = require('../models/faculty');
 
 const JsonExtra = require('../pages.json');
 
@@ -30,7 +31,18 @@ module.exports.template = async (req, res) => {
 
 module.exports.renderCentre = async (req, res) =>{
     const {centre} = req.params;
-    const page = await Pages.findOne({code : `${centre}`}).populate('notifications')
     const navbarItems = await NavbarItems.find({});
+    const page = await Pages.findOne({code : `${centre}`})
+        .populate('notifications')
+        .populate('faculties')
+    const notifications = page.notifications; //for sorting taking out notifications array and redefining same array in page object after sorting
+    // its better to do aggregation instead of this, need to match, lookup, unwind, sort, group, project.
+    notifications.sort((a, b) => {
+        let da = new Date(a.updatedAt),
+            db = new Date(b.updatedAt);
+        return db - da;
+    });
+    page.notifications = notifications;
+    
     res.render('centre', {page, navbarItems})
 };

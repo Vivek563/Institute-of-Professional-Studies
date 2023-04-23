@@ -96,35 +96,45 @@ const seedFaculties =[
         designation: 'this is designation of faculty 1',
         emailId: 'gg.gg@gmail.com/',
         education: 'this is education of faculty 1',
-        researchPaperCount: 2    
+        researchPaperCount: 2,
+        photo: 'dlfodg',
+        code: 'cms'    
     },
     {
         name: 'Dummy Faculty name 2',
         designation: 'this is designation of faculty 2',
         emailId: 'gg.gg@gmail.com/',
         education: 'this is education of faculty 2',
-        researchPaperCount: 2    
+        researchPaperCount: 2,
+        photo: 'dlfodg',
+        code: 'cms'    
     },
     {
         name: 'Dummy Faculty name 3',
         designation: 'this is designation of faculty 3',
         emailId: 'gg.gg@gmail.com/',
         education: 'this is education of faculty 3',
-        researchPaperCount: 2    
+        researchPaperCount: 2,
+        photo: 'dlfodg',
+        code: 'cms'    
     },
     {
         name: 'Dummy Faculty name 4',
         designation: 'this is designation of faculty 4',
         emailId: 'gg.gg@gmail.com/',
         education: 'this is education of faculty 4',
-        researchPaperCount: 2    
+        researchPaperCount: 2,
+        photo: 'dlfodg',
+        code: 'cms'    
     },
     {
         name: 'Dummy Faculty name 5',
         designation: 'this is designation of faculty 5',
         emailId: 'gg.gg@gmail.com/',
         education: 'this is education of faculty 5',
-        researchPaperCount: 2    
+        researchPaperCount: 2,
+        photo: 'dlfodg',
+        code: 'cms'    
     }
     
 ]

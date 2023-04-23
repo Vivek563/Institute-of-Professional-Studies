@@ -61,6 +61,14 @@
     top: 0;
     right: 0.4rem;
   }
+  dialog .cross::before {
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0.4rem;
+  }
   
   dialog form {
     border: 0

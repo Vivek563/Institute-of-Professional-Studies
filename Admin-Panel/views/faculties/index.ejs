@@ -11,8 +11,15 @@
                 <div class="row">
                     <div class="card-body ps-4">
                         <h4 class="card-title"><%= c.name %></h4>
-                        <p class="card-text d-inline"><b>DESIGNATION : </b><%= c.designation %></p>
-                        <p class="card-text"><b>EMAIL : </b><%= c.emailId %></p>
+                        <% { let name = ''; %> 
+                        <% if(c.code === 'cfdt') { name = 'Fashion & Design Technology'; } %>
+                        <% if(c.code === 'cft') { name = 'Food Technology' } %>
+                        <% if(c.code === 'cms') { name = 'Media Studies' } %>
+                        <% if(c.code === 'cce') { name = 'Computer Education' } %>
+                        <p class="card-text "><b>Department : </b><i>Centre of <%= name %></i></p>
+                        <% } %>
+                        <p class="card-text d-inline"><b>Designation : </b><%= c.designation %></p>
+                        <p class="card-text"><b>Email : </b><%= c.emailId %></p>
                         <a class="btn btn-outline-primary" href="/faculties/<%=c._id%>">View more...</a>
                     </div>   
                 </div>

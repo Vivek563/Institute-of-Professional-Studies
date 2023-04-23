@@ -22,7 +22,8 @@ module.exports.facultySchema = Joi.object({
         designation: Joi.string().required(),
         emailId: Joi.string().required(),
         education: Joi.string().required(),
-        researchPaperCount: Joi.number().required().min(0)
+        researchPaperCount: Joi.number().required().min(0),
+        code: Joi.string().required()
     }).required()
 });
 module.exports.navbarItemSchema = Joi.object({
