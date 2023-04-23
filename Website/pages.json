@@ -140,6 +140,11 @@
             "fake parameter": "fake data",
             "path": "../../"
         },
+  "contactus":
+        {   "code": "contactus",
+            "fake parameter": "fake data",
+            "path": "../../"
+        },
 "courses":
         {
             "fake parameter": "fake data",

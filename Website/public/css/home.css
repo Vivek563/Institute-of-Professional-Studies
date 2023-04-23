@@ -1,19 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-* {
+*{
   padding: 0;
   margin: 0;
 }
 
-body {
-  font-family: "Open Sans", sans-serif ", Figtree", sans-serif;
-  font-weight: 600;
-  font-size: 17px;
-
-}
-
 .bg {
   background-color: #0e1924;
+  margin: 0;
+  padding: 0;
 }
 .navbarContainer {
   margin: 0 auto;
@@ -21,12 +17,21 @@ body {
 }
 
 
-
+.nameips{
+  
+  z-index: -10;
+}
 
 
 
 /*................message form director..............*/
 
+.webdesign .webdesign-left .messagefromvc{
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'Satisfy', cursive;
+  
+}
 .webdesign-wrapper {
   /* background-color: #27496c; */
   background-color: #0e1924;
@@ -87,6 +92,7 @@ body {
 }
 
 @media only screen and (max-width: 1134px) {
+  
   .webdesign .webdesign-left h4 {
     font-size: 1.8rem;
   }
