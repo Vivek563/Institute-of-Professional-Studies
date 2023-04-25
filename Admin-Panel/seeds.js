@@ -310,7 +310,7 @@ const seedPages =[
         code: "cce",
         path: "../../",
         shortDescription: "This is a short description.",
-        about: "This is a detailed description.",
+        about: "The Centre of Computer Education & Training was established under Institute of Professional Studies, University of Allahabad in December 2000. Initially it offered to University students short-term courses on Computer Basics, Programming, Hardware & Networking, Web Design and Computer-Aided Financial Management and training for DOEACC 'O' Level examination.In 2006 the Centre was granted full accreditation by DOEACC Society (An autonomous body of Dept. of Information Technology, Ministry of Communication & Information Technology, Govt. of India, New Delhi) for a period of 6 years to conduct DOEACC 'O' Level computer courses. <br/> Later in the year 2007 the centre also initiated Master of Computer Applications (MCA) and Bachelor of Computer Applications (BCA).",
         style: "css/centre.css",
         script: "js/home.js"
     },
