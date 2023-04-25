@@ -60,8 +60,6 @@ module.exports.pageSchema = Joi.object({
         code: Joi.string().required(),
         path: Joi.string().required(), 
         shortDescription: Joi.string().required(), 
-        about: Joi.string().required(), 
-        style: Joi.string().required(), 
-        script: Joi.string().required()
+        about: Joi.string().required()
     }).required()
 });

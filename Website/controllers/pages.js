@@ -16,7 +16,7 @@ module.exports.index = async (req, res) => {
     const news = await News.find({}).limit(6).sort({updatedAt: 'desc'});
     const navbarItems = await NavbarItems.find({});
     const jsonExtra =  JsonExtra['home'];
-
+    console.log(req.params)
     res.render('home', {page, news, events, announcements, navbarItems, ...jsonExtra})
 };
 
@@ -31,10 +31,15 @@ module.exports.template = async (req, res) => {
 
 module.exports.renderCentre = async (req, res) =>{
     const {centre} = req.params;
+
     const navbarItems = await NavbarItems.find({});
+    
     const page = await Pages.findOne({code : `${centre}`})
         .populate('notifications')
         .populate('faculties')
+    if(!page){
+        return res.redirect('../');
+    }
     const notifications = page.notifications; //for sorting taking out notifications array and redefining same array in page object after sorting
     // its better to do aggregation instead of this, need to match, lookup, unwind, sort, group, project.
     notifications.sort((a, b) => {
