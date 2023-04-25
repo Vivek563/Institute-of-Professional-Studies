@@ -141,7 +141,9 @@
   align-items: center;
   justify-content: center;
 }
-
+.mySlides{
+  background-color: #413d3d;
+}
 /*--------image section-------------------------*/
 .slideshowContainer div > img {
   max-height: 100%;
@@ -150,6 +152,7 @@
   object-position: bottom;
   /* height: 300px;
   width:  400px; */
+  opacity: 0.8;
   display: block;
   z-index: 1;
 }

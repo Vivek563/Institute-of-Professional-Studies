@@ -2,7 +2,7 @@ const Pages = require('../models/page');
 const Notification = require('../models/notification');
 
 module.exports.index = async (req, res) => {
-    const notifications = await Notification.find({}).limit(10).sort({updatedAt: 'desc'})
+    const notifications = await Notification.find({}).limit(10).sort({updatedAt: 'asc'})
  
     res.render('notifications/index', { notifications});
 };
@@ -11,7 +11,6 @@ module.exports.renderNewForm = (req, res) => {
 };
 module.exports.createNotification = async (req, res) => {
     const newNotification = new Notification(req.body.notification);
-    console.log(req.body.notification.code)
     const page = await Pages.findOne({code: `${req.body.notification.code}`});
     page.notifications.push(newNotification);
     await newNotification.save();
@@ -25,7 +24,7 @@ module.exports.showNotification = async (req, res) => {
     if(notification.code === 'cfdt'){ name = 'Fashion & Design Technology'; }
     else if(notification.code === 'cft'){ name = 'Food Technology' }
     else if(notification.code === 'cms'){ name = 'Media Studies' }
-    else { name = 'Computer Education' }
+    else if(notification.code === 'cce'){ name = 'Computer Education' }
     res.render('notifications/show', { notification, name })
 };
 module.exports.renderEditForm = async (req, res) => {
@@ -35,7 +34,7 @@ module.exports.renderEditForm = async (req, res) => {
     if(notification.code === 'cce'){ n = '1' }
     else if(notification.code === 'cfdt'){ n = '2' }
     else if(notification.code === 'cft'){ n = '3' }
-    else { n = '4' }
+    else if(notification.code === 'cms'){ n = '4' }
     res.render('notifications/edit', { notification, n })
 };
 module.exports.updateNotification = async (req, res) => {

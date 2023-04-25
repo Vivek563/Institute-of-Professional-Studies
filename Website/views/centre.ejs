@@ -49,9 +49,10 @@
     <!-- service section  -->
     <section class="skills" id="skills">
       <h1 class="heading">Faculty</h1>
-
-          <h3 class="name">Lorem ipsum dolor sit amet.</h3>
-            <p class="lines"><%= page.faculty %></p>
+      <% for(faculty of page.faculties) {%>
+        <h3 class="name"><%= faculty.name  %></h3>
+        <p class="lines"><%= faculty.designation %></p>
+      <% } %>
     </section>
 
     <!-- Project section  -->

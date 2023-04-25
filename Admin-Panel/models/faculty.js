@@ -20,6 +20,13 @@ const facultySchema = new mongoose.Schema({
     researchPaperCount:{
         type: Number,
         required: true
+    },
+    photo:{
+        type: String,
+    },
+    code:{
+        type: String,
+        required: true
     }
 
 }, {timestamps: true})
