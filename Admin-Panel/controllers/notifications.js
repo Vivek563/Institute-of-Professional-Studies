@@ -2,7 +2,7 @@ const Pages = require('../models/page');
 const Notification = require('../models/notification');
 
 module.exports.index = async (req, res) => {
-    const notifications = await Notification.find({}).limit(10).sort({updatedAt: 'asc'})
+    const notifications = await Notification.find({}).limit(10).sort({updatedAt: 'desc'})
  
     res.render('notifications/index', { notifications});
 };
