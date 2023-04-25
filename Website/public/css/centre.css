@@ -14,7 +14,7 @@
 
 }
 .centerbody{
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 body {
@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button-text{
+  margin-top: 5px;
   text-decoration: none;
   list-style-type: none;
   font-size: 20px;
