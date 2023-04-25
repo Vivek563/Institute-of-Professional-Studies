@@ -8,7 +8,7 @@
     top: 0px;
     width: 100%;
     align-items: center;
-    border-radius: 0 0 60% 90% / 90%;
+    /* border-radius: 0 0 60% 90% / 90%; */
     height: 100px;
   }
   .navbar .logo img {
