@@ -14,7 +14,7 @@
               <li class="button-text">Notice</li></a>
               
   <a href="#syllabus" class="button-text">
-              <li class="button-text">Syllubus</li></a>
+              <li class="button-text">Syllabus</li></a>
               
   <a href="#time-table" class="button-text">
               <li class="button-text">Time Table</li></a> 
@@ -56,7 +56,7 @@
                 <% } %>
               </ul>   
           </div>
-<!--------------------------------- reusable  Dialog  --------------------------------------------->
+<!--------------------------------- reusable  Dialog starts --------------------------------------------->
           <dialog id="reusableDialog">
             <form method="dialog">
               <button type="submit" onclick="window.reusableDialog.close();" aria-label="close" class="btn cross">❌</button>
@@ -69,6 +69,7 @@
               </div>
             </form>
           </dialog>
+ <!--------------------------------- reusable  Dialog ends --------------------------------------------->         
       </section>
 
   <section id="syllabus" class="auto-height  about-section white-background bordered">
@@ -130,7 +131,7 @@
                       <p>M.Sc.</p>
                       <p>Ph.D.</p>
                       <p class="subTitle">Niche area of research</p>
-                      <p><%= faculty.education  %></p>
+                      <p><%- faculty.education  %></p>
                       <p class="subTitle">Total no. of research papers</p>
                       <p><%= faculty.researchPaperCount  %></p>
                   </div>
