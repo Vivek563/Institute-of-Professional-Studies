@@ -1,6 +1,4 @@
-* , *::after, *::before{
-  box-sizing: border-box;
-}
+
 
 :root {
   --color-primary: #2997FF;
@@ -14,6 +12,9 @@
   --color-border: #ccc;
   /* --border-radius: 30px; */
 
+}
+.centerbody{
+  margin-top: 120px;
 }
 
 body {
