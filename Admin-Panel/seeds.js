@@ -169,7 +169,7 @@ const seedNavbarItems =[
     {
         "item":  "Student",
         "link": "#",   
-        "subItems": ["Syllubus","Library"],
+        "subItems": ["Syllabus","Library"],
         "subLinks": ["/home/student","/home/Library"]
     },
     {
