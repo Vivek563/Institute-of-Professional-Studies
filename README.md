@@ -1,6 +1,6 @@
-# In this project, a website is going to be built for the Institue of Professional Studies, University of Allahabad, the team working on this project consists of four members namely, Divya Khera, Gufran Ahmed Khan, Prakhar Verma, and Vivek Maurya.
+### In this project, a website is going to be built for the Institue of Professional Studies, University of Allahabad, the team working on this project consists of four members namely, Divya Khera, Gufran Ahmed Khan, Prakhar Verma, and Vivek Maurya.
 
-### Rules
+## Rules
 
 <ol>
     <li><b>Follow MVC pattern only.</b>
@@ -31,7 +31,7 @@
 
 
 
-### Guidelines
+## Guidelines
 
 <ul>
     <li>Clear institute name on every page( including on footer)</li>
