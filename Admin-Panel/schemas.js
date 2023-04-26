@@ -29,6 +29,7 @@ module.exports.facultySchema = Joi.object({
 module.exports.navbarItemSchema = Joi.object({
     navbarItem: Joi.object({
         item: Joi.string().required(),
+        serialNo: Joi.number().required().min(1),
         link: Joi.string().required(), 
         subItems: Joi.array().sparse().items(Joi.string().empty('')),
         subLinks: Joi.array().sparse().items(Joi.string().empty(''))

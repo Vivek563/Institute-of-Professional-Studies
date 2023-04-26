@@ -14,7 +14,7 @@ module.exports.index = async (req, res) => {
     const events = await Events.find({}).limit(2).sort({updatedAt: 'desc'});
     const announcements = await Announcements.find({}).limit(4).sort({updatedAt: 'desc'});
     const news = await News.find({}).limit(6).sort({updatedAt: 'desc'});
-    const navbarItems = await NavbarItems.find({});
+    const navbarItems = await NavbarItems.find({}).sort({serialNo: 'asc'})
     const jsonExtra =  JsonExtra['home'];
 
     res.render('home', {page, news, events, announcements, navbarItems, ...jsonExtra})

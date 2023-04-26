@@ -13,6 +13,13 @@
                      </div>
                 </div>
                 <div class="mb-3">
+                    <label class="form-label" for="item">Serial Number</label>
+                    <input class="form-control" type="number" min="1" id="item" name="navbarItem[serialNo]" value="<%=navbarItem.serialNo %>" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
                     <label class="form-label" for="link">Link</label>
                     <input class="form-control" type="text" id="link" name="navbarItem[link]" value="<%=navbarItem.link %>" required>
                     <div class="valid-feedback">
