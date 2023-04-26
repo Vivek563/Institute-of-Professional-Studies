@@ -184,12 +184,12 @@ const seedNavbarItems =[
         "subItems": [],
         "subLinks": []   
     },
-    {
-        "item":  "Newsletter",
-        "link": "/home/newsletter",
-        "subItems": [],
-        "subLinks": []   
-    },
+    // {
+    //     "item":  "Newsletter",
+    //     "link": "/home/newsletter",
+    //     "subItems": [],
+    //     "subLinks": []   
+    // },
     {
         "item":  "Contact Us",
         "link": "/home/contactus",
