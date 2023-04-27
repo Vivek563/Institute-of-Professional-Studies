@@ -203,9 +203,9 @@ section .box {
   background: transparent; /* make scrollbar transparent */
 }
 
-.menu-icon {
+/* .menu-icon {
   display: none;    
-}
+} */
 
 
 /* Responsive */
@@ -446,24 +446,24 @@ section {
 }
 
 
-.menu ul, a {
+/* .menu ul, a {
   font-size: .8rem;
   padding: 0px 8px;
   cursor: pointer;
-}
+} */
 
-.menu a{
+/* .menu a{
   color: black;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
-a:visited {
+/* a:visited {
   text-decoration: none;
   color: black;
-}
+} */
 
 .about-container {
  
