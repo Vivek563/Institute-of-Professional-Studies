@@ -5,6 +5,10 @@ const navbarItemSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    serialNo:{
+        type: Number,
+        required: true
+    },
     link:{
         type: String,
         required: true

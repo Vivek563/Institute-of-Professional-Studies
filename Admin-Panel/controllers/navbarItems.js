@@ -5,7 +5,7 @@ module.exports.index = async (req, res) => {
     res.render('navbarItems/index', { navbarItems });
 };
 module.exports.renderNewForm = (req, res) => {
-    res.render('navbarItems/new', {limit: 2});
+    res.render('navbarItems/new', {limit: 4});
 };
 module.exports.createNavbarItem = async (req, res) => {
     const newNavbarItem = new NavbarItems(req.body.navbarItem);

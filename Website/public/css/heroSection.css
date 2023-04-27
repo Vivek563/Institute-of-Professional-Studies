@@ -141,11 +141,11 @@
   align-items: center;
   justify-content: center;
 }
-.mySlides{
-  background-color: #413d3d;
-}
 /*--------image section-------------------------*/
-.slideshowContainer div > img {
+.imageBackground{
+  background-color: #1c1717;
+}
+.mySlides img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
@@ -231,7 +231,7 @@
 
 @-ms-keyframes fadeIn {
   0% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

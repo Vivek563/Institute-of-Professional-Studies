@@ -150,54 +150,63 @@ Faculties.insertMany(seedFaculties)
 const seedNavbarItems =[
     {
         "item": "Home",
+        "serialNo": "1",
         "link": "/",
         "subItems": [],
         "subLinks": []      
     },
     {
         "item": "About",
+        "serialNo": "2",
         "link": "#",
         "subItems": ["About UOA","About IPS"],
         "subLinks": ["/home/aboutUoA","/home/about"]
     },
     {
         "item": "Centres",
+        "serialNo": "3",
         "link": "#",   
         "subItems": ["Centre of Computer Education","Centre of Fashion & Design Technology", "Centre of Food Technology", "Centre of Media Studies"],
         "subLinks": ["/home/centre/cce", "/home/centre/cfdt", "/home/centre/cft", "/home/centre/cms"]
     },
     {
         "item":  "Student",
+        "serialNo": "4",
         "link": "#",   
-        "subItems": ["Syllubus","Library"],
+        "subItems": ["Syllabus","Library"],
         "subLinks": ["/home/student","/home/Library"]
     },
     {
         "item":  "Gallery",
+        "serialNo": "5",
         "link": "/home/gallery",
         "subItems": [],
         "subLinks": []   
     },
     {
         "item":  "Admission",
+        "serialNo": "6",
         "link": "/home/admission",
         "subItems": [],
         "subLinks": []   
     },
     // {
     //     "item":  "Newsletter",
+    //      "serialNo": "9",
     //     "link": "/home/newsletter",
     //     "subItems": [],
     //     "subLinks": []   
     // },
     {
         "item":  "Contact Us",
+        "serialNo": "7",
         "link": "/home/contactus",
         "subItems": [],
         "subLinks": []   
     },
     {
         "item":  "Alumni",
+        "serialNo": "8",
         "link": "/home/alumni",
         "subItems": [],
         "subLinks": []   
