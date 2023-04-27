@@ -6,18 +6,18 @@
         <div class="col-6 offset-3">
             <form action="/navbarItems/<%=navbarItem._id%>?_method=PUT" method="POST" novalidate class="validated-form"> 
                 <div class="mb-3">
-                    <label class="form-label" for="item">Item</label>
-                    <input class="form-control" type="text" id="item" name="navbarItem[item]" value="<%=navbarItem.item %>" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                     </div>
-                </div>
-                <div class="mb-3">
                     <label class="form-label" for="item">Serial Number</label>
                     <input class="form-control" type="number" min="1" id="item" name="navbarItem[serialNo]" value="<%=navbarItem.serialNo %>" required>
                     <div class="valid-feedback">
                        Looks good!
                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="item">Item</label>
+                    <input class="form-control" type="text" id="item" name="navbarItem[item]" value="<%=navbarItem.item %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="link">Link</label>

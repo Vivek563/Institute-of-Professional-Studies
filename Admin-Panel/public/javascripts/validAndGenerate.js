@@ -38,10 +38,12 @@ function initializeN(nu){
 function createSubItem(n){
     const subItem = document.createElement("div");
     subItem.innerHTML=
-    `<label class="form-label" for="subItems">Sub Item ${n+1} </label>
-    <input class="form-control" type="text" id="subItems" name="navbarItem[subItems][${n}]" novalidate>
-    <label class="form-label" for="subLinks">Sub Link ${n+1}</label>
-    <input class="form-control" type="text" id="subLinks" name="navbarItem[subLinks][${n}]" novalidate>`;
+    `<div class="mb-3"><label class="form-label" for="subItems">Sub Item ${n+1} </label>
+    <input class="form-control" type="text" id="subItems" name="navbarItem[subItems][${n}]" required>
+    <div class="valid-feedback">Looks good!</div></div>
+    <div class="mb-3"><label class="form-label" for="subLinks">Sub Link ${n+1}</label>
+    <input class="form-control" type="text" id="subLinks" name="navbarItem[subLinks][${n}]" required>
+    <div class="valid-feedback">Looks good!</div></div>`;
     return subItem;
 }
 const el = document.querySelector('.genBtn');
