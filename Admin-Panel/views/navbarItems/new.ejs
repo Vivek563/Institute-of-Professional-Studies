@@ -6,15 +6,15 @@
         <div class="col-6 offset-3"> 
             <form action="/navbarItems" method="POST" novalidate class="validated-form">
                 <div class="mb-3">
-                    <label class="form-label" for="item">Item</label>
-                    <input class="form-control" type="text" id="item" name="navbarItem[item]" required>
+                    <label class="form-label" for="item">Serial Number</label>
+                    <input class="form-control" type="number" min="1" id="item" name="navbarItem[serialNo]" required>
                     <div class="valid-feedback">
                        Looks good!
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="item">Serial Number</label>
-                    <input class="form-control" type="number" min="1" id="item" name="navbarItem[serialNo]" required>
+                    <label class="form-label" for="item">Item</label>
+                    <input class="form-control" type="text" id="item" name="navbarItem[item]" required>
                     <div class="valid-feedback">
                        Looks good!
                     </div>
@@ -26,22 +26,17 @@
                        Looks good!
                     </div>
                 </div>
-                <% for(let i = 0; i< limit; i++) { %>
-                <div class="mb-3">
-                    <label class="form-label" for="subItems">Sub Item <%= i+1 %></label>
-                    <input class="form-control" type="text" id="subItems" name="navbarItem[subItems][<%= i %>]" novalidate>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="subLinks">Sub Link <%= i+1 %></label>
-                    <input class="form-control" type="text" id="subLinks" name="navbarItem[subLinks][<%= i %>]" novalidate>
-                </div>
-                <% } %>
+
+                <div class="mb-3 subItems"></div>
  
-                <div class="d-inline mb-3">
-                    <button class="btn btn-danger">Submit</button>
-                </div>
-                <div class="d-inline mb-3">
-                    <a href="/navbarItems" class="btn btn-success">Back to All Navbar Items</a>
+                <div class="mb-3 d-flex">
+                    <div class="genBtn flex-fill btn btn-outline-primary">Add Sub-Item</div>
+                    <div class="remBtn flex-fill btn btn-outline-primary">Don't?</div>
+                </div>      
+
+                <div class=" d-inline mb-3">
+                    <button class=" btn btn-danger px-5">Submit</button>
+                    <a href="/navbarItems" class=" btn btn-success">Back to All Navbar Items</a>
                 </div>
             </form>
                
