@@ -1,6 +1,6 @@
 .navbar {
   z-index: 4;
-  background-color: #FF7A66;
+  background-color: #FFC172;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -20,7 +20,7 @@
   display: none;
 }
 .navbar .list {
-  margin-top: -20px;
+  margin-top: 4px;
   list-style-type: none;
   display: flex;
   gap: 50px;
@@ -33,7 +33,7 @@
 
 .list-item {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 .navbar .list .list-item:hover {
   color: #ff3131;
@@ -63,6 +63,7 @@
   .navbar .logo img {
     width: 80px;
     padding: 20px;
+    margin-top: 4px;
   }
 }
 
