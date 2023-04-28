@@ -29,6 +29,7 @@
   padding: 15px 60px 20px;
   font-weight: 700;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .list-item {
@@ -53,12 +54,13 @@
   .navbar .list {
     list-style-type: none;
     display: flex;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     gap: 40px;
     padding: 18px;
     color: #FAFAFA;
     font-weight: 500;
     align-items: center;
+    /* margin-bottom: 0px; */
   }
 
   .navbar .logo img {

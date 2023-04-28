@@ -1,3 +1,7 @@
+body{
+  background-color: #FAFAFA;
+}
+
 .uoaclass {
   background-color: #fafafa;
   /* margin-top: 170px; */
@@ -6,17 +10,17 @@
   margin-top: 110px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #fff;
+  background-color: #a2d5f25e;
   margin-bottom: 40px;
   font-family: "DM Sans", sans-serif;
-  color:#07689F;
+  
 }
 .AboutBorder {
   height: 60%;
   background: #A2D5F2;
   color: #fafafa;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .titlecentre{
   font-size: 30px;
@@ -25,9 +29,11 @@
 }
 .titlecentre td{
   padding-bottom: 40px;
+  color:#07689F;
 }
 .centrename td{
   padding-bottom: 40px;
+  
 }
 .viewDetail{
   align-items: center;

@@ -1,28 +1,28 @@
 .bodysectionbackground {
-   
-    background-color: #fff;
+    font-family: "DM Sans", sans-serif;
+    background-color: #fafafa;
   }
   
   .bodysection {
     margin-top: 110px;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: #fff;
+    background-color: #fafafa;
     margin-bottom: 40px;
   
   }
 
   .AboutBorder {
     height: 60%;
-    background: #e7c508;
-    color: #fff;
+    background: #A2D5F2;
+    color: #fafafa;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   .AboutBorder span {
     font-size: 40px;
     font-weight: 800;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
   }
   
   .alumni {

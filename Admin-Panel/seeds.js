@@ -301,7 +301,7 @@ Notifications.insertMany(seedNotifications)
 const seedPages =[
     {
         name: "Institute of Professional Studies",
-        title: "Institute of Professional Studies",
+        title: "IPS - University of Allahabad",
         icon: "iconImage",
         favicon: "faviconImage",
         code: "home",
@@ -313,7 +313,7 @@ const seedPages =[
     },
     {
         name: "Centre of Computer Education",
-        title: "Centre of Computer Education",
+        title: "Computer Education - IPS",
         icon: "assets/computer.png",
         favicon: "faviconImage",
         code: "cce",
@@ -324,7 +324,7 @@ const seedPages =[
     },
     {
         name: "Centre of Fashion & Design Technology",
-        title: "Centre of Fashion & Design Technology",
+        title: "Fashion & Design Technology - IPS",
         icon: "assets/fashion.png",
         favicon: "faviconImage",
         code: "cfdt",
@@ -336,7 +336,7 @@ const seedPages =[
     },
     {
         name: "Centre of Food Technology",
-        title: "Centre of Food Technology",
+        title: "Food Technology - IPS",
         icon: "assets/food.png",
         favicon: "faviconImage",
         code: "cft",
@@ -348,7 +348,7 @@ const seedPages =[
     },
     {
         name: "Centre of Media Studies",
-        title: "Centre of Media Studies",
+        title: "Media Studies - IPS",
         icon: "assets/media.png",
         favicon: "faviconImage",
         code: "cms",

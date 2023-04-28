@@ -1,13 +1,14 @@
 .bodybackground{
-    background-color: #fff;
+    background-color: #fafafa;
+    font-family: "DM Sans", sans-serif;
   }
 .bodysection {
     margin-top: 110px;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: #fff;
+    background-color: #fafafa;
     margin-bottom: 40px;
-  
+
   }
   .padding{
     padding-bottom: 50px;
@@ -18,7 +19,7 @@
   }
   .contact h1 {
     text-align: center;
-    background-color: rgb(196, 196, 31);
+    background-color: #A2D5F2;
     color: #ffffff;
     width: 100%;
   }
@@ -66,26 +67,26 @@
         margin-top: 140px;
         margin-left: 20px;
         margin-right: 20px;
-        background-color: #fff;
+        background-color: #fafafa;
         margin-bottom: 40px;
       
       }
   }
   @media (max-width: 900px){
     .bg{
-        background-color: #fff;
+        background-color: #fafafa;
     }
     .contact h1{
         margin-top: -100px;
     }
     .bodybackground{
-        background-color: #fff;
+        background-color: #fafafa;
       }
       .bodysection {
         margin-top: 140px;
         margin-left: 20px;
         margin-right: 20px;
-        background-color: #fff;
+        background-color: #fafafa;
         margin-bottom: 40px;
       
       }

@@ -12,8 +12,7 @@
   padding: 0;
 }
 .navbarContainer {
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 
@@ -106,6 +105,7 @@
 /*.................... center.............. */
 .centres {
   background-color: #07689f1c;
+  font-family: "DM Sans", sans-serif;
 }
 .ag-format-container {
   width: 100vw;

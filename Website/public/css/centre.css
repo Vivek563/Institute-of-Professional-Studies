@@ -202,10 +202,6 @@ section .box {
   visibility: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
-}
 
 /* .menu-icon {
   display: none;    

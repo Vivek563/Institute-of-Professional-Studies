@@ -14,12 +14,12 @@
   background: #A2D5F2;
   color: #fafafa;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .AboutBorder span {
   font-size: 40px;
   font-weight: 800;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .contentsdiv {

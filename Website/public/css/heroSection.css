@@ -86,7 +86,7 @@
     z-index: 1;
     font-size: 2rem;
     margin-top: 30px;
-    /* text-transform: capitalize; */
+    font-family: "DM Sans", sans-serif;
     text-align: center;
   }
   .nameips span {
