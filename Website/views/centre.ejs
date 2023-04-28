@@ -40,7 +40,7 @@
           <div class="modal-content">
               <span class="close">&times;</span>
                   <h3>About</h3>
-                  <p><%- page.about %></p>   
+                  <div><%- page.about %></div>   
           </div>
       </div>
       
@@ -65,8 +65,7 @@
               <button type="submit" onclick="window.reusableDialog.close();" aria-label="close" class="btn cross">❌</button>
               <br/>
               <br/>
-              <div id="reusableDialogContent">
-              </div>
+              <div id="reusableDialogContent"></div>
               <div id="dialogActions">
                 <button type="submit" class="btn primary" onclick="window.reusableDialog.close();">Close</button>
               </div>

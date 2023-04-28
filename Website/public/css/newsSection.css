@@ -2,13 +2,16 @@
 .happiness {
     display: flex;
     /* flex-wrap: wrap; */
-    background-color: #cfa164;
+    background-color: #07689f17;
     height: 80v;
     justify-content: space-between;
+    font-family: "DM Sans", sans-serif;
   }
   .happiness .newsTitle .happyHead {
     margin-top: -20px;
     padding-bottom: 15px;
+    background-color: #FF7E67;
+    color: #fafafa;
   }
   
   .newsTitle ul li {
@@ -16,6 +19,10 @@
     font: 1.2em sans-serif;
     margin-top: 10px ;
     margin-bottom: 10px;
+    color: #07689F;
+  }
+  .newsTitle ul li:hover {
+    color: #A2D5F2;
   }
   
   .newsTitle {
@@ -25,7 +32,7 @@
     width: 25rem;
     z-index: 1;
     margin: 50px 50px 50px 50px;
-    background-color: #F6F7C1;
+    background-color: #FAFAFA;
     border-radius: 25px;
     box-shadow: 16px 16px 16px 16px rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -113,7 +120,7 @@
     --universal-margin: 0.5rem;
     --universal-padding: 0.5rem;
     --universal-border-radius: 0.25rem;
-    accent-color: #5e81ac;
+    --accent-color: #5e81ac;
     --button-fore-color: #2e3440;
     --button-border-color: transparent;
     --button-hover-border-color: transparent;

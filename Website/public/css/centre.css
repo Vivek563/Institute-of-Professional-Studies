@@ -66,7 +66,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #07689F;
+  font-weight: 550;
+}
+.button-text:hover{
+  color: #A2D5F2;
 }
 
 .title-notice{
@@ -174,7 +178,7 @@ section .box {
   opacity: .5;
   font-size: 1rem;
   font-weight: bolder;
-  color: white;
+  color: #fafafa;
   background-color: #000;
   border-radius: 50%;
   
@@ -345,7 +349,7 @@ to {top:0; opacity:1}
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #fafafa;
   margin: auto;
   padding: 50px;
   border: 1px solid #888;
@@ -357,11 +361,14 @@ to {top:0; opacity:1}
   animation-duration: 0.4s
 }
 
-.modal-content p {
+.modal-content div{
+  height: 60vh;
+  overflow-y: scroll;
+  /* background-color: #a2d5f22a; */
+  /* border: 1px solid #07689F; */
   font-size: 1.2rem;
   text-align: justify;
 }
-
 .close {
   color: #aaaaaa;
   float: right;
@@ -561,12 +568,12 @@ dialog {
   background-color: var(--modal-back-color);
   max-width: 64ch;
   margin: auto;
-  position: fixed;
 }
 ::backdrop {
   background-color: var(--modal-overlay-color);
   backdrop-filter: blur(2px);
 }
+
 
 dialog .cross {
   filter: grayscale(1);
@@ -637,3 +644,4 @@ button.primary:hover, button.primary:focus {
   --modal-close-hover-color: #e5e9f0;
   --modal-back-color: #fff;
 }
+

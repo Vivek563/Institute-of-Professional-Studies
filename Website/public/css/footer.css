@@ -1,18 +1,19 @@
 .footer-section {
-  background-color: #609966;
+  background-color: #07689F;
   display: flex;
   justify-content: space-between;
   padding: 20px 90px;
   align-items: center;
   height: 200px;
   flex-wrap: wrap;
+  font-family: "DM Sans", sans-serif;
 }
 
 .footer-section .footer-left .list {
   list-style-type: none;
   display: flex;
   gap: 39px;
-  color: #ffffff;
+  color: #fafafa;
   font-weight: lighter;
   font-size: 13px;
   padding-top: 20px;
@@ -28,7 +29,7 @@
   height: 50%;
   margin-left: 20px;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 
 .footer-right:first-child {
@@ -45,7 +46,7 @@
   list-style-type: none;
   display: flex;
   gap: 20px;
-  color: #ffffff;
+  color: #fafafa;
   font-weight: lighter;
   font-size: 13px;
 }
@@ -55,7 +56,7 @@
   height: 50%;
   margin-left: 20px;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 
 @media only screen and (max-width: 670px) {

@@ -11,30 +11,31 @@
   display: flex;
   padding: 50px 51px 50px 49px;
   gap: 5%;
+  font-family: "DM Sans", sans-serif;
 }
 .hero-left {
   margin: auto;
 }
 .hero .hero-left .Institute {
-  color: #000000;
+  /* color: #000000; */
   width: 500px;
   font-size: 2.5rem;
   line-height: 60px;
   margin-bottom: 30px;
 }
 .hero .hero-left .pro {
-  color: #eb2828;
+  color: #FF7E67;
   font-size: 3rem;
   line-height: 60px;
   margin-bottom: 30px;
 }
 .hero .hero-left p {
-  color: #000000;
+  /* color: #000000; */
   font-size: 24px;
   font-weight: 800;
 }
 .hero .hero-left .trust {
-  color: #000000;
+  /* color: #000000; */
   font-size: 20px;
   text-align: justify;
   font-weight: 300;
@@ -57,7 +58,7 @@
     padding: 100px 30px 40px 30px;
   }
   .hero .hero-left .trust {
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 20px;
     text-align: justify;
     font-weight: 300;
@@ -74,22 +75,22 @@
 }
 @media only screen and (max-width: 815px) {
   .hero .hero-left .trust {
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 20px;
     text-align: justify;
     font-weight: 300;
   }
   .nameips{
     visibility: visible;
-    color: #ffffff;
+    color: #FF7E67;
     z-index: 1;
     font-size: 2rem;
     margin-top: 30px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     text-align: center;
   }
   .nameips span {
-    color: #eb2828;
+    color: #FF7E67;
     font-size: 2rem;
     line-height: 60px;
     margin-bottom: 30px;
@@ -161,12 +162,12 @@
 .next {
   position: absolute;
   z-index: 2;
-  color: rgb(255, 255, 255);
+  color: #FAFAFA;
   transition: 0.3s ease;
   user-select: none;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
-  background-color: rgba(128, 128, 128, 0.61);
+  background-color: #07689f0f;
 }
 .prev {
   left: 0;
@@ -182,7 +183,7 @@
 }
 .prev:hover,
 .next:hover {
-  background-color: #eb2828c7;
+  background-color: #a2d5f277;
 }
 /*----------------------------------------------Fading animation--------------------------------------------------------*/
 .fade-in-image {

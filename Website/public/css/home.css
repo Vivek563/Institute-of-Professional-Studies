@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); */
 
 *{
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 .bg {
-  background-color: #FFC172;
+  background-color: #fafafa;
   margin: 0;
   padding: 0;
 }
@@ -33,19 +33,20 @@
   
 }
 .webdesign-wrapper {
-  background-color: #FFC172;
+  background-color: #Fafafa;
   left: 0;
   right: 0;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-family: "DM Sans", sans-serif;
 }
 .webdesign-wrapper h2 {
-  font-family: "Raleway";
+  /* font-family: "Raleway"; */
   font-size: 3.9rem;
   text-align: center;
   color: #000000;
   padding-bottom: 20px;
-  font-weight: 900;
+  font-weight: 700;
 }
 .webdesign {
   max-width: 78rem;
@@ -65,7 +66,7 @@
   /* background-color: #27496c; */
   /* background-color: #609966; */
   font-weight: 700;
-  font-family: "Raleway";
+  /* font-family: "Raleway"; */
 }
 .webdesign .webdesign-left p {
   font-size: 1.2rem;
@@ -104,7 +105,7 @@
 
 /*.................... center.............. */
 .centres {
-  background-color: #cfa164;
+  background-color: #07689f1c;
 }
 .ag-format-container {
   width: 100vw;
@@ -133,7 +134,7 @@
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
-  background-color: #ffffff;
+  background-color: #fafafa;
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -158,10 +159,11 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 30px;
-  color: #000000;
+  color: #000;
   z-index: 2;
   position: relative;
 }
+
 
 .ag-courses-item_date-box {
   font-size: 18px;
@@ -173,7 +175,7 @@
 }
 .ag-courses-item_date {
   font-weight: bold;
-  color: #f9b234;
+  /* color: #f9b234; */
 
   -webkit-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
@@ -182,7 +184,7 @@
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #f9b234;
+  /* background-color: #f9b234; */
   z-index: 1;
   position: absolute;
   top: -75px;
