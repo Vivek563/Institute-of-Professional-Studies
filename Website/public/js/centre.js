@@ -13,13 +13,13 @@ document.querySelector(this.getAttribute('href')).scrollIntoView({
     anchor.addEventListener('click', () => {
     document.querySelectorAll('.bordered').forEach(a => {
         a.setAttribute('style', 'padding-top:160px');
-    });
+    }, true);
     });    
     document.addEventListener('scroll', () => {
         // console.log(event);
     document.querySelectorAll('.bordered').forEach(a => {
         a.style.paddingTop = "20px";
-    });
+    }, false);
     });
 });
 
