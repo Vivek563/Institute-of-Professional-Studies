@@ -1,6 +1,4 @@
-body{
-  background-color: #FAFAFA;
-}
+
 
 .uoaclass {
   background-color: #fafafa;
@@ -11,9 +9,7 @@ body{
   margin-left: 20px;
   margin-right: 20px;
   background-color: #a2d5f25e;
-  margin-bottom: 40px;
-  font-family: "DM Sans", sans-serif;
-  
+  margin-bottom: 40px; 
 }
 .AboutBorder {
   height: 60%;

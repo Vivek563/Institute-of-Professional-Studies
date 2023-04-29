@@ -1,3 +1,7 @@
+body{
+  background-color: #FAFAFA;
+  font-family: "DM Sans", sans-serif;
+}
 .navbar {
   z-index: 4;
   background-color: #07689F;
@@ -153,3 +157,6 @@
 .list-item:hover .dropdown-content {
   display: block;
 }
+
+
+

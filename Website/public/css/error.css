@@ -6,6 +6,8 @@
     background-color: #f1f1f7;
     margin: auto;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
   }
   .errorMiddle{
     background-color: #f8b6b6;
