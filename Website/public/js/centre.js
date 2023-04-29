@@ -7,6 +7,20 @@ document.querySelector(this.getAttribute('href')).scrollIntoView({
     behavior: 'smooth'
 });
 });
+
+//-----------------------------------anchor tag on same page---------------------------
+
+    anchor.addEventListener('click', () => {
+    document.querySelectorAll('.bordered').forEach(a => {
+        a.setAttribute('style', 'padding-top:160px');
+    });
+    });    
+    document.addEventListener('scroll', () => {
+        // console.log(event);
+    document.querySelectorAll('.bordered').forEach(a => {
+        a.style.paddingTop = "20px";
+    });
+    });
 });
 
 // Get the modal
@@ -70,3 +84,7 @@ function dialogFiller(c){
   })
   })
   
+
+
+
+ 
