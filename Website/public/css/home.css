@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 *{
   padding: 0;
@@ -28,6 +28,7 @@
 .webdesign .webdesign-left .messagefromvc{
   font-size: 16px;
   font-weight: 200;
+  width: 130%;
   font-family: 'Satisfy', cursive;
   
 }
@@ -82,8 +83,9 @@
   overflow: hidden;
 }
 .webdesign-right .webdesign-img img {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
+  margin-left: 190px;
   object-fit: cover;
   object-position: right;
 }
@@ -116,7 +118,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
+  margin-left: 50px;
+  margin-right: 50px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -193,6 +196,9 @@
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.ag-courses_item:nth-child(1n) .ag-courses-item_bg {
+  background-color: #f7b135;
 }
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
   background-color: #3ecd5e;
