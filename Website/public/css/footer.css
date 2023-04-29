@@ -19,6 +19,9 @@
   padding-top: 20px;
   margin-left: -40px;
 }
+.footer-section .footer-left .footer-logo{
+  width: 10%;
+}
 .footer-section
   .footer-left
   .list
@@ -40,6 +43,7 @@
 
 .footer-right #footer-logos:not(:last-child) {
   margin-right: 25px;
+  width: 50%;
   cursor: pointer;
 }
 .footer-right .logos-list {
