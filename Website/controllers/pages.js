@@ -17,7 +17,7 @@ module.exports.index = async (req, res) => {
     const navbarItems = await NavbarItems.find({}).sort({serialNo: 'asc'});
     const count = await Faculties.aggregate([{$match : { code : { $eq : 'cms'}}},{ $count : "fCount"}]);
     const jsonExtra =  JsonExtra['home'];
-    count[0].fCount = 1200; //default faculties Count is set (need to be removed in last)
+    count[0].fCount = 60; //default faculties Count is set (need to be removed in last)
     res.render('home', {page, news, events, announcements, navbarItems, ...jsonExtra, count})
 };
 

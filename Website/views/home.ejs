@@ -181,8 +181,8 @@
           <div class="counter-container">
             <img src="<%= path %>assets/<%= counter.image %>" height="200px" width="200px">
             <i class="counter-student"></i>
-            <% if(i < count.length){ %>
-            <div class="counter" data-target="<%= count[i].fCount %>"></div>
+            <% if(i === 1){ %>
+            <div class="counter" data-target="<%= count[i-1].fCount %>" ></div>
             <% }else { %>
             <div class="counter" data-target="<%= counter.count %>"></div>
 

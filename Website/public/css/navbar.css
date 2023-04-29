@@ -11,7 +11,7 @@ body{
   top: 0px;
   width: 100%;
   align-items: center;
- 
+  white-space: nowrap;
   /* border-radius: 0 0 60% 90% / 90%; */
   height: 90px;
 }

@@ -1,6 +1,7 @@
 
 const counters = document.querySelectorAll(".counter");
 
+
 counters.forEach((counter) => {
   counter.innerText = "0";
   const updateCounter = () => {
@@ -14,3 +15,8 @@ counters.forEach((counter) => {
   };
   updateCounter();
 });
+
+
+// counters[0].addEventListener('click', function (){
+//     console.log(anony);
+// });
