@@ -186,7 +186,7 @@ const seedNavbarItems =[
     {
         "item":  "Admission",
         "serialNo": "6",
-        "link": "/home/admission",
+        "link": "https://aupravesh2022.in/Home/Applicationform.aspx",
         "subItems": [],
         "subLinks": []   
     },

@@ -91,29 +91,6 @@ footer{
 }
 
 
-.icons a{
-  text-decoration: none;
-  color: #fafafa;
-  border: 1px solid #fafafa;
-  justify-content: center;
-  padding: 1px;
-  border-radius: 50%;
-  align-items: center;
-  font-size: 1.1rem;
-  margin: 1%;
-}
-
-
-.social-icon{
-  position: relative;
-  top:2px;
-}
-.icons a:hover{
-  color: #fafafa;
-  background-color: #FB2576;
-  border-color: #FB2576;
-}
-
 .copyright{
   text-align: center;
 }
