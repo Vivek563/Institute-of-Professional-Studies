@@ -89,7 +89,7 @@ cursor: pointer;
 
 
 
-h3 {
+.bordered h3 {
   font-size: 3rem;
 }
 
@@ -214,7 +214,7 @@ section .box {
   
 
 
-  h3 {
+.bordered  h3{
       font-size: 2rem;
   }
 
@@ -345,6 +345,7 @@ to {top:0; opacity:1}
 }
 
 .modal-content {
+  font-size: 3rem;
   background-color: #fafafa;
   margin: auto;
   padding: 50px;
