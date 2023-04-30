@@ -204,13 +204,13 @@ const seedNavbarItems =[
         "subItems": [],
         "subLinks": []   
     },
-    {
-        "item":  "Alumni",
-        "serialNo": "8",
-        "link": "/home/alumni",
-        "subItems": [],
-        "subLinks": []   
-    }
+    // {
+    //     "item":  "Alumni",
+    //     "serialNo": "8",
+    //     "link": "/home/alumni",
+    //     "subItems": [],
+    //     "subLinks": []   
+    // }
 ]
 
 NavbarItems.insertMany(seedNavbarItems)  

@@ -131,6 +131,7 @@
   -ms-flex-preferred-size: calc(33.33333% - 30px);
   flex-basis: calc(33.33333% - 30px);
   margin: 0 15px 30px;
+  box-shadow: 16px 16px 16px 16px #20638a, 0 6px 20px 0 #e0eaf0;
   overflow: hidden;
   border-radius: 28px;
 }
