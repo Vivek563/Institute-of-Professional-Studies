@@ -15,12 +15,12 @@ document.querySelector(this.getAttribute('href')).scrollIntoView({
         a.setAttribute('style', 'padding-top:160px');
     }, true);
     });    
-    document.addEventListener('scroll', () => {
-        // console.log(event);
-    document.querySelectorAll('.bordered').forEach(a => {
-        a.style.paddingTop = "20px";
-    }, false);
-    });
+    // document.addEventListener('scroll', () => {
+    //     // console.log(event);
+    // document.querySelectorAll('.bordered').forEach(a => {
+    //     a.style.paddingTop = "20px";
+    // }, false);
+    // });
 });
 
 // Get the modal
