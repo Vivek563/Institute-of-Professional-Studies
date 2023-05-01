@@ -64,3 +64,12 @@ module.exports.pageSchema = Joi.object({
         about: Joi.string().required()
     }).required()
 });
+
+module.exports.studentSchema = Joi.object({
+    student: Joi.object({
+        enrollmentNumber: Joi.string().required(),
+        centreCode: Joi.string().required(),
+        name: Joi.string().required(),
+        semster: Joi.number().required()
+    }).required()
+});

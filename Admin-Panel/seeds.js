@@ -7,6 +7,7 @@ const NavbarItems = require('./models/navbarItem');
 const News = require('./models/news');
 const Notifications = require('./models/notification');
 const Pages = require('./models/page');
+const Students = require('./models/student');
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/IPS')
@@ -371,4 +372,44 @@ Pages.insertMany(seedPages)
 
 //  mongoose.connection.close();
     
+const seedStudents =[
+    {
+        name: 'Dummy Student name 1',
+        semster: '1',
+        enrollmentNumber: 'u1',
+        centreCode: "cce"
+    },
+    {
+        name: 'Dummy Student name 2',
+        semster: '2',
+        enrollmentNumber: 'u2',
+        centreCode: "cft"
+    },
+    {
+        name: 'Dummy Student name 3',
+        semster: '3',
+        enrollmentNumber: 'u3',
+        centreCode: "cfdt"
+    },
+    {
+        name: 'Dummy Student name 4',
+        semster: '4',
+        enrollmentNumber: 'u4',
+        centreCode: "cms"
+    },
+    {
+        name: 'Dummy Student name 5',
+        semster: '5',
+        enrollmentNumber: 'u5',
+        centreCode: "cce"
+    }
+]
+
+Students.insertMany(seedStudents)  
+                                    
+    .then(res => {
+    })
+    .catch(err => {
+        console.log(err)
+    })
 

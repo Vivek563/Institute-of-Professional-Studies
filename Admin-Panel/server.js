@@ -12,6 +12,7 @@ const navbarItemsRoutes = require('./routes/navbarItems');
 const newsRoutes = require('./routes/news');
 const notificationsRoutes = require('./routes/notifications');
 const pagesRoutes = require('./routes/pages');
+const studentsRoutes = require('./routes/students');
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/IPS');
@@ -65,6 +66,10 @@ app.use('/notifications', notificationsRoutes)
 //------------------------------------------- Pages routes starts----------------------------------------
 app.use('/pages', pagesRoutes)
 //------------------------------------------- Pages routes ends----------------------------------------
+
+//------------------------------------------- Students routes starts----------------------------------------
+app.use('/students', studentsRoutes)
+//------------------------------------------- Students routes ends----------------------------------------
 
 
 app.all('*', (req, res, next) => {

@@ -5,7 +5,8 @@ const {
         navbarItemSchema,
         newsSchema,
         notificationSchema,
-        pageSchema
+        pageSchema,
+        studentSchema
     } = require('./schemas');
 
 const ExpressError = require('./utils/ExpressError');
@@ -66,6 +67,15 @@ module.exports.validateNotification = (req, res, next) => {
 };
 module.exports.validatePage = (req, res, next) => {
     const { error } = pageSchema.validate(req.body);
+    if(error){ 
+        const msg = error.details.map(el => el.message).join(',')
+        throw new ExpressError(msg, 400)
+    }else{
+        next();
+    }
+};
+module.exports.validateStudent = (req, res, next) => {
+    const { error } = studentSchema.validate(req.body);
     if(error){ 
         const msg = error.details.map(el => el.message).join(',')
         throw new ExpressError(msg, 400)
