@@ -13,39 +13,7 @@
   
     <!-- custom css file link  -->
 
-      <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/navbar.css" />
-      <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/footer.css" />
-      <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/error.css" />
-
-      <% if(page.code === 'home') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/home.css" />
-      <% } %>
-      <% if(page.code === 'cce' || page.code === 'cfdt' || page.code === 'cft' || page.code === 'cms') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/centre.css" />
-      <% } %>
-    <% if(!(typeof(code) === 'undefined')) {%>
-      <% if(code === 'gallery') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/gallery.css" />
-      <% } %>
-      <% if(code === 'student') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/student.css" />
-      <% } %>
-      <% if(code === 'alumni') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/alumni.css" />
-      <% } %>
-      <% if(code === 'about') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/about.css" />
-      <% } %>
-      <% if(code === 'aboutUoA') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/aboutUoA.css" />
-      <% } %>
-      <% if(code === 'Library') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/Library.css" />
-      <% } %>
-      <% if(code === 'contactus') {%>
-        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/contactus.css" />
-      <% } %>
-    <% } %>
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/web.css" />
 
     <title><%= page.title %></title>
   </head>
