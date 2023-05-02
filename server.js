@@ -23,13 +23,12 @@ const notificationsRoutes = require('./routes/notifications');
 const pagesRoutes = require('./routes/pages');
 const storesRoutes = require('./routes/stores');
 const studentsRoutes = require('./routes/students');
-const usersRoutes = require('./routes/users');
+const adminsRoutes = require('./routes/admins');
 
 
 
 // app.use(morgan('tiny'));
 
-// const Centres = require('./models/centres');
 
 mongoose.connect('mongodb://127.0.0.1:27017/IPS');
 const db = mongoose.connection;
@@ -68,7 +67,7 @@ app.use('/home/centre', centreRoutes)
 // -----------------------------------------centre page routes ends------------------------------------
 
 //------------------------------------------- Admin / User routes starts----------------------------------------
-app.use('/admin', usersRoutes)
+app.use('/admin', adminsRoutes)
 //------------------------------------------- Admin / User routes ends----------------------------------------
 
 //------------------------------------------- Announcements routes starts----------------------------------------
