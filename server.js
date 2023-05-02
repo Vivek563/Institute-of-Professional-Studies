@@ -23,6 +23,7 @@ const notificationsRoutes = require('./routes/notifications');
 const pagesRoutes = require('./routes/pages');
 const storesRoutes = require('./routes/stores');
 const studentsRoutes = require('./routes/students');
+const usersRoutes = require('./routes/users');
 
 
 
@@ -65,6 +66,10 @@ app.use('/home', homeRoutes)
 // -----------------------------------------cetre page routes starts----------------------------------
 app.use('/home/centre', centreRoutes)
 // -----------------------------------------centre page routes ends------------------------------------
+
+//------------------------------------------- Admin / User routes starts----------------------------------------
+app.use('/admin', usersRoutes)
+//------------------------------------------- Admin / User routes ends----------------------------------------
 
 //------------------------------------------- Announcements routes starts----------------------------------------
 app.use('/admin/announcements', announcementsRoutes)
