@@ -25,7 +25,7 @@
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <div class="imageBackground">
             <% for(let image of sliderImages) { %>
-              <div class="mySlides fade-in-image"><img src="<%= path %>assets/<%= image %>" alt="image"></div>
+              <div class="mySlides fade-in-image"><img src="/assets/<%= image %>" alt="image"></div>
             <% } %>
           </div>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -142,7 +142,7 @@
         </div>
         <div class="webdesign-right">
           <div class="webdesign-img">
-            <img src="<%= path %>assets/<%= message.image %>" alt="image" />
+            <img src="/assets/<%= message.image %>" alt="image" />
           </div>
         </div>
       </div>
@@ -164,7 +164,7 @@
                     Centre of <%= centre.name %>
                   </div>
                   <div class="ag-courses-item_date-box">
-                    <img src="<%= path %>assets/<%= centre.icon %>" height="80px" width="80px" />
+                    <img src="/assets/<%= centre.icon %>" height="80px" width="80px" />
                   </div>
                 </a>
               </div>
@@ -179,7 +179,7 @@
       <div class="count">
         <% counterList.forEach( (counter, i) => { %>
           <div class="counter-container">
-            <img src="<%= path %>assets/<%= counter.image %>" height="200px" width="200px">
+            <img src="/assets/<%= counter.image %>" height="200px" width="200px">
             <i class="counter-student"></i>
             <% if(i === 1){ %>
             <div class="counter" data-target="<%= count[i-1].fCount %>" ></div>

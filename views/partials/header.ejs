@@ -13,41 +13,37 @@
   
     <!-- custom css file link  -->
 
-
-    <% if(!(typeof(page.code) === 'undefined')) {%>
-
-      <link rel="stylesheet" type="text/css" href="<%= page.path  %>css/navbar.css" />
-      <link rel="stylesheet" type="text/css" href="<%= page.path  %>css/footer.css" />
-      <link rel="stylesheet" type="text/css" href="<%= page.path  %>css/error.css" />
+      <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/navbar.css" />
+      <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/footer.css" />
+      <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/error.css" />
 
       <% if(page.code === 'home') {%>
-        <link rel="stylesheet" type="text/css" href="<%= page.path  %>css/home.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/home.css" />
       <% } %>
       <% if(page.code === 'cce' || page.code === 'cfdt' || page.code === 'cft' || page.code === 'cms') {%>
-        <link rel="stylesheet" type="text/css" href="<%= page.path  %>css/centre.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/centre.css" />
       <% } %>
-    <% } %>
     <% if(!(typeof(code) === 'undefined')) {%>
       <% if(code === 'gallery') {%>
-        <link rel="stylesheet" type="text/css" href="<%= path  %>css/gallery.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/gallery.css" />
       <% } %>
       <% if(code === 'student') {%>
-        <link rel="stylesheet" type="text/css" href="<%= path  %>css/student.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/student.css" />
       <% } %>
       <% if(code === 'alumni') {%>
-        <link rel="stylesheet" type="text/css" href="<%= path  %>css/alumni.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/alumni.css" />
       <% } %>
       <% if(code === 'about') {%>
-        <link rel="stylesheet" type="text/css" href="<%= path  %>css/about.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/about.css" />
       <% } %>
       <% if(code === 'aboutUoA') {%>
-        <link rel="stylesheet" type="text/css" href="<%= path  %>css/aboutUoA.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/aboutUoA.css" />
       <% } %>
       <% if(code === 'Library') {%>
-        <link rel="stylesheet" type="text/css" href="<%= path  %>css/Library.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/Library.css" />
       <% } %>
       <% if(code === 'contactus') {%>
-        <link rel="stylesheet" type="text/css" href="<%= path  %>css/contactus.css" />
+        <link rel="stylesheet" crossorigin="anonymous" type="text/css" href="/css/contactus.css" />
       <% } %>
     <% } %>
 

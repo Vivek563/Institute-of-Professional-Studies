@@ -8,13 +8,13 @@
               
               <div class="logo row">
                 <div class="footer-header">
-                  <img src="../../assets/footerlogo.png" class="footerlogo" alt="">
+                  <img src="/assets/footerlogo.png" class="footerlogo" alt="">
                 </div>
                 <div class="logo-des">
                     <h2>About IPS</h2><br/>
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                   
-                  <a href="./home/about" class="btn-know">Know More</a>
+                  <a href="/home/about" class="btn-know">Know More</a>
                 </div>   
               </div>
               
@@ -90,32 +90,32 @@
 
     <% if(!(typeof(page.code) === 'undefined')) {%>
 
-      <script  type="text/javascript" src="<%= page.path  %>js/navbar.js"></script>
-      <script  type="text/javascript" src="<%= page.path  %>js/footer.js"></script>
-      <script  type="text/javascript" src="<%= page.path  %>js/error.js"></script>
+      <script  type="text/javascript" src="/js/navbar.js"></script>
+      <script  type="text/javascript" src="/js/footer.js"></script>
+      <script  type="text/javascript" src="/js/error.js"></script>
 
       <% if(page.code === 'home') {%>
-        <script  type="text/javascript" src="<%= page.path %>js/home.js"></script>
-        <script  type="text/javascript" src="<%= page.path %>js/heroSection.js"></script>
-        <script  type="text/javascript" src="<%= page.path %>js/newsSection.js"></script>
-        <script  type="text/javascript" src="<%= page.path %>js/counterSection.js"></script>
+        <script  type="text/javascript" src="/js/home.js"></script>
+        <script  type="text/javascript" src="/js/heroSection.js"></script>
+        <script  type="text/javascript" src="/js/newsSection.js"></script>
+        <script  type="text/javascript" src="/js/counterSection.js"></script>
       <% } %>
       <% if(page.code === 'cce' || page.code === 'cfdt' || page.code === 'cft' || page.code === 'cms') {%>
-        <script  type="text/javascript" src="<%= page.path %>js/centre.js"></script>
+        <script  type="text/javascript" src="/js/centre.js"></script>
       <% } %>
     <% } %>
     <% if(!(typeof(code) === 'undefined')) {%>
       <% if(code === 'gallery') {%>
-        <script  type="text/javascript" src="<%= path %>js/gallery.js"></script>
+        <script  type="text/javascript" src="/js/gallery.js"></script>
       <% } %>
       <% if(code === 'student') {%>
-        <script  type="text/javascript" src="<%= path %>js/student.js"></script>
+        <script  type="text/javascript" src="/js/student.js"></script>
       <% } %>
       <% if(code === 'alumni') {%>
-        <script  type="text/javascript" src="<%= path %>js/alumni.js"></script>
+        <script  type="text/javascript" src="/js/alumni.js"></script>
       <% } %>
       <% if(code === 'about') {%>
-        <script  type="text/javascript" src="<%= path %>js/about.js"></script>
+        <script  type="text/javascript" src="/js/about.js"></script>
       <% } %>
     <% } %>
 
