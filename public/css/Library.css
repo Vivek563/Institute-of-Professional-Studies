@@ -1,0 +1,74 @@
+body{
+  background-color: #FAFAFA;
+}
+.bodysectionbackground {
+    font-family: "DM Sans", sans-serif;
+    background-color: #fafafa;
+  }
+  
+  .bodysection {
+    margin-top: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fafafa;
+    margin-bottom: 40px;
+  
+  }
+
+  .AboutBorder {
+    height: 60%;
+    background: #A2D5F2;
+    color: #fafafa;
+    text-align: center;
+    /* text-transform: uppercase; */
+  }
+  .AboutBorder span {
+    font-size: 40px;
+    font-weight: 800;
+    /* text-transform: capitalize; */
+  }
+  
+  .alumni {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .alumni .image {
+    width: 30%;
+  }
+  
+  .aboutcontent {
+    margin-left: 20px;
+    margin-right: 30px;
+    font-size: 1.8rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 100;
+  }
+  
+  .capmuslife {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
+  .ulclass{
+    font-size: 1.8rem;
+  
+  }
+  
+  .centerh3{
+    margin-left: 40px;
+  }
+  
+  .ullist{
+   margin-left: 50px;
+   font-size: 20px;
+  }
+  
+ .bodysection .alumni-last{
+    padding-bottom: 50px;
+ }

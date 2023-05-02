@@ -1,0 +1,14 @@
+<%- include('partials/header') %> 
+
+<div class="errorPage">
+    <div class="errorMiddle">
+        <div class="alertContainer" role="alert">
+            <h4 class="alertHeading"><%= err. message%></h4>
+            <p class="alertMsg"><%= err.stack %></p>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include('partials/footer') %>

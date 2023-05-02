@@ -1,0 +1,37 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="col-8"> 
+        <h1 class="text-center">Edit this Student details</h1>
+        <div class="col-6 offset-3">
+            <form action="/admin/students/<%=student._id%>?_method=PUT" method="POST" novalidate class="validated-form"> 
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="student[name]" value="<%=student.name %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="student">Enrollment No.</label>
+                    <textarea class="form-control" type="text" id="student" name="student[enrollmentNumber]" required><%=student.enrollmentNumber%></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="centreCode">Centre Code</label>
+                    <input class="form-control" type="text" id="centreCode" name="student[centreCode]" value="<%= student.centreCode %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3 d-inline">
+                    <button class="btn btn-info">Save</button>
+                </div>
+                <div class="mb-3 d-inline">
+                    <a class="btn btn-primary" href="/admin/students/<%= student._id%>">Go Back</a>
+                </div>
+            </form>
+        </div>
+    </div>

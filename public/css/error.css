@@ -1,0 +1,33 @@
+
+.errorPage{
+    display: flex;
+    font-size: large;
+    width: 98%;
+    background-color: #f1f1f7;
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .errorMiddle{
+    background-color: #f8b6b6;
+    max-width: 500px;
+    margin: auto;
+  
+  }
+  .alertContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+  }
+  .alertHeading{
+    color: #d80808;
+    font-weight: bolder;
+    padding: 2px;
+  }
+  .alertMsg{
+    font-weight: 500;
+    color:#d84747;
+    padding-left: 10px;
+  }

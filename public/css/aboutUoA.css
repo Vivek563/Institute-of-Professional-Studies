@@ -1,0 +1,51 @@
+
+.bodybackground{
+  background-color: #fafafa;
+}
+.bodysection {
+  margin-top: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #fafafa;
+  margin-bottom: 40px;
+
+}
+.AboutBorder {
+  height: 60%;
+  background: #A2D5F2;
+  color: #fafafa;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+.AboutBorder span {
+  font-size: 40px;
+  font-weight: 800;
+  /* text-transform: capitalize; */
+}
+
+.alumni {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alumni .image {
+  width: 30%;
+}
+
+.aboutcontent {
+  margin-left: 20px;
+  margin-right: 30px;
+  font-size: 1.8rem;
+  text-align: justify;
+  font-weight: 100;
+  text-justify: inter-word;
+  margin-bottom: 80px;
+
+}
+
+.capmuslife {
+  margin-top: 20px;
+  text-align: center;
+}

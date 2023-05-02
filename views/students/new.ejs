@@ -1,0 +1,40 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="col-8"> 
+        <h1 class="text-center">Add a new Student</h1>
+        <div class="col-6 offset-3"> 
+            <form action="/admin/students" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="student[name]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="student">Centre Code</label>
+                    <textarea class="form-control" type="text" id="student" name="student[centreCode]" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="enrollmentNumber">Enrollment No.</label>
+                    <input class="form-control" type="text" id="enrollmentNumber" name="student[enrollmentNumber]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+ 
+                <div class="d-inline mb-3">
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+                <div class="d-inline mb-3">
+                    <a href="/admin/students" class="btn btn-success">Back to All Students</a>
+                </div>
+            </form>
+               
+        </div>
+    </div>
+    

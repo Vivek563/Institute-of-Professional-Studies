@@ -1,0 +1,158 @@
+
+<%- include('partials/header') %> <!--including the common head-->
+
+<div class="centerbody ">
+<div class="centrebodydiv">
+
+
+  <div class="mainhead">
+   <h1 class="title"><%= page.name %></h1>
+<div class="button">
+  <ul class="button-area">
+     
+      <a href="#about" class="button-text">
+          <li class="button-text">About</li></a>
+
+  <a href="#notice" class="button-text">
+              <li class="button-text">Notice</li></a>
+              
+  <a href="#syllabus" class="button-text">
+              <li class="button-text">Syllabus</li></a>
+              
+  <a href="#time-table" class="button-text">
+              <li class="button-text">Time Table</li></a> 
+              
+  <a href="#faculty" class="button-text">
+              <li class="button-text">Faculty</li></a>
+
+
+  </ul>
+</div>
+</div>
+  <section id="about" class="auto-height about-section white-background bordered no-height">
+      <div class="about-container">
+          <h3>About</h3>
+          <p><%- page.shortDescription %></p>
+          <button id="myBtn" class="text-btn">Read more></button>
+      </div>
+  </section>
+      <div id="myModal" class="modal">
+          <div class="modal-content ">
+              <span class="close">&times;</span>
+                  <h3>About</h3>
+                  <div><%- page.about %></div>   
+          </div>
+      </div>
+      
+      <section id="notice" class="auto-height  about-section white-background bordered">
+         
+          <div class="about-container">
+              <h3>Notice</h3> 
+
+          </div>
+          <div class="notice-section">
+              <ul class="notice-ul">
+                <% for(c of page.notifications) {%>
+                <li class="li-notice primary dialogTrigger" onclick="dialogFiller(`<%= JSON.stringify(c) %>`)">
+                  <%= c.title  %>
+                </li>
+                <% } %>
+              </ul>   
+          </div>
+<!--------------------------------- reusable  Dialog starts --------------------------------------------->
+          <dialog id="reusableDialog">
+            <form method="dialog">
+              <button type="submit" onclick="window.reusableDialog.close();" aria-label="close" class="btn cross">❌</button>
+              <br/>
+              <br/>
+              <div id="reusableDialogContent"></div>
+              <div id="dialogActions">
+                <button type="submit" class="btn primary" onclick="window.reusableDialog.close();">Close</button>
+              </div>
+            </form>
+          </dialog>
+ <!--------------------------------- reusable  Dialog ends --------------------------------------------->         
+      </section>
+
+  <section id="syllabus" class="auto-height  about-section white-background bordered">
+      <div class="about-container">
+          <h3>Syllabus</h3>
+          <div class="subject-container flex-horizontal space-between">
+              <p>MCA</p>
+              <button class="btn btn-primary"><a href="#">Download</a></button>
+          </div>
+          <div class="subject-container flex-horizontal space-between">
+              <p>BCA</p>
+              <button class="btn btn-primary"><a href="#">Download</a></button>
+          </div>
+          <div class="subject-container flex-horizontal space-between">
+              <p>(PGDCA)</p>
+              <button class="btn btn-primary"><a href="#">Download</a></button>
+          </div>
+          <div class="subject-container flex-horizontal space-between">
+              <p>Data Science</p>
+              <button class="btn btn-primary"><a href="#">Download</a></button>
+          </div>
+          <div class="subject-container flex-horizontal space-between">
+              <p>Pre. Ph.D</p>
+              <button class="btn btn-primary"><a href="#">Download</a></button>
+          </div>
+      </div>
+  </section>
+
+  <section id="time-table" class="about-section white-background bordered ">
+      <div class="about-container">
+          <h3>Time Table</h3>
+          <div class="spacer"></div>
+          <h6>Time table for UG and PG courses</h6>
+          <div class="subject-container flex-horizontal space-between">
+              <p>B.Sc - I (2021-2022) & B.Sc - III (2022-2023)</p>
+              <button class="btn btn-primary"><a href="#">View</a></button>
+          </div>
+          <div class="subject-container flex-horizontal space-between">
+              <p>M.Sc - II (2021-2022)</p>
+              <button class="btn btn-primary"><a href="#">View</a></button>
+          </div>
+          <div class="spacer"></div>
+      </div>
+  </section>
+
+  <section id="faculty" class="about-section white-background space-between bordered">
+      <div class="about-container">
+          <h3>Faculty</h3>
+          <div class="spacer"></div>
+          <div class="center-container">
+          <div class="profile-container white-background">
+            <% for(faculty of page.faculties) {%>
+              <div class="card">
+                  <img src="../../assets/director.jpg" alt="<%= faculty.name  %>" style="width:100%">
+                  <div class="profile-detail">
+                    
+                      <h4><%= faculty.name  %></h4>
+                      <p class="title"><%= faculty.designation  %></p>
+                      <p>M.Sc.</p>
+                      <p>Ph.D.</p>
+                      <p class="subTitle">Niche area of research</p>
+                      <p><%- faculty.education  %></p>
+                      <p class="subTitle">Total no. of research papers</p>
+                      <p><%= faculty.researchPaperCount  %></p>
+                  </div>
+                </div>
+              <% } %>
+                <div class="card center-text">
+                      <p class="text-btn">View More</p>
+                </div>
+          </div>
+          </div>
+      </div>
+  </section>
+ 
+</div>
+
+</div>
+
+
+
+    <%- include('partials/footer') %> 
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="col-8"> 
+        <h1 class="text-center">Make a new Announcement</h1>
+        <div class="col-6 offset-3"> 
+            <form action="/admin/announcements" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="announcement[title]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="announcement">Description</label>
+                    <textarea class="form-control" type="text" id="announcement" name="announcement[description]" required></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="pdfUrl">pdf Url</label>
+                    <input class="form-control" type="url" id="pdfUrl" name="announcement[pdfUrl]" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+ 
+                <div class="d-inline mb-3">
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+                <div class="d-inline mb-3">
+                    <a href="/admin/announcements" class="btn btn-success">Back to All Announcements</a>
+                </div>
+            </form>
+               
+        </div>
+    </div>
+    
