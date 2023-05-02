@@ -91,8 +91,6 @@
     <% if(!(typeof(page.code) === 'undefined')) {%>
 
       <script  type="text/javascript" src="/js/navbar.js"></script>
-      <script  type="text/javascript" src="/js/footer.js"></script>
-      <script  type="text/javascript" src="/js/error.js"></script>
 
       <% if(page.code === 'home') {%>
         <script  type="text/javascript" src="/js/home.js"></script>
@@ -104,18 +102,5 @@
         <script  type="text/javascript" src="/js/centre.js"></script>
       <% } %>
     <% } %>
-    <% if(!(typeof(code) === 'undefined')) {%>
-      <% if(code === 'gallery') {%>
-        <script  type="text/javascript" src="/js/gallery.js"></script>
-      <% } %>
-      <% if(code === 'student') {%>
-        <script  type="text/javascript" src="/js/student.js"></script>
-      <% } %>
-      <% if(code === 'alumni') {%>
-        <script  type="text/javascript" src="/js/alumni.js"></script>
-      <% } %>
-      <% if(code === 'about') {%>
-        <script  type="text/javascript" src="/js/about.js"></script>
-      <% } %>
-    <% } %>
+
 
