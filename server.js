@@ -21,7 +21,7 @@ const navbarItemsRoutes = require('./routes/navbarItems');
 const newsRoutes = require('./routes/news');
 const notificationsRoutes = require('./routes/notifications');
 const pagesRoutes = require('./routes/pages');
-const storesRoutes = require('./routes/stores');
+const uploadsRoutes = require('./routes/uploads');
 const studentsRoutes = require('./routes/students');
 const adminsRoutes = require('./routes/admins');
 
@@ -98,14 +98,13 @@ app.use('/admin/notifications', notificationsRoutes)
 app.use('/admin/pages', pagesRoutes)
 //------------------------------------------- Pages routes ends----------------------------------------
 
-//------------------------------------------- Faculties routes starts----------------------------------------
-app.use('/admin/stores', storesRoutes)
-//------------------------------------------- Faculties routes ends----------------------------------------
-
 //------------------------------------------- Students routes starts----------------------------------------
 app.use('/admin/students', studentsRoutes)
 //------------------------------------------- Students routes ends----------------------------------------
 
+//------------------------------------------- Faculties routes starts----------------------------------------
+app.use('/admin/uploads', uploadsRoutes)
+//------------------------------------------- Faculties routes ends----------------------------------------
 
 
 app.all('*', (req, res, next) => {

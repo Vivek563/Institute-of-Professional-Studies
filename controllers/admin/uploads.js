@@ -43,11 +43,15 @@ let upload = multer({
 }).single('img');	
 
 
-module.exports.renderNewStore =  (req,res) => {
-    res.render('stores/new');
+module.exports.index =  (req,res) => {
+    res.render('uploads/index');
 };
 
-module.exports.createStore =  (req, res, next) => {
+module.exports.renderNewForm =  (req,res) => {
+    res.render('uploads/new');
+};
+
+module.exports.createUpload =  (req, res, next) => {
 		
 	// Error MiddleWare for multer file upload, so if any
 	// error occurs, the image would not be uploaded!
@@ -63,7 +67,7 @@ module.exports.createStore =  (req, res, next) => {
 		else {
 
 			// SUCCESS, image successfully uploaded
-			res.render('stores/show')
+			res.render('uploads/show')
 		}
 	})
 };
