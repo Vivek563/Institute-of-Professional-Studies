@@ -75,11 +75,26 @@ module.exports.pageSchema = Joi.object({
     }).required()
 });
 
+module.exports.staffSchema = Joi.object({
+    staff: Joi.object({
+        name: Joi.string().required(),
+        designation: Joi.string().required(),
+        emailId: Joi.string().required(),
+        education: Joi.string().required(),
+        centreCode: Joi.string().required(),
+        photo: Joi.string().min(0)
+    }).required()
+});
+
 module.exports.studentSchema = Joi.object({
     student: Joi.object({
         enrollmentNumber: Joi.string().required(),
         centreCode: Joi.string().required(),
         name: Joi.string().required(),
-        semster: Joi.number().required()
+        semster: Joi.number().required(),
+        address: Joi.string().required(),
+        phoneNumber: Joi.number().required().min(0000000000).max(9999999999),
+        doa: Joi.date().iso().required(),
+        dob: Joi.date().iso().required()
     }).required()
 });

@@ -23,6 +23,7 @@ const newsRoutes = require('./routes/news');
 const notificationsRoutes = require('./routes/notifications');
 const pagesRoutes = require('./routes/pages');
 const uploadsRoutes = require('./routes/uploads');
+const staffsRoutes = require('./routes/staffs');
 const studentsRoutes = require('./routes/students');
 const adminsRoutes = require('./routes/admins');
 
@@ -102,6 +103,10 @@ app.use('/admin/notifications', notificationsRoutes)
 //------------------------------------------- Pages routes starts----------------------------------------
 app.use('/admin/pages', pagesRoutes)
 //------------------------------------------- Pages routes ends----------------------------------------
+
+//------------------------------------------- Students routes starts----------------------------------------
+app.use('/admin/staffs', staffsRoutes)
+//------------------------------------------- Students routes ends----------------------------------------
 
 //------------------------------------------- Students routes starts----------------------------------------
 app.use('/admin/students', studentsRoutes)

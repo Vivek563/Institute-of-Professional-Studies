@@ -13,8 +13,15 @@
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="student">Enrollment No.</label>
-                    <textarea class="form-control" type="text" id="student" name="student[enrollmentNumber]" required><%=student.enrollmentNumber%></textarea>
+                    <label class="form-label" for="dob">Date of Birth</label>
+                    <input class="form-control" type="date" id="dob" name="student[dob]" value="<%=student.dob.toISOString().slice(0,10) %>" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="enrollmentNumber">Enrollment No.</label>
+                    <input class="form-control" type="text" id="enrollmentNumber" name="student[enrollmentNumber]" value="<%=student.enrollmentNumber %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
@@ -22,6 +29,34 @@
                 <div class="mb-3">
                     <label class="form-label" for="centreCode">Centre Code</label>
                     <input class="form-control" type="text" id="centreCode" name="student[centreCode]" value="<%= student.centreCode %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="semster">Semster</label>
+                    <input class="form-control" type="number" min="0" id="semster" name="student[semster]" value="<%= student.semster %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="doa">Date of Admission</label>
+                    <input class="form-control" type="date" id="doa" name="student[doa]" value="<%= student.doa.toISOString().slice(0,10) %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="address">Address</label>
+                    <input class="form-control" type="text" id="address" name="student[address]" value="<%= student.address %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="phoneNumber">Phone No.</label>
+                    <input class="form-control" type="tel" id="phoneNumber" name="student[phoneNumber]" placeholder="1234567890" pattern="[0-9]{10}" value="<%= student.phoneNumber %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>

@@ -2,36 +2,62 @@
 
 
     <div class="col-8"> 
-        <h1 class="text-center">Make a new Announcement</h1>
+        <h1 class="text-center">Add a new Staff</h1>
         <div class="col-6 offset-3"> 
-            <form action="/admin/announcements" method="POST" novalidate class="validated-form">
+            <form action="/admin/staffs" method="POST" novalidate class="validated-form">
                 <div class="mb-3">
-                    <label class="form-label" for="title">Title</label>
-                    <input class="form-control" type="text" id="title" name="announcement[title]" required>
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="staff[name]" required>
                     <div class="valid-feedback">
                        Looks good!
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="announcement">Description</label>
-                    <textarea class="form-control" type="text" id="announcement" name="announcement[description]" required></textarea>
+                    <label class="form-label" for="designation">Designation</label>
+                    <input class="form-control" type="text" id="designation" name="staff[designation]" required>
                     <div class="valid-feedback">
-                        Looks good!
-                     </div>
+                       Looks good!
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="pdfUrl">pdf Url</label>
-                    <input class="form-control" type="url" id="pdfUrl" name="announcement[pdfUrl]" required>
+                    <label class="form-label" for="emailId">Email Id</label>
+                    <input class="form-control" type="email" id="emailId" name="staff[emailId]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="photo">Photo</label>
+                    <input class="form-control" type="text" id="photo" name="staff[photo]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="staff">Education</label>
+                    <textarea class="form-control" type="text" id="staff" name="staff[education]" required></textarea>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
                 </div>
- 
+                <div class="mb-3 btn-group" role="group" aria-label="Basic radio toggle button group" >
+                    <input type="radio" class="form-control btn-check" name="staff[centreCode]" id="cce" value="cce" autocomplete="off" checked>
+                    <label class="form-label btn btn-outline-dark" for="cce">Computer Education</label>
+                  
+                    <input type="radio" class="form-control btn-check" name="staff[centreCode]" id="cfdt" value="cfdt" autocomplete="off">
+                    <label class="form-label btn btn-outline-dark" for="cfdt">Fashion & Design Technology</label>
+                  
+                    <input type="radio" class="form-control btn-check" name="staff[centreCode]" id="cft" value="cft"  autocomplete="off">
+                    <label class="form-label btn btn-outline-dark" for="cft">Food Technology</label>
+                    
+                    <input type="radio" class="form-control btn-check" name="staff[centreCode]" id="cms"  value="cms" autocomplete="off">
+                    <label class="form-label btn btn-outline-dark" for="cms">Media Studies</label>
+              </div>
                 <div class="d-inline mb-3">
                     <button class="btn btn-danger">Submit</button>
                 </div>
                 <div class="d-inline mb-3">
-                    <a href="/admin/announcements" class="btn btn-success">Back to All Announcements</a>
+                    <a href="/admin/staffs" class="btn btn-success">Back to All Staffs</a>
                 </div>
             </form>
                
