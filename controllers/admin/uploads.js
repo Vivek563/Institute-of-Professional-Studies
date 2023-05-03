@@ -7,18 +7,29 @@ const path = require('path');
 let storage = multer.diskStorage({
 	destination: function (req, file, cb) {
 
-		// Uploads/images is the Upload_folder_name
-		cb(null, 'public/uploads/images')
+		if(file.fieldname === 'img'){
+			cb(null, 'public/uploads/images')
+		}
+		else if(file.fieldname === 'pdf'){
+			cb(null, 'public/uploads/documents')
+		}
 	},
 	filename: function (req, file, cb) {
-	cb(null, file.fieldname + "-" + Date.now()+".jpg")
+		
+		if(file.fieldname === 'img'){
+			cb(null, file.fieldname + "-" + Date.now()+".jpg")
+		}
+		else if(file.fieldname === 'pdf'){
+			cb(null, file.fieldname + "-" + Date.now()+".pdf")
+		}
 	}
 })
 	
 // Define the maximum size for uploading
 // picture i.e. 5MB. it is optional
 const maxSize = 5 * 1000 * 1000;
-	
+
+
 let upload = multer({
 	storage: storage,
 	limits: { fileSize: maxSize },
@@ -26,8 +37,12 @@ let upload = multer({
 	
 		// Set the filetypes, it is optional
 		let filetypes = /jpeg|jpg|png/;
+		
+		if(file.fieldname === 'pdf'){
+			filetypes = /pdf/;
+		}
 		let mimetype = filetypes.test(file.mimetype);
-
+		
 		let extname = filetypes.test(path.extname(
 					file.originalname).toLowerCase());
 		
@@ -39,8 +54,8 @@ let upload = multer({
 				+ "following filetypes - " + filetypes);
 	}
 
-// img is the name of file attribute
-}).single('img');	
+// img  and pdf are the names of file attribute
+}).fields([{ name: 'img', maxCount: 1 }, { name: 'pdf', maxCount: 1 }]);;	
 
 
 module.exports.index =  (req,res) => {
@@ -57,6 +72,7 @@ module.exports.createUpload =  (req, res, next) => {
 	// error occurs, the image would not be uploaded!
 	upload(req, res, (err) =>  {
 
+		
 		if(err) {
 
 			// ERROR occurred (here it can be occurred due
