@@ -8,6 +8,16 @@ module.exports.announcementSchema = Joi.object({
         
     }).required()
 });
+module.exports.courseSchema = Joi.object({
+    course: Joi.object({
+        name: Joi.string().required(),
+        code: Joi.string().required(),
+        centreCode: Joi.string().required(),
+        pdfUrl: Joi.string().required(),
+        duration: Joi.number().required().min(1),
+        description: Joi.string().min(0)       
+    }).required()
+});
 module.exports.eventSchema = Joi.object({
     event: Joi.object({
         title: Joi.string().required(),

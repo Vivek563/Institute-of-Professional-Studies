@@ -2,26 +2,44 @@
 
 
     <div class="col-8"> 
-        <h1 class="text-center">Make a new Announcement</h1>
+        <h1 class="text-center">Make a new Course</h1>
         <div class="col-6 offset-3"> 
-            <form action="/admin/announcements" method="POST" novalidate class="validated-form">
+            <form action="/admin/courses" method="POST" novalidate class="validated-form">
                 <div class="mb-3">
-                    <label class="form-label" for="title">Title</label>
-                    <input class="form-control" type="text" id="title" name="announcement[title]" required>
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="course[name]" required>
                     <div class="valid-feedback">
                        Looks good!
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="announcement">Description</label>
-                    <textarea class="form-control" type="text" id="announcement" name="announcement[description]" required></textarea>
+                    <label class="form-label" for="code">Course Code</label>
+                    <input class="form-control" type="text" id="code" name="course[code]" required>
                     <div class="valid-feedback">
-                        Looks good!
-                     </div>
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="centreCode">Centre Code</label>
+                    <input class="form-control" type="text" id="centreCode" name="course[centreCode]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="duration">Duration (in months)</label>
+                    <input class="form-control" type="number" min="1" id="duration" name="course[duration]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="course">Description (optional)</label>
+                    <textarea class="form-control" type="text" id="course" name="course[description]"></textarea>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="pdfUrl">pdf Url</label>
-                    <input class="form-control" type="url" id="pdfUrl" name="announcement[pdfUrl]" required>
+                    <input class="form-control" type="text" id="pdfUrl" name="course[pdfUrl]" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
@@ -31,7 +49,7 @@
                     <button class="btn btn-danger">Submit</button>
                 </div>
                 <div class="d-inline mb-3">
-                    <a href="/admin/announcements" class="btn btn-success">Back to All Announcements</a>
+                    <a href="/admin/courses" class="btn btn-success">Back to All Courses</a>
                 </div>
             </form>
                

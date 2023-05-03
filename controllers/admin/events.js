@@ -29,6 +29,6 @@ module.exports.updateEvent = async (req, res) => {
 };
 module.exports.deleteEvent = async (req, res) => {
     const { id } = req.params;
-    const deleteNews = await Events.findByIdAndDelete(id);
+    const deleteEvent = await Events.findByIdAndDelete(id);
     res.redirect('/admin/events');
 };

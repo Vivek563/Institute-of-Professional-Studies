@@ -15,6 +15,7 @@ const homeRoutes = require('./routes/homeRoutes');
 const centreRoutes = require('./routes/centreRoutes');
 
 const announcementsRoutes = require('./routes/announcements');
+const coursesRoutes = require('./routes/courses');
 const eventsRoutes = require('./routes/events');
 const facultiesRoutes = require('./routes/faculties');
 const navbarItemsRoutes = require('./routes/navbarItems');
@@ -73,6 +74,10 @@ app.use('/admin', adminsRoutes)
 //------------------------------------------- Announcements routes starts----------------------------------------
 app.use('/admin/announcements', announcementsRoutes)
 //------------------------------------------- Announcements routes ends----------------------------------------
+
+//------------------------------------------- Courses routes starts----------------------------------------
+app.use('/admin/courses', coursesRoutes)
+//------------------------------------------- Courses routes ends----------------------------------------
 
 //------------------------------------------- Events routes starts----------------------------------------
 app.use('/admin/events', eventsRoutes)
