@@ -2,7 +2,8 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 
-
+let filename = '';
+let type = '';
 	
 let storage = multer.diskStorage({
 	destination: function (req, file, cb) {
@@ -15,7 +16,7 @@ let storage = multer.diskStorage({
 					    fs.mkdirSync(folderName, { recursive: true, force: true });
 					  }
 				} catch (err) {
-						  console.error(err);
+		
 				}
 			cb(null, 'public/uploads/images')
 		}
@@ -26,7 +27,7 @@ let storage = multer.diskStorage({
 					    fs.mkdirSync(folderName, { recursive: true, force: true });
 					  }
 				} catch (err) {
-						  console.error(err);
+
 				}
 			cb(null, 'public/uploads/documents')
 		}
@@ -34,10 +35,14 @@ let storage = multer.diskStorage({
 	filename: function (req, file, cb) {
 		
 		if(file.fieldname === 'img'){
-			cb(null, file.fieldname + "-" + Date.now()+".jpg")
+			type = file.fieldname;
+			filename = file.fieldname + "-" + Date.now()+".jpg";
+			cb(null, filename)
 		}
 		else if(file.fieldname === 'pdf'){
-			cb(null, file.fieldname + "-" + Date.now()+".pdf")
+			type = file.fieldname;
+			filename = file.fieldname + "-" + Date.now()+".pdf";
+			cb(null, filename)
 		}
 	}
 })
@@ -66,9 +71,9 @@ let upload = multer({
 		if (mimetype && extname) {
 			return cb(null, true);
 		}
-	
+
 		cb("Error: File upload only supports the "
-				+ "following filetypes - " + filetypes);
+		+ "following filetypes - " + filetypes);
 	}
 
 // img  and pdf are the names of file attribute
@@ -95,12 +100,14 @@ module.exports.createUpload =  (req, res, next) => {
 			// ERROR occurred (here it can be occurred due
 			// to uploading image of size greater than
 			// 5MB or uploading different file type)
-			next(err)
+			next({message: err});
+			
 		}
 		else {
-
 			// SUCCESS, image successfully uploaded
-			res.render('uploads/show')
+
+			const file = {filename: filename}
+			res.render('uploads/show', {file, type})
 		}
 	})
 };

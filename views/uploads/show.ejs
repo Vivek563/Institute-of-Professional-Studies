@@ -1,18 +1,24 @@
 <% layout('layouts/boilerplate') %>
 
 <div class="col-8"> 
-    <h1 class="text-center mb-3">Successfully Uploaded</h1>
-    <div class="col-6 offset-3">
-
-        <!-- <form action="/stores" enctype="multipart/form-data" method="POST">
-
-            <div class="mb-3">
-                <label class="form-label" for="img">Upload Image : </label>
-                <input class="form-control" type="file" id="img" name="img" required /> 
+    <div class="offset-3">
+        <div class="clip mt-3">
+            <div onclick="myFunction()" onmouseout="outFunc()">
+              <span class="cliptext" id="myClip">Copy?</span>
+              <input type="text" value="<%= file.filename  %>" id="myInput"  disabled>
             </div>
-            <div class="mb-3">
-                <button  class="btn btn-danger">Submit</button>
-            </div> 
-        </form> -->
+        </div>
+        <% if(type === 'img') { %>
+            <img src="/uploads/images/<%= file.filename  %>" class="img-fluid" alt="Responsive image">
+        <% } else if(type === 'pdf') { %>
+            <embed
+            src="/uploads/documents/<%= file.filename  %>"
+            type="application/pdf"
+            frameBorder="0"
+            scrolling="auto"
+            height="500px"
+            width="100%"
+            ></embed>
+            <% } %>
     </div>
 </div>

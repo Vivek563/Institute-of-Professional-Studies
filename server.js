@@ -130,7 +130,6 @@ app.use(async (err, req, res, next) => {
     
     const page = await Pages.findOne({code : 'home'});
     const navbarItems = await NavbarItems.find({});
-
     const {statusCode = 500} = err;
     if(!err.message) err.message = 'Oh No, Something Went Wrong!';
     res.status(statusCode).render('notfound', {page, navbarItems, err})
