@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
 
 const Announcements = require('./models/announcement');
+const Courses = require('./models/course');
 const Events = require('./models/event');
 const Faculties = require('./models/faculty');
 const NavbarItems = require('./models/navbarItem');
 const News = require('./models/news');
 const Notifications = require('./models/notification');
 const Pages = require('./models/page');
+const Staffs = require('./models/staff');
 const Students = require('./models/student');
 
 
@@ -99,7 +101,7 @@ const seedFaculties =[
         education: 'this is education of faculty 1',
         researchPaperCount: 2,
         photo: 'dlfodg',
-        code: 'cms'    
+        centreCode: 'cms'    
     },
     {
         name: 'Dummy Faculty name 2',
@@ -108,7 +110,7 @@ const seedFaculties =[
         education: 'this is education of faculty 2',
         researchPaperCount: 2,
         photo: 'dlfodg',
-        code: 'cms'    
+        centreCode: 'cms'    
     },
     {
         name: 'Dummy Faculty name 3',
@@ -117,7 +119,7 @@ const seedFaculties =[
         education: 'this is education of faculty 3',
         researchPaperCount: 2,
         photo: 'dlfodg',
-        code: 'cms'    
+        centreCode: 'cms'    
     },
     {
         name: 'Dummy Faculty name 4',
@@ -126,7 +128,7 @@ const seedFaculties =[
         education: 'this is education of faculty 4',
         researchPaperCount: 2,
         photo: 'dlfodg',
-        code: 'cms'    
+        centreCode: 'cms'    
     },
     {
         name: 'Dummy Faculty name 5',
@@ -135,7 +137,7 @@ const seedFaculties =[
         education: 'this is education of faculty 5',
         researchPaperCount: 2,
         photo: 'dlfodg',
-        code: 'cms'    
+        centreCode: 'cms'    
     }
     
 ]
@@ -370,38 +372,108 @@ Pages.insertMany(seedPages)
     })
 
 
-//  mongoose.connection.close();
+    const seedStaffs =[
+        {
+            name: 'Dummy Staff name 1',
+            designation: 'this is designation of staff 1',
+            emailId: 'gg.gg@gmail.com/',
+            education: 'this is education of staff 1',
+            photo: 'dlfodg',
+            centreCode: 'cms'    
+        },
+        {
+            name: 'Dummy Staff name 2',
+            designation: 'this is designation of staff 2',
+            emailId: 'gg.gg@gmail.com/',
+            education: 'this is education of staff 2',
+            photo: 'dlfodg',
+            centreCode: 'cms'    
+        },
+        {
+            name: 'Dummy Staff name 3',
+            designation: 'this is designation of staff 3',
+            emailId: 'gg.gg@gmail.com/',
+            education: 'this is education of staff 3',
+            photo: 'dlfodg',
+            centreCode: 'cms'    
+        },
+        {
+            name: 'Dummy Staff name 4',
+            designation: 'this is designation of staff 4',
+            emailId: 'gg.gg@gmail.com/',
+            education: 'this is education of staff 4',
+            photo: 'dlfodg',
+            centreCode: 'cms'    
+        },
+        {
+            name: 'Dummy Staff name 5',
+            designation: 'this is designation of staff 5',
+            emailId: 'gg.gg@gmail.com/',
+            education: 'this is education of staff 5',
+            photo: 'dlfodg',
+            centreCode: 'cms'    
+        }
+        
+    ]
+    
+    Staffs.insertMany(seedStaffs)  
+                                        
+        .then(res => {
+        })
+        .catch(err => {
+            console.log(err)
+        })
     
 const seedStudents =[
     {
         name: 'Dummy Student name 1',
         semster: '1',
         enrollmentNumber: 'u1',
-        centreCode: "cce"
+        centreCode: "cce",
+        address: "dummy address",
+        doa: "2023-01-01",
+        dob: "2000-01-01",
+        phoneNumber: "1234567890"
     },
     {
         name: 'Dummy Student name 2',
         semster: '2',
         enrollmentNumber: 'u2',
-        centreCode: "cft"
+        centreCode: "cft",
+        address: "dummy address",
+        doa: "2023-01-01",
+        dob: "2000-01-01",
+        phoneNumber: "1234567890"
     },
     {
         name: 'Dummy Student name 3',
         semster: '3',
         enrollmentNumber: 'u3',
-        centreCode: "cfdt"
+        centreCode: "cfdt",
+        address: "dummy address",
+        doa: "2023-01-01",
+        dob: "2000-01-01",
+        phoneNumber: "1234567890"
     },
     {
         name: 'Dummy Student name 4',
         semster: '4',
         enrollmentNumber: 'u4',
-        centreCode: "cms"
+        centreCode: "cms",
+        address: "dummy address",
+        doa: "2023-01-01",
+        dob: "2000-01-01",
+        phoneNumber: "1234567890"
     },
     {
         name: 'Dummy Student name 5',
         semster: '5',
         enrollmentNumber: 'u5',
-        centreCode: "cce"
+        centreCode: "cce",
+        address: "dummy address",
+        doa: "2023-01-01",
+        dob: "2000-01-01",
+        phoneNumber: "1234567890"
     }
 ]
 

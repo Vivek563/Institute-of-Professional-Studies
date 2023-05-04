@@ -24,7 +24,7 @@ const facultySchema = new mongoose.Schema({
     photo:{
         type: String,
     },
-    code:{
+    centreCode:{
         type: String,
         required: true
     }

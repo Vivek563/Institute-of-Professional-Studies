@@ -33,7 +33,7 @@ module.exports.facultySchema = Joi.object({
         emailId: Joi.string().required(),
         education: Joi.string().required(),
         researchPaperCount: Joi.number().required().min(0),
-        code: Joi.string().required()
+        centreCode: Joi.string().required()
     }).required()
 });
 module.exports.navbarItemSchema = Joi.object({

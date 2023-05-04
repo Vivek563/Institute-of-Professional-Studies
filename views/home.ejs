@@ -93,7 +93,6 @@
 
 
 
-  <% for(let message of messageSection) { %>
     <section class="webdesign-wrapper">
       <h2>Message From The Vice-Chancellor
       </h2>
@@ -142,12 +141,11 @@
         </div>
         <div class="webdesign-right">
           <div class="webdesign-img">
-            <img src="/assets/<%= message.image %>" alt="image" />
+            <img src="/assets/director.jpg" alt="image" />
           </div>
         </div>
       </div>
     </section>
-    <% } %>
 
 
       <!------------------------------ centres section -------------------------------->
@@ -155,20 +153,54 @@
       <section class="centres">
         <div class="ag-format-container">
           <div class="ag-courses_box">
-            <% for(let centre of centresList) { %>
               <div class="ag-courses_item">
-                <a href="<%= centre.Centrepath %>" class="ag-courses-item_link">
+                <a href="/home/centre/cce" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">
-                    Centre of <%= centre.name %>
+                    Centre of Computer Education
                   </div>
                   <div class="ag-courses-item_date-box">
-                    <img src="/assets/<%= centre.icon %>" height="80px" width="80px" />
+                    <img src="/assets/computer.png" height="80px" width="80px" />
                   </div>
                 </a>
               </div>
-              <% } %>
+              <div class="ag-courses_item">
+                <a href="/home/centre/cms" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Centre of Media Studies
+                  </div>
+                  <div class="ag-courses-item_date-box">
+                    <img src="/assets/media.png" height="80px" width="80px" />
+                  </div>
+                </a>
+              </div>
+              <div class="ag-courses_item">
+                <a href="/home/centre/cft" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Centre of Food Technology
+                  </div>
+                  <div class="ag-courses-item_date-box">
+                    <img src="/assets/food.png" height="80px" width="80px" />
+                  </div>
+                </a>
+              </div>
+              <div class="ag-courses_item">
+                <a href="/home/centre/cfdt" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Centre of Fashion & Design Technology
+                  </div>
+                  <div class="ag-courses-item_date-box">
+                    <img src="/assets/fashion.png" height="80px" width="80px" />
+                  </div>
+                </a>
+              </div>
           </div>
         </div>
       </section>
@@ -177,22 +209,31 @@
 
       <!--------------------------- counter section ----------------------------------->
       <div class="count">
-        <% counterList.forEach( (counter, i) => { %>
+        
           <div class="counter-container">
-            <img src="/assets/<%= counter.image %>" height="200px" width="200px">
+            <img src="/assets/student.png" height="200px" width="200px">
             <i class="counter-student"></i>
-            <% if(i === 1){ %>
-            <div class="counter" data-target="<%= count[i-1].fCount %>" ></div>
-            <% }else { %>
-            <div class="counter" data-target="<%= counter.count %>"></div>
-
-              <%  } %>
+            <div class="counter" data-target="<%= count[0].count %>" ></div>
             <span>
-              <%= counter.name %>
+              Student
             </span>
-
           </div>
-          <% }); %>
+          <div class="counter-container">
+            <img src="/assets/faculty.png" height="200px" width="200px">
+            <i class="counter-student"></i>
+            <div class="counter" data-target="<%= count[1].count %>" ></div>
+            <span>
+              Faculty
+            </span>
+          </div>
+          <div class="counter-container">
+            <img src="/assets/staff.png" height="200px" width="200px">
+            <i class="counter-student"></i>
+            <div class="counter" data-target="<%= count[2].count %>" ></div>
+            <span>
+              Staff
+            </span>
+          </div>
       </div>
 
 

@@ -13,57 +13,7 @@
             "script": "js/home.js",
                             
         
-    "sliderImages": [ "img1.JPG", "img2.jpeg", "img3.jpeg", "img4.jpeg", "img5.JPG" ],
-    "messageSection": 
-    [
-        { 
-             "name": "Director",
-             "inShort": "Effective Website Design\n and development.",
-             "message": "",
-             "image": "director.jpg"
-         }
-     ],
-    "centresList": 
-    [   
-        {
-            "name": "Computer Education", 
-            "icon": "computer.png",
-            "Centrepath": "./home/centre/cce"
-        }, 
-        {
-            "name": "Media Studies", 
-            "icon": "media.png",
-            "Centrepath": "./home/centre/cms"
-        }, 
-        {
-            "name": "Food Technology", 
-            "icon": "food.png",
-            "Centrepath": "./home/centre/cft"
-        }, 
-        {
-            "name": "Fashion & Design Technology", 
-            "icon": "fashion.png",
-            "Centrepath": "./home/centre/cfdt"
-        }
-    ],
-    "counterList":
-    [
-        {
-            "name": "Student", 
-            "count": "1200", 
-            "image": "student.png"
-        },
-        {
-            "name": "Faculty", 
-            "count": "500", 
-            "image": "faculty.png"
-        },
-        {
-            "name": "Staff", 
-            "count": "150", 
-            "image": "staff.png"
-        }
-    ]
+    "sliderImages": [ "img1.JPG", "img2.jpeg", "img3.jpeg", "img4.jpeg", "img5.JPG" ]
         },
     "cce":
         {

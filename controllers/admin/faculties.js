@@ -10,7 +10,7 @@ module.exports.renderNewForm = (req, res) => {
 };
 module.exports.createFaculty = async (req, res) => {
     const newFaculty = new Faculties(req.body.faculty);
-    const page = await Pages.findOne({code: `${req.body.faculty.code}`});
+    const page = await Pages.findOne({centreCode: `${req.body.faculty.centreCode}`});
     page.faculties.push(newFaculty);
     await newFaculty.save();
     await page.save();
@@ -20,20 +20,20 @@ module.exports.showFaculty = async (req, res) => {
     const { id } = req.params;
     const faculty = await Faculties.findById(id)
     let name = '';
-    if(faculty.code === 'cfdt'){ name = 'Fashion & Design Technology'; }
-    else if(faculty.code === 'cft'){ name = 'Food Technology' }
-    else if(faculty.code === 'cms'){ name = 'Media Studies' }
-    else if(faculty.code === 'cce'){ name = 'Computer Education' }
+    if(faculty.centreCode === 'cfdt'){ name = 'Fashion & Design Technology'; }
+    else if(faculty.centreCode === 'cft'){ name = 'Food Technology' }
+    else if(faculty.centreCode === 'cms'){ name = 'Media Studies' }
+    else if(faculty.centreCode === 'cce'){ name = 'Computer Education' }
     res.render('faculties/show', { faculty, name })
 };
 module.exports.renderEditForm = async (req, res) => {
     const { id } = req.params;
     const faculty = await Faculties.findById(id);
     let n = '0';
-    if(faculty.code === 'cce'){ n = '1' }
-    else if(faculty.code === 'cfdt'){ n = '2' }
-    else if(faculty.code === 'cft'){ n = '3' }
-    else if(faculty.code === 'cms'){ n = '4' }
+    if(faculty.centreCode === 'cce'){ n = '1' }
+    else if(faculty.centreCode === 'cfdt'){ n = '2' }
+    else if(faculty.centreCode === 'cft'){ n = '3' }
+    else if(faculty.centreCode === 'cms'){ n = '4' }
     res.render('faculties/edit', { faculty, n })
 };
 module.exports.updateFaculty = async (req, res) => {
