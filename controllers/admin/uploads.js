@@ -1,16 +1,33 @@
 const multer = require('multer');
 const path = require('path');
+const fs = require('fs');
 
-// let upload = multer({ dest: "Upload_folder_name" })
-// If you do not want to use diskStorage then uncomment it
+
 	
 let storage = multer.diskStorage({
 	destination: function (req, file, cb) {
 
+		let folderName = '';
 		if(file.fieldname === 'img'){
+				folderName = 'public/uploads/images';
+			try {
+				  if (!fs.existsSync(folderName)) {
+					    fs.mkdirSync(folderName, { recursive: true, force: true });
+					  }
+				} catch (err) {
+						  console.error(err);
+				}
 			cb(null, 'public/uploads/images')
 		}
 		else if(file.fieldname === 'pdf'){
+			folderName = 'public/uploads/documents';
+			try {
+				  if (!fs.existsSync(folderName)) {
+					    fs.mkdirSync(folderName, { recursive: true, force: true });
+					  }
+				} catch (err) {
+						  console.error(err);
+				}
 			cb(null, 'public/uploads/documents')
 		}
 	},
