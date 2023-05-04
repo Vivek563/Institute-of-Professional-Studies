@@ -46,7 +46,7 @@ module.exports.renderCentre = async (req, res) =>{
         .populate('notifications')
         .populate('faculties')
     if(!page){
-        return res.redirect('../../');
+        return res.redirect('/home');
     }
     const notifications = page.notifications; //for sorting taking out notifications array and redefining same array in page object after sorting
     // its better to do aggregation instead of this, need to match, lookup, unwind, sort, group, project.
