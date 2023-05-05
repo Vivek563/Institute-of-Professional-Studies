@@ -12,7 +12,7 @@ const JsonExtra = require('../../pages.json');
 
 
 module.exports.index = async (req, res) => {
-    const page = await Pages.findOne({code : 'home'});
+    const page = await Pages.findOne({centreCode : 'home'});
     const events = await Events.find({}).limit(2).sort({updatedAt: 'desc'});
     const announcements = await Announcements.find({}).limit(4).sort({updatedAt: 'desc'});
     const news = await News.find({}).limit(6).sort({updatedAt: 'desc'});
@@ -30,7 +30,7 @@ module.exports.index = async (req, res) => {
 
 module.exports.template = async (req, res) => {
     const {template} = req.params;
-    const page = await Pages.findOne({code : 'home'});
+    const page = await Pages.findOne({centreCode : 'home'});
     const navbarItems = await NavbarItems.find({});
     const jsonExtra =  JsonExtra[`${template}`];
     // console.log(jsonExtra)
@@ -42,7 +42,7 @@ module.exports.renderCentre = async (req, res) =>{
 
     const navbarItems = await NavbarItems.find({});
     
-    const page = await Pages.findOne({code : `${centre}`})
+    const page = await Pages.findOne({centreCode : `${centre}`})
         .populate('notifications')
         .populate('faculties')
     if(!page){

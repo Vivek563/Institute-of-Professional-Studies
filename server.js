@@ -128,7 +128,7 @@ app.use(async (err, req, res, next) => {
     console.log("**************ERROR*****************")
     console.log("************************************")
     
-    const page = await Pages.findOne({code : 'home'});
+    const page = await Pages.findOne({centreCode : 'home'});
     const navbarItems = await NavbarItems.find({});
     const {statusCode = 500} = err;
     if(!err.message) err.message = 'Oh No, Something Went Wrong!';

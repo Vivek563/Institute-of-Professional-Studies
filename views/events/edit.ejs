@@ -13,15 +13,16 @@
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="event">Description</label>
-                    <textarea class="form-control" type="text" id="event" name="event[description]" required><%=event.description%></textarea>
+                    <label class="form-label" for="description">Description (optional)</label>
+                    <input class="form-control" type="text" minlength="0" id="description" name="event[description]" value="<%=event.description %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
                 </div>
+                
                 <div class="mb-3">
                     <label class="form-label" for="pdfUrl">pdf Url</label>
-                    <input class="form-control" type="url" id="pdfUrl" name="event[pdfUrl]" value="<%= event.pdfUrl %>" required>
+                    <input class="form-control" type="text" id="pdfUrl" name="event[pdfUrl]" value="<%= event.pdfUrl %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>

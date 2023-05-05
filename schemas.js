@@ -3,7 +3,7 @@ const Joi = require('joi');
 module.exports.announcementSchema = Joi.object({
     announcement: Joi.object({
         title: Joi.string().required(),
-        description: Joi.string().required(),
+        description: Joi.string().min(0) ,
         pdfUrl: Joi.string().required()
         
     }).required()
@@ -21,7 +21,7 @@ module.exports.courseSchema = Joi.object({
 module.exports.eventSchema = Joi.object({
     event: Joi.object({
         title: Joi.string().required(),
-        description: Joi.string().required(),
+        description: Joi.string().min(0),
         pdfUrl: Joi.string().required()
         
     }).required()
@@ -29,6 +29,7 @@ module.exports.eventSchema = Joi.object({
 module.exports.facultySchema = Joi.object({
     faculty: Joi.object({
         name: Joi.string().required(),
+        photo: Joi.string().min(0),
         designation: Joi.string().required(),
         emailId: Joi.string().required(),
         education: Joi.string().required(),
@@ -48,7 +49,7 @@ module.exports.navbarItemSchema = Joi.object({
 module.exports.newsSchema = Joi.object({
     aNews: Joi.object({
         title: Joi.string().required(),
-        description: Joi.string().required(),
+        description: Joi.string().min(0),
         pdfUrl: Joi.string().required()
         
     }).required()
@@ -56,9 +57,9 @@ module.exports.newsSchema = Joi.object({
 module.exports.notificationSchema = Joi.object({
     notification: Joi.object({
         title: Joi.string().required(),
-        description: Joi.string().required(),
+        description: Joi.string().min(0),
         pdfUrl: Joi.string().required(),
-        code: Joi.string().required()
+        centreCode: Joi.string().required()
     }).required()
 });
 
@@ -68,7 +69,7 @@ module.exports.pageSchema = Joi.object({
         title: Joi.string().required(), 
         icon: Joi.string().required(), 
         favicon: Joi.string().required(), 
-        code: Joi.string().required(),
+        centreCode: Joi.string().required(),
         path: Joi.string().required(), 
         shortDescription: Joi.string().required(), 
         about: Joi.string().required()

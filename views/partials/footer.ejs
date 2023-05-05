@@ -88,17 +88,17 @@
   
     </div> 
 
-    <% if(!(typeof(page.code) === 'undefined')) {%>
+    <% if(!(typeof(page.centreCode) === 'undefined')) {%>
 
       <script  type="text/javascript" src="/js/navbar.js"></script>
 
-      <% if(page.code === 'home') {%>
+      <% if(page.centreCode === 'home') {%>
         <script  type="text/javascript" src="/js/home.js"></script>
         <script  type="text/javascript" src="/js/heroSection.js"></script>
         <script  type="text/javascript" src="/js/newsSection.js"></script>
         <script  type="text/javascript" src="/js/counterSection.js"></script>
       <% } %>
-      <% if(page.code === 'cce' || page.code === 'cfdt' || page.code === 'cft' || page.code === 'cms') {%>
+      <% if(page.centreCode === 'cce' || page.centreCode === 'cfdt' || page.centreCode === 'cft' || page.centreCode === 'cms') {%>
         <script  type="text/javascript" src="/js/centre.js"></script>
       <% } %>
     <% } %>

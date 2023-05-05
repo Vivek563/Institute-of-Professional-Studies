@@ -13,8 +13,8 @@
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="code">Course Code</label>
-                    <input class="form-control" type="text" id="code" name="course[code]" value="<%=course.code %>" required>
+                    <label class="form-label" for="courseCode">Course Code</label>
+                    <input class="form-control" type="text" id="courseCode" name="course[courseCode]" value="<%=course.courseCode %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
@@ -34,8 +34,8 @@
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="course">Description (optional)</label>
-                    <textarea class="form-control" type="text" id="course" name="course[description]"><%=course.description%></textarea>
+                    <label class="form-label" for="description">Description (optional)</label>
+                    <input class="form-control" type="number" id="description" minlength="0" name="course[description]" value="<%=course.duration %>" >
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="pdfUrl">pdf Url</label>
