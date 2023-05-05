@@ -4,8 +4,13 @@
             <div class="card mb-3">
                 <div class="card-body">
                 <h2 class="card-title"><%= student.name %></h2>
-                <p class="card-text d-inline"><b>Centre : </b><%= student.centreCode %></p>
-                <p class="card-text"><b>Enrollment Number : </b><%= student.enrollmentNumber %></p>
+                <p class="card-text d-inline"><b>Enrollment Number : </b><%= student.enrollmentNumber %></p>
+                <p class="card-text "><b>Belong To : </b><i>Centre of <%= name %></i></p>
+                <p class="card-text "><b>Semster : </b><%= student.semster %></p>
+                <p class="card-text "><b>Phone Number : </b><%= student.phoneNumber %></p>
+                <p class="card-text "><b>Address : </b><%= student.address %></p>
+                <p class="card-text "><b>Date of Admission : </b><%= student.doa.toString().slice(4,16) %></p>
+                <p class="card-text"><b>Date of Birth : </b><%= student.dob.toString().slice(4,16) %></p>
                 </div>
                 <div class="card-body">
                     <a class="card-link btn btn-info" href="/admin/students/<%=student._id%>/edit">Edit</a>             

@@ -6,8 +6,7 @@ const announcementSchema = new mongoose.Schema({
         required: true
     },
     description:{
-        type: String,
-        required: true
+        type: String
     },
     pdfUrl:{
         type: String,

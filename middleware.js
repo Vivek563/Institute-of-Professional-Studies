@@ -1,18 +1,29 @@
 const {
         announcementSchema,
+        courseSchema,
         eventSchema,
         facultySchema,
         navbarItemSchema,
         newsSchema,
         notificationSchema,
         pageSchema,
-        studentSchema
+        studentSchema,
+        staffSchema
     } = require('./schemas');
 
 const ExpressError = require('./utils/ExpressError');
 
 module.exports.validateAnnouncement = (req, res, next) => {
     const { error } = announcementSchema.validate(req.body);
+    if(error){ 
+        const msg = error.details.map(el => el.message).join(',')
+        throw new ExpressError(msg, 400)
+    }else{
+        next();
+    }
+};
+module.exports.validateCourse = (req, res, next) => {
+    const { error } = courseSchema.validate(req.body);
     if(error){ 
         const msg = error.details.map(el => el.message).join(',')
         throw new ExpressError(msg, 400)
@@ -67,6 +78,15 @@ module.exports.validateNotification = (req, res, next) => {
 };
 module.exports.validatePage = (req, res, next) => {
     const { error } = pageSchema.validate(req.body);
+    if(error){ 
+        const msg = error.details.map(el => el.message).join(',')
+        throw new ExpressError(msg, 400)
+    }else{
+        next();
+    }
+};
+module.exports.validateStaff = (req, res, next) => {
+    const { error } = staffSchema.validate(req.body);
     if(error){ 
         const msg = error.details.map(el => el.message).join(',')
         throw new ExpressError(msg, 400)

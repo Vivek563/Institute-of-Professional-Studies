@@ -2,26 +2,44 @@
 
 
     <div class="col-8"> 
-        <h1 class="text-center">Edit this Announcement</h1>
+        <h1 class="text-center">Edit this Course</h1>
         <div class="col-6 offset-3">
-            <form action="/admin/announcements/<%=announcement._id%>?_method=PUT" method="POST" novalidate class="validated-form"> 
+            <form action="/admin/courses/<%=course._id%>?_method=PUT" method="POST" novalidate class="validated-form"> 
                 <div class="mb-3">
-                    <label class="form-label" for="title">Title</label>
-                    <input class="form-control" type="text" id="title" name="announcement[title]" value="<%=announcement.title %>" required>
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="course[name]" value="<%=course.name %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="announcement">Description</label>
-                    <textarea class="form-control" type="text" id="announcement" name="announcement[description]" required><%=announcement.description%></textarea>
+                    <label class="form-label" for="courseCode">Course Code</label>
+                    <input class="form-control" type="text" id="courseCode" name="course[courseCode]" value="<%=course.courseCode %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="centreCode">Centre Code</label>
+                    <input class="form-control" type="text" id="centreCode" name="course[centreCode]" value="<%=course.centreCode %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="duration">Duration</label>
+                    <input class="form-control" type="number" id="duration" min="1" name="course[duration]" value="<%=course.duration %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description (optional)</label>
+                    <input class="form-control" type="number" id="description" minlength="0" name="course[description]" value="<%=course.duration %>" >
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="pdfUrl">pdf Url</label>
-                    <input class="form-control" type="url" id="pdfUrl" name="announcement[pdfUrl]" value="<%= announcement.pdfUrl %>" required>
+                    <input class="form-control" type="text" id="pdfUrl" name="course[pdfUrl]" value="<%= course.pdfUrl %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
@@ -30,7 +48,7 @@
                     <button class="btn btn-info">Save</button>
                 </div>
                 <div class="mb-3 d-inline">
-                    <a class="btn btn-primary" href="/admin/announcements/<%= announcement._id%>">Go Back</a>
+                    <a class="btn btn-primary" href="/admin/courses/<%= course._id%>">Go Back</a>
                 </div>
             </form>
         </div>

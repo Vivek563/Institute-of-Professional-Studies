@@ -22,9 +22,9 @@ const facultySchema = new mongoose.Schema({
         required: true
     },
     photo:{
-        type: String,
+        type: String
     },
-    code:{
+    centreCode:{
         type: String,
         required: true
     }

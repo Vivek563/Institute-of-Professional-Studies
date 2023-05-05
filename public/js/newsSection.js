@@ -2,8 +2,23 @@
 
 function dialogFiller(c){
     let c_object = JSON.parse(c);
-   
-    document.getElementById("reusableDialogContent").innerHTML = `<h2>${c_object.title}</h2><p>${c_object.description}</p><a href="${c_object.pdfUrl}" target="_blank">oo</a>`;
+
+    let pdfUrl = '';
+
+    if(c_object.pdfUrl){
+      pdfUrl = `<embed
+      src='/uploads/documents/${c_object.pdfUrl}'
+      type='application/pdf'
+      frameBorder='0'
+      scrolling='auto'
+      height='100%'
+      width='100%'
+      ></embed>`
+    }
+     let title = `<h2>${c_object.title}</h2>`;
+     let description = `<p>${c_object.description}</p>`;
+
+    document.getElementById("reusableDialogContent").innerHTML = title + description + pdfUrl;
   }
   
   document.querySelectorAll(".dialogTrigger").forEach( item => { 

@@ -318,13 +318,21 @@ dialog {
   box-shadow: 0 0 24px var(--modal-close-color); 
   padding: calc(2*var(--universal-padding)) calc(4*var(--universal-padding));
   background-color: var(--modal-back-color);
-  max-width: 64ch;
+  width: 80%;
+  height: 90%;
   margin: auto;
   position: fixed;
 }
 ::backdrop {
   background-color: var(--modal-overlay-color);
   backdrop-filter: blur(2px);
+}
+embed{
+  height: 450px;
+}
+#reusableDialogContent{
+  width: 100%;
+  height: 100%;
 }
 
 dialog .cross {

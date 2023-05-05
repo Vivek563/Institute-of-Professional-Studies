@@ -10,7 +10,7 @@ const pageSchema = new mongoose.Schema({
     icon: String,
     favicon: String,
     path: String,
-    code: String,
+    centreCode: String,
     shortDescription: String,
     about: String,
     style: String,

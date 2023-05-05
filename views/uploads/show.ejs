@@ -1,0 +1,24 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="col-8"> 
+    <div class="offset-3">
+        <div class="clip mt-3">
+            <div onclick="myFunction()" onmouseout="outFunc()">
+              <span class="cliptext" id="myClip">Copy?</span>
+              <input type="text" value="<%= file.filename  %>" id="myInput"  disabled>
+            </div>
+        </div>
+        <% if(type === 'img') { %>
+            <img src="/uploads/images/<%= file.filename  %>" class="img-fluid" alt="Responsive image">
+        <% } else if(type === 'pdf') { %>
+            <embed
+            src="/uploads/documents/<%= file.filename  %>"
+            type="application/pdf"
+            frameBorder="0"
+            scrolling="auto"
+            height="500px"
+            width="100%"
+            ></embed>
+            <% } %>
+    </div>
+</div>

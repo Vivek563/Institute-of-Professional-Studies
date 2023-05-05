@@ -15,13 +15,15 @@ const homeRoutes = require('./routes/homeRoutes');
 const centreRoutes = require('./routes/centreRoutes');
 
 const announcementsRoutes = require('./routes/announcements');
+const coursesRoutes = require('./routes/courses');
 const eventsRoutes = require('./routes/events');
 const facultiesRoutes = require('./routes/faculties');
 const navbarItemsRoutes = require('./routes/navbarItems');
 const newsRoutes = require('./routes/news');
 const notificationsRoutes = require('./routes/notifications');
 const pagesRoutes = require('./routes/pages');
-const storesRoutes = require('./routes/stores');
+const uploadsRoutes = require('./routes/uploads');
+const staffsRoutes = require('./routes/staffs');
 const studentsRoutes = require('./routes/students');
 const adminsRoutes = require('./routes/admins');
 
@@ -74,6 +76,10 @@ app.use('/admin', adminsRoutes)
 app.use('/admin/announcements', announcementsRoutes)
 //------------------------------------------- Announcements routes ends----------------------------------------
 
+//------------------------------------------- Courses routes starts----------------------------------------
+app.use('/admin/courses', coursesRoutes)
+//------------------------------------------- Courses routes ends----------------------------------------
+
 //------------------------------------------- Events routes starts----------------------------------------
 app.use('/admin/events', eventsRoutes)
 //------------------------------------------- Events routes ends----------------------------------------
@@ -98,14 +104,17 @@ app.use('/admin/notifications', notificationsRoutes)
 app.use('/admin/pages', pagesRoutes)
 //------------------------------------------- Pages routes ends----------------------------------------
 
-//------------------------------------------- Faculties routes starts----------------------------------------
-app.use('/admin/stores', storesRoutes)
-//------------------------------------------- Faculties routes ends----------------------------------------
+//------------------------------------------- Students routes starts----------------------------------------
+app.use('/admin/staffs', staffsRoutes)
+//------------------------------------------- Students routes ends----------------------------------------
 
 //------------------------------------------- Students routes starts----------------------------------------
 app.use('/admin/students', studentsRoutes)
 //------------------------------------------- Students routes ends----------------------------------------
 
+//------------------------------------------- Faculties routes starts----------------------------------------
+app.use('/admin/uploads', uploadsRoutes)
+//------------------------------------------- Faculties routes ends----------------------------------------
 
 
 app.all('*', (req, res, next) => {
@@ -119,9 +128,8 @@ app.use(async (err, req, res, next) => {
     console.log("**************ERROR*****************")
     console.log("************************************")
     
-    const page = await Pages.findOne({code : 'home'});
+    const page = await Pages.findOne({centreCode : 'home'});
     const navbarItems = await NavbarItems.find({});
-
     const {statusCode = 500} = err;
     if(!err.message) err.message = 'Oh No, Something Went Wrong!';
     res.status(statusCode).render('notfound', {page, navbarItems, err})

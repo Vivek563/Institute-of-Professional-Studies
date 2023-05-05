@@ -5,25 +5,32 @@ const News = require('../../models/News');
 const NavbarItems = require('../../models/navbarItem');
 const Notifications = require('../../models/notification');
 const Faculties = require('../../models/faculty');
+const Staffs = require('../../models/staff');
+const Students = require('../../models/student');
 
 const JsonExtra = require('../../pages.json');
 
 
 module.exports.index = async (req, res) => {
-    const page = await Pages.findOne({code : 'home'});
+    const page = await Pages.findOne({centreCode : 'home'});
     const events = await Events.find({}).limit(2).sort({updatedAt: 'desc'});
     const announcements = await Announcements.find({}).limit(4).sort({updatedAt: 'desc'});
     const news = await News.find({}).limit(6).sort({updatedAt: 'desc'});
     const navbarItems = await NavbarItems.find({}).sort({serialNo: 'asc'});
-    const count = await Faculties.aggregate([{$match : { code : { $eq : 'cms'}}},{ $count : "fCount"}]);
+    const count = await Students.aggregate([{$match : { centreCode : { $eq : 'cms'}}},{ $count : "count"}]);
+    const fCount = await Faculties.aggregate([{$match : { centreCode : { $eq : 'cms'}}},{ $count : "count"}]);
+    const staCount = await Staffs.aggregate([{$match : { centreCode : { $eq : 'cms'}}},{ $count : "count"}]);
+    count.push(...fCount, ...staCount);
     const jsonExtra =  JsonExtra['home'];
-    count[0].fCount = 60; //default faculties Count is set (need to be removed in last)
+    count[0].count = 1200; //default students Count is set (need to be removed in last)
+    count[1].count = 60; //default faculties Count is set (need to be removed in last)
+    count[2].count = 40; //default staffs Count is set (need to be removed in last);
     res.render('home', {page, news, events, announcements, navbarItems, ...jsonExtra, count})
 };
 
 module.exports.template = async (req, res) => {
     const {template} = req.params;
-    const page = await Pages.findOne({code : 'home'});
+    const page = await Pages.findOne({centreCode : 'home'});
     const navbarItems = await NavbarItems.find({});
     const jsonExtra =  JsonExtra[`${template}`];
     // console.log(jsonExtra)
@@ -35,11 +42,11 @@ module.exports.renderCentre = async (req, res) =>{
 
     const navbarItems = await NavbarItems.find({});
     
-    const page = await Pages.findOne({code : `${centre}`})
+    const page = await Pages.findOne({centreCode : `${centre}`})
         .populate('notifications')
         .populate('faculties')
     if(!page){
-        return res.redirect('../../');
+        return res.redirect('/home');
     }
     const notifications = page.notifications; //for sorting taking out notifications array and redefining same array in page object after sorting
     // its better to do aggregation instead of this, need to match, lookup, unwind, sort, group, project.

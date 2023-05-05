@@ -11,7 +11,7 @@ module.exports.renderNewForm = (req, res) => {
 };
 module.exports.createNotification = async (req, res) => {
     const newNotification = new Notification(req.body.notification);
-    const page = await Pages.findOne({code: `${req.body.notification.code}`});
+    const page = await Pages.findOne({centreCode: `${req.body.notification.centreCode}`});
     page.notifications.push(newNotification);
     await newNotification.save();
     await page.save();
@@ -21,20 +21,20 @@ module.exports.showNotification = async (req, res) => {
     const { id } = req.params;
     const notification = await Notification.findById(id)
     let name = '';
-    if(notification.code === 'cfdt'){ name = 'Fashion & Design Technology'; }
-    else if(notification.code === 'cft'){ name = 'Food Technology' }
-    else if(notification.code === 'cms'){ name = 'Media Studies' }
-    else if(notification.code === 'cce'){ name = 'Computer Education' }
+    if(notification.centreCode === 'cfdt'){ name = 'Fashion & Design Technology'; }
+    else if(notification.centreCode === 'cft'){ name = 'Food Technology' }
+    else if(notification.centreCode === 'cms'){ name = 'Media Studies' }
+    else if(notification.centreCode === 'cce'){ name = 'Computer Education' }
     res.render('notifications/show', { notification, name })
 };
 module.exports.renderEditForm = async (req, res) => {
     const { id } = req.params;
     const notification = await Notification.findById(id);
     let n = '0';
-    if(notification.code === 'cce'){ n = '1' }
-    else if(notification.code === 'cfdt'){ n = '2' }
-    else if(notification.code === 'cft'){ n = '3' }
-    else if(notification.code === 'cms'){ n = '4' }
+    if(notification.centreCode === 'cce'){ n = '1' }
+    else if(notification.centreCode === 'cfdt'){ n = '2' }
+    else if(notification.centreCode === 'cft'){ n = '3' }
+    else if(notification.centreCode === 'cms'){ n = '4' }
     res.render('notifications/edit', { notification, n })
 };
 module.exports.updateNotification = async (req, res) => {

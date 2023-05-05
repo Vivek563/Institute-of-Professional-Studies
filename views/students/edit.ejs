@@ -13,19 +13,61 @@
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="student">Enrollment No.</label>
-                    <textarea class="form-control" type="text" id="student" name="student[enrollmentNumber]" required><%=student.enrollmentNumber%></textarea>
+                    <label class="form-label" for="dob">Date of Birth</label>
+                    <input class="form-control" type="date" id="dob" name="student[dob]" value="<%=student.dob.toISOString().slice(0,10) %>" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="enrollmentNumber">Enrollment No.</label>
+                    <input class="form-control" type="text" id="enrollmentNumber" name="student[enrollmentNumber]" value="<%=student.enrollmentNumber %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>        
+                <div class="mb-3">
+                    <label class="form-label" for="semster">Semster</label>
+                    <input class="form-control" type="number" min="0" id="semster" name="student[semster]" value="<%= student.semster %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="centreCode">Centre Code</label>
-                    <input class="form-control" type="text" id="centreCode" name="student[centreCode]" value="<%= student.centreCode %>" required>
+                    <label class="form-label" for="doa">Date of Admission</label>
+                    <input class="form-control" type="date" id="doa" name="student[doa]" value="<%= student.doa.toISOString().slice(0,10) %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>
                 </div>
+                <div class="mb-3">
+                    <label class="form-label" for="address">Address</label>
+                    <input class="form-control" type="text" id="address" name="student[address]" value="<%= student.address %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="phoneNumber">Phone No.</label>
+                    <input class="form-control" type="tel" id="phoneNumber" name="student[phoneNumber]" placeholder="1234567890" pattern="[0-9]{10}" value="<%= student.phoneNumber %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3 btn-group" role="group" aria-label="Basic radio toggle button group" >
+                    
+                    <input type="radio" class="form-control btn-check" name="student[centreCode]" id="cce" value="cce" autocomplete="off" <% if(n === '1') {%><%- `checked` %><% } %>>
+                    <label class="form-label btn btn-outline-dark" for="cce">Computer Education</label>
+
+                    <input type="radio" class="form-control btn-check" name="student[centreCode]" id="cfdt" value="cfdt" autocomplete="off" <% if(n === '2') {%><%- `checked` %><% } %>>
+                    <label class="form-label btn btn-outline-dark" for="cfdt">Fashion & Design Technology</label>
+                  
+                    <input type="radio" class="form-control btn-check" name="student[centreCode]" id="cft" value="cft"  autocomplete="off" <% if(n === '3') {%><%- `checked` %><% } %>>
+                    <label class="form-label btn btn-outline-dark" for="cft">Food Technology</label>
+                    
+                    <input type="radio" class="form-control btn-check" name="student[centreCode]" id="cms"  value="cms" autocomplete="off" <% if(n === '4') {%><%- `checked` %><% } %>>
+                    <label class="form-label btn btn-outline-dark" for="cms">Media Studies</label>
+              </div>
                 <div class="mb-3 d-inline">
                     <button class="btn btn-info">Save</button>
                 </div>

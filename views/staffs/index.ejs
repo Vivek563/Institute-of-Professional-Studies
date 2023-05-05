@@ -1,20 +1,27 @@
 <% layout('layouts/boilerplate') %>
 
     <div class="col-8"> 
-        <h1 class="text-center">All Announcements</h1>
+        <h1 class="text-center">All Staffs</h1>
         <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
-            <a class="btn btn-danger" href="/admin/announcements/new">Add a Announcement</a>
+            <a class="btn btn-danger" href="/admin/staffs/new">Add a Staff</a>
         </div>
     
-        <% for (let c of announcements){%>
+        <% for (let c of staffs){%>
             <div class="card mb-3">
                 <div class="row">
-                        <div class="card-body ps-4">
-                            <h5 class="card-title"><%= c.title %></h5>
-                            <p class="card-text"><b>DESCRIPTION : </b><%= c.description %></p>
-                            <a class="btn btn-outline-primary" href="/admin/announcements/<%=c._id%>">View more...</a>
-                        </div>
-                    
+                    <div class="card-body ps-4">
+                        <h4 class="card-title"><%= c.name %></h4>
+                        <% { let name = ''; %> 
+                        <% if(c.centreCode === 'cfdt') { name = 'Fashion & Design Technology'; } %>
+                        <% if(c.centreCode === 'cft') { name = 'Food Technology' } %>
+                        <% if(c.centreCode === 'cms') { name = 'Media Studies' } %>
+                        <% if(c.centreCode === 'cce') { name = 'Computer Education' } %>
+                        <p class="card-text "><b>Centre Name : </b><i>Centre of <%= name %></i></p>
+                        <% } %>
+                        <p class="card-text d-inline"><b>Designation : </b><%= c.designation %></p>
+                        <p class="card-text"><b>Email : </b><%= c.emailId %></p>
+                        <a class="btn btn-outline-primary" href="/admin/staffs/<%=c._id%>">View more...</a>
+                    </div>   
                 </div>
             </div>
         <% }%>

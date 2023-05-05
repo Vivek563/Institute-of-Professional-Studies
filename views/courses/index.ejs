@@ -1,18 +1,20 @@
 <% layout('layouts/boilerplate') %>
 
     <div class="col-8"> 
-        <h1 class="text-center">All Announcements</h1>
+        <h1 class="text-center">All Courses</h1>
         <div class="mb-3 d-grid gap-2 d-md-flex justify-content-md-end">
-            <a class="btn btn-danger" href="/admin/announcements/new">Add a Announcement</a>
+            <a class="btn btn-danger" href="/admin/courses/new">Add a Course</a>
         </div>
     
-        <% for (let c of announcements){%>
+        <% for (let c of courses){%>
             <div class="card mb-3">
                 <div class="row">
                         <div class="card-body ps-4">
-                            <h5 class="card-title"><%= c.title %></h5>
-                            <p class="card-text"><b>DESCRIPTION : </b><%= c.description %></p>
-                            <a class="btn btn-outline-primary" href="/admin/announcements/<%=c._id%>">View more...</a>
+                            <h5 class="card-title"><%= c.name %></h5>
+                            <p class="card-text "><b>Course Code : </b><%= c.courseCode %></p>
+                            <p class="card-text d-inline"><b>Centre Code : </b><%= c.centreCode %></p>
+                            <p class="card-text "><b>Duration : </b><%= c.duration %></p>
+                            <a class="btn btn-outline-primary" href="/admin/courses/<%=c._id%>">View more...</a>
                         </div>
                     
                 </div>
