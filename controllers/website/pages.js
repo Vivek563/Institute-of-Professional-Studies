@@ -13,8 +13,8 @@ const JsonExtra = require('../../pages.json');
 
 module.exports.index = async (req, res) => {
     const page = await Pages.findOne({centreCode : 'home'});
-    const events = await Events.find({}).limit(2).sort({updatedAt: 'desc'});
-    const announcements = await Announcements.find({}).limit(4).sort({updatedAt: 'desc'});
+    const events = await Events.find({}).limit(6).sort({updatedAt: 'desc'});
+    const announcements = await Announcements.find({}).limit(6).sort({updatedAt: 'desc'});
     const news = await News.find({}).limit(6).sort({updatedAt: 'desc'});
     const navbarItems = await NavbarItems.find({}).sort({serialNo: 'asc'});
     const count = await Students.aggregate([{$match : { centreCode : { $eq : 'cms'}}},{ $count : "count"}]);
