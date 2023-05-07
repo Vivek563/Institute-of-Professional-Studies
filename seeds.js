@@ -23,28 +23,28 @@ mongoose.connect('mongodb://127.0.0.1:27017/IPS')
 
 const seedAnnouncements =[
     {
-        title: 'Dummy Announcement title 1',
-        description: 'this is description of announcement 1',
+        title: 'Exam Notification',
+        description: 'Your Exam will be start from 11th of May',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Announcement title 2',
-        description: 'this is description of announcement 2',
+        title: 'Center of computer application',
+        description: 'Bca syllubus has been changed',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Announcement title 3',
-        description: 'this is description of announcement 3',
+        title: 'Practical Exam Notification',
+        description: 'Practical exam will be on 8th of May',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Announcement title 4',
-        description: 'this is description of announcement 4',
+        title: 'Fresher party ',
+        description: 'Your freher party will be on 10th of may',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Announcement title 5',
-        description: 'this is description of announcement 5',
+        title: 'Fairwell party ',
+        description: 'Fairwell party will be on 11th of may',
         pdfUrl: 'pdf-1683245945479.pdf'
     }
 ]
@@ -59,28 +59,28 @@ Announcements.insertMany(seedAnnouncements)
 
 const seedEvents =[
     {
-        title: 'Dummy Event title 1',
-        description: 'this is description of event 1',
+        title: 'workshop',
+        description: 'workshop will be organized on 11th of may',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Event title 2',
-        description: 'this is description of event 2',
+        title: 'Order: Approved Model of Photocopier, Printer and Computer',
+        description: 'Center of computer education',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Event title 3',
-        description: 'this is description of event 3',
+        title: 'Distinguish Lecture Series: India Foreign Policy Since Independence',
+        description: 'there will be a conference called the conference',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Event title 4',
-        description: 'this is description of event 4',
+        title: 'Invitation for startups and sponsors to participate in the START-UP MELA 2023 on March 27, 2023, organised by the Incubation Centre',
+        description: 'Invitation for startups and sponsors to participate in the START-UP MELA 2023 on March 27, 2023, organised by the Incubation Centre',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy Event title 5',
-        description: 'this is description of event 5',
+        title: 'Thematic Talk on India G20 Presidency: Hope for the Future',
+        description: 'Thematic Talk on India G20 Presidency: Hope for the Future',
         pdfUrl: 'pdf-1683245945479.pdf'
     }
 ]
@@ -226,28 +226,28 @@ NavbarItems.insertMany(seedNavbarItems)
 
 const seedNews =[
     {
-        title: 'Dummy News title 1',
-        description: 'this is description of news 1',
+        title: 'Notification for Holiday on 04-05-2023',
+        description: 'Notification for Holiday on 04-05-2023',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy News title 2',
-        description: 'this is description of news 2',
+        title: ' Inauguration of New Dynamic Website of University of Allahabad',
+        description: ' Inauguration of New Dynamic Website of University of Allahabad',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy News title 3',
-        description: 'this is description of news 3',
+        title: 'Applications are invited for Dronacharya Awards & Best Research Scholar Awards',
+        description: 'Applications are invited for Dronacharya Awards & Best Research Scholar Awards',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy News title 4',
-        description: 'this is description of news 4',
+        title: 'The 100th Episode of Mann Ki Baat',
+        description: 'The 100th Episode of Mann Ki Baat',
         pdfUrl: 'pdf-1683245945479.pdf'
     },
     {
-        title: 'Dummy News title 5',
-        description: 'this is description of news 5',
+        title: 'CRET 2022 : Schedule and Guidelines',
+        description: 'CRET 2022 : Schedule and Guidelines',
         pdfUrl: 'pdf-1683245945479.pdf'
     }
 ]
