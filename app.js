@@ -53,6 +53,7 @@ app.use(mongoSanitize());
 
 const Pages = require('./models/page');
 const NavbarItems = require('./models/navbarItem');
+const isLoggedIn = require("./middleware/auth");
 
 
 // -----------------------------------------first page page routes starts----------------------------------
@@ -72,7 +73,7 @@ app.use('/admin', usersRoutes)
 //------------------------------------------- Admin / User routes ends----------------------------------------
 
 //------------------------------------------- Announcements routes starts----------------------------------------
-app.use('/admin/announcements', announcementsRoutes)
+app.use('/admin/announcements', isLoggedIn, announcementsRoutes)
 //------------------------------------------- Announcements routes ends----------------------------------------
 
 //------------------------------------------- Courses routes starts----------------------------------------

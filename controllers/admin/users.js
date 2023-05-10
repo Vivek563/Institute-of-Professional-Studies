@@ -13,13 +13,13 @@ module.exports.register = async (req, res) => {
 
     if (!(email && password && firstname && lastname)) {
         // res.status(400).send("All fields are required");
-        res.status(400).redirect('/admin/register');
+        res.redirect('/admin/register');
     }
 
     const existingUser = await User.findOne({ email }); // PROMISE
 
     if (existingUser) {
-        res.status(401).send("User already exists");
+        res.send("User already exists");
     }
 
     const myEncPassword = await bcrypt.hash(password, 10);

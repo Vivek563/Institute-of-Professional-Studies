@@ -5,7 +5,7 @@ const catchAsync = require('../utils/catchAsync');
 
 
 
-const isAuth = require("../middleware/auth");
+const isLoggedIn = require("../middleware/auth");
 const authen = require('../controllers/admin/users');
 
 
@@ -15,8 +15,8 @@ router.route('/')
   });
  
 router.route('/register')
-    .get(authen.renderRegister)  
-    .post(catchAsync(authen.register));
+    .get( authen.renderRegister)  
+    .post( catchAsync(authen.register));
 
 router.route('/login')
     .get(authen.renderLogin)
@@ -24,7 +24,7 @@ router.route('/login')
   
 router.get('/logout', authen.logout);
   
-router.get("/dashboard", isAuth, (req, res) => {
+router.get("/dashboard", isLoggedIn, (req, res) => {
     res.render('dashboard');
   });
 

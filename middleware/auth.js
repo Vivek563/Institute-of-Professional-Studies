@@ -2,26 +2,28 @@ const jwt = require("jsonwebtoken");
 
 //model is optional
 
-const isAuth = (req, res, next) => {
-  console.log(req.cookies);
+const isLoggedIn = (req, res, next) => {
+  // console.log(req.cookies);
   const token =
     req.cookies.token ||
-    req.body.token ||
-    req.header("Authorization").replace("Bearer ", "");
+    req.body.token ;
+    // req.header("Authorization").replace("Bearer ", "");
 
   if (!token) {
-    return res.status(403).send("token is missing");
+    // return res.status(403).send("token is missing");
+    return res.redirect('/admin/login');
   }
 
   try {
     const decode = jwt.verify(token, process.env.SECRET_KEY);
-    console.log(decode);
+    // console.log(decode);
     req.user = decode;
     // bring in info from DB
   } catch (error) {
-    return res.status(401).send("Invalid Token");
+    // return res.status(401).send("Invalid Token");
+    return res.redirect('/admin/login');
   }
   return next();
 };
 
-module.exports = isAuth;
+module.exports = isLoggedIn;
