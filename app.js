@@ -1,8 +1,13 @@
+require("dotenv").config();
+require("./config/database").connect();
+
+
 const express = require('express');
 const path = require('path');
-const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
+const cookieParser = require("cookie-parser");
+
 
 const ExpressError = require('./utils/ExpressError');
 const mongoSanitize = require('express-mongo-sanitize');
@@ -25,19 +30,11 @@ const pagesRoutes = require('./routes/pages');
 const uploadsRoutes = require('./routes/uploads');
 const staffsRoutes = require('./routes/staffs');
 const studentsRoutes = require('./routes/students');
-const adminsRoutes = require('./routes/admins');
+const usersRoutes = require('./routes/users');
 
 
 
 // app.use(morgan('tiny'));
-
-
-mongoose.connect('mongodb://127.0.0.1:27017/IPS');
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
-db.once("open", () => {
-    console.log("Database connected");
-});
 
 const app = express();
 
@@ -48,6 +45,8 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'))
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(cookieParser());
 app.use(methodOverride('_method'));
 app.use(mongoSanitize());
 
@@ -69,7 +68,7 @@ app.use('/home/centre', centreRoutes)
 // -----------------------------------------centre page routes ends------------------------------------
 
 //------------------------------------------- Admin / User routes starts----------------------------------------
-app.use('/admin', adminsRoutes)
+app.use('/admin', usersRoutes)
 //------------------------------------------- Admin / User routes ends----------------------------------------
 
 //------------------------------------------- Announcements routes starts----------------------------------------
@@ -136,9 +135,4 @@ app.use(async (err, req, res, next) => {
 })
 
 
-
-
-
-app.listen(3000, () => {
-    console.log("LISTENING ON PORT 3000") 
-})
+module.exports = app;

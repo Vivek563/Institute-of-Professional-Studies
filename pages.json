@@ -13,6 +13,6 @@
             "script": "js/home.js",
                             
         
-    "sliderImages": [ "img0.jpg","img1.JPG", "img1_5.jpg","img2.jpeg", "img3.jpeg", "img4.jpeg", "img5.JPG", "img7.jpg", "img8.jpeg" ]
+    "sliderImages": [ "img0.jpg","img1.JPG", "img1_5.jpg","img2.jpeg", "img4.jpeg", "img5.JPG", "img7.jpg", "img8.jpeg" ]
         }
 }
