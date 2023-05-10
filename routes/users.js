@@ -10,9 +10,7 @@ const authen = require('../controllers/admin/users');
 
 
 router.route('/')
-    .get( (req, res) => {
-    res.send("<h1>Hello from auth system - LCO</h1>");
-  });
+  .get( authen.renderLogin);
  
 router.route('/register')
     .get( authen.renderRegister)  
