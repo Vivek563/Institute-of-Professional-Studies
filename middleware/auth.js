@@ -1,29 +1,28 @@
 const jwt = require("jsonwebtoken");
+const User = require('../models/user');
 
-//model is optional
 
-const isLoggedIn = (req, res, next) => {
-  // console.log(req.cookies);
-  const token =
-    req.cookies.token ||
-    req.body.token ;
-    // req.header("Authorization").replace("Bearer ", "");
-
+const isLoggedIn = async (req, res, next) => {
+  
+  const token = req.cookies.access_token ;
+    
   if (!token) {
     // return res.status(403).send("token is missing");
-    return res.redirect('/admin/login');
+    return res.status(403).redirect('/admin/login');
   }
 
   try {
-    const decode = jwt.verify(token, process.env.SECRET_KEY);
-    // console.log(decode);
-    req.user = decode;
+    const {userID} = jwt.verify(token, process.env.SECRET_KEY);
+    
+    
+    req.user = await User.findById(userID).select('-password');
+ 
+    next();
     // bring in info from DB
   } catch (error) {
     // return res.status(401).send("Invalid Token");
-    return res.redirect('/admin/login');
+    return res.status(401).redirect('/admin/login');
   }
-  return next();
 };
 
 module.exports = isLoggedIn;

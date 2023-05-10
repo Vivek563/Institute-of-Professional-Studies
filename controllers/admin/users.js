@@ -13,7 +13,7 @@ module.exports.register = async (req, res) => {
 
     if (!(email && password && firstname && lastname)) {
         // res.status(400).send("All fields are required");
-        res.redirect('/admin/register');
+        res.status(400).redirect('/admin/register');
     }
 
     const existingUser = await User.findOne({ email }); // PROMISE
@@ -33,7 +33,7 @@ module.exports.register = async (req, res) => {
 
     //token
     const token = jwt.sign(
-        { user_id: user._id, email },
+        { userID: user._id, email },
         process.env.SECRET_KEY,
         {
         expiresIn: "2h",
@@ -62,7 +62,7 @@ module.exports.login = async (req, res) => {
   
       if (!(email && password)) {
         // res.status(400).send("Field is missing");
-        return res.redirect('/admin/login');
+        return res.status(400).redirect('/admin/login');
 
       }
   
@@ -71,10 +71,9 @@ module.exports.login = async (req, res) => {
       // if(!user){
       //   res.status(400).send("You are not registered in our router")
       // }
-  
       if (user && (bcrypt.compare(password, user.password))) {
         const token = jwt.sign(
-          { user_id: user._id, email },
+          { userID: user._id, email },
           process.env.SECRET_KEY,
           {
             expiresIn: "2h",
@@ -90,19 +89,16 @@ module.exports.login = async (req, res) => {
           httpOnly: true,
         };
   
-        res.render('dashboard');
+        return res.cookie("access_token", token, options).render('dashboard');
       }
   
       // res.status(400).send("email or password is incorrect");
-      return res.redirect('/admin/login');;
+      return res.status(400).redirect('/admin/login');;
     } catch (err) {
       return next(err);
     }
 };
 
 module.exports.logout = (req, res, next) => {
-    req.logout(err => {
-        if(err) return next(err);
-        res.redirect('/admin/login');
-    });
+    res.clearCookie('access_token').status(200).redirect('/admin/login');
 };

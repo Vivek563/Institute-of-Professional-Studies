@@ -77,43 +77,43 @@ app.use('/admin/announcements', isLoggedIn, announcementsRoutes)
 //------------------------------------------- Announcements routes ends----------------------------------------
 
 //------------------------------------------- Courses routes starts----------------------------------------
-app.use('/admin/courses', coursesRoutes)
+app.use('/admin/courses', isLoggedIn, coursesRoutes)
 //------------------------------------------- Courses routes ends----------------------------------------
 
 //------------------------------------------- Events routes starts----------------------------------------
-app.use('/admin/events', eventsRoutes)
+app.use('/admin/events', isLoggedIn, eventsRoutes)
 //------------------------------------------- Events routes ends----------------------------------------
 
 //------------------------------------------- Faculties routes starts----------------------------------------
-app.use('/admin/faculties', facultiesRoutes)
+app.use('/admin/faculties', isLoggedIn, facultiesRoutes)
 //------------------------------------------- Faculties routes ends----------------------------------------
 
 //------------------------------------------- NavbarItems routes starts----------------------------------------
-app.use('/admin/navbarItems', navbarItemsRoutes)
+app.use('/admin/navbarItems', isLoggedIn, navbarItemsRoutes)
 //------------------------------------------- NavbarItems routes ends----------------------------------------
 
 //------------------------------------------- News routes starts----------------------------------------
-app.use('/admin/news', newsRoutes)
+app.use('/admin/news', isLoggedIn, newsRoutes)
 //------------------------------------------- News routes ends----------------------------------------
 
 //------------------------------------------- Events routes starts----------------------------------------
-app.use('/admin/notifications', notificationsRoutes)
+app.use('/admin/notifications', isLoggedIn, notificationsRoutes)
 //------------------------------------------- Events routes ends----------------------------------------
 
 //------------------------------------------- Pages routes starts----------------------------------------
-app.use('/admin/pages', pagesRoutes)
+app.use('/admin/pages',isLoggedIn, pagesRoutes)
 //------------------------------------------- Pages routes ends----------------------------------------
 
 //------------------------------------------- Students routes starts----------------------------------------
-app.use('/admin/staffs', staffsRoutes)
+app.use('/admin/staffs', isLoggedIn, staffsRoutes)
 //------------------------------------------- Students routes ends----------------------------------------
 
 //------------------------------------------- Students routes starts----------------------------------------
-app.use('/admin/students', studentsRoutes)
+app.use('/admin/students', isLoggedIn, studentsRoutes)
 //------------------------------------------- Students routes ends----------------------------------------
 
 //------------------------------------------- Faculties routes starts----------------------------------------
-app.use('/admin/uploads', uploadsRoutes)
+app.use('/admin/uploads', isLoggedIn, uploadsRoutes)
 //------------------------------------------- Faculties routes ends----------------------------------------
 
 

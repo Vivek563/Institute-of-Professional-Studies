@@ -88,19 +88,15 @@
   
     </div> 
 
-    <% if(!(typeof(page.centreCode) === 'undefined')) {%>
+    
 
-      <script  type="text/javascript" src="/js/navbar.js"></script>
 
       <% if(page.centreCode === 'home') {%>
-        <script  type="text/javascript" src="/js/home.js"></script>
-        <script  type="text/javascript" src="/js/heroSection.js"></script>
-        <script  type="text/javascript" src="/js/newsSection.js"></script>
-        <script  type="text/javascript" src="/js/counterSection.js"></script>
+        <script  type="text/javascript" src="/js/web.js"></script>
       <% } %>
       <% if(page.centreCode === 'cce' || page.centreCode === 'cfdt' || page.centreCode === 'cft' || page.centreCode === 'cms') {%>
         <script  type="text/javascript" src="/js/centre.js"></script>
       <% } %>
-    <% } %>
+   
 
 
