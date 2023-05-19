@@ -5,16 +5,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const pageSchema = new mongoose.Schema({
-    name: String,
     title: String,
-    icon: String,
     favicon: String,
-    path: String,
     centreCode: String,
     shortDescription: String,
     about: String,
-    style: String,
-    script: String,
     navbarItems:[
         {
             type: Schema.Types.ObjectId,

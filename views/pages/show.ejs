@@ -4,7 +4,10 @@
             <div class="card mb-3">
                 <div class="card-body">
                 <h2 class="card-title"><%= page.title %></h2>
-                <p class="card-text"><b>DESCRIPTION : </b><%- page.shortDescription %></p>
+                <p class="card-text"><b>Code : </b><%= page.centreCode %></p>
+                <p class="card-text"><b>Favicon : </b> <img src="/assets/<%=  page.favicon %>" alt="Favicon_Img" ></p>
+                <p class="card-text"><b>Description : </b><%- page.shortDescription %></p>
+                <p class="card-text"><b>About : </b><%- page.about %></p>
                 </div>
                 <div class="card-body">
                     <a class="card-link btn btn-info" href="/admin/pages/<%=page._id%>/edit">Edit</a>             

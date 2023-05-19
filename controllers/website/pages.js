@@ -1,7 +1,7 @@
 const Pages = require('../../models/page');
-const Events = require('../../models/Event');
+const Events = require('../../models/event');
 const Announcements = require('../../models/announcement');
-const News = require('../../models/News');
+const News = require('../../models/news');
 const NavbarItems = require('../../models/navbarItem');
 const Notifications = require('../../models/notification');
 const Faculties = require('../../models/faculty');
@@ -30,11 +30,9 @@ module.exports.index = async (req, res) => {
 
 module.exports.template = async (req, res) => {
     const {template} = req.params;
-    const page = await Pages.findOne({centreCode : 'home'});
+    const page = await Pages.findOne({centreCode : `${template}`});
     const navbarItems = await NavbarItems.find({});
-    const jsonExtra =  JsonExtra[`${template}`];
-    // console.log(jsonExtra)
-     res.render(`template/${template}`, {page, navbarItems, ...jsonExtra})
+     res.render(`template/${template}`, {page, navbarItems})
 };
 
 module.exports.renderCentre = async (req, res) =>{

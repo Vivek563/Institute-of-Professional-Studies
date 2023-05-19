@@ -66,7 +66,10 @@ module.exports.notificationSchema = Joi.object({
 module.exports.pageSchema = Joi.object({
     page: Joi.object({
         title: Joi.string().required(), 
-        shortDescription: Joi.string().required()
+        centreCode: Joi.string().required(), 
+        favicon: Joi.string().required(), 
+        shortDescription: Joi.string().required(),
+        about: Joi.string().required()
     }).required()
 });
 

@@ -1,4 +1,4 @@
-const News = require('../../models/News');
+const News = require('../../models/news');
 
 module.exports.index = async (req, res) => {
     const news = await News.find({}).limit(6).sort({updatedAt: 'desc'})

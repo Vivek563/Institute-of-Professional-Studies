@@ -13,8 +13,29 @@
                      </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="page">Short Description</label>
-                    <textarea class="form-control" type="text" id="page" name="page[shortDescription]" required><%-page.description%></textarea>
+                    <label class="form-label" for="centreCode">Code</label>
+                    <input class="form-control" type="text" id="centreCode" name="page[centreCode]" value="<%=page.centreCode %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="favicon">Favicon Image Name (in assets dir only)</label>
+                    <input class="form-control" type="text" id="favicon" name="page[favicon]" value="<%=page.favicon %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="shortDescription">Short Description (allowed tags: h's, p, br)</label>
+                    <input class="form-control" type="text" id="shortDescription" name="page[shortDescription]" value="<%=page.shortDescription %>" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="about">About (allowed tags: h's, p, br)</label>
+                    <input class="form-control" type="text" id="about" name="page[about]" value="<%=page.about %>" required>
                     <div class="valid-feedback">
                         Looks good!
                      </div>

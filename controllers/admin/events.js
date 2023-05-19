@@ -1,4 +1,4 @@
-const Events = require('../../models/Event');
+const Events = require('../../models/event');
 
 module.exports.index = async (req, res) => {
     const events = await Events.find({}).limit(10).sort({updatedAt: 'desc'})
