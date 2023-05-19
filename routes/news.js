@@ -4,7 +4,7 @@ const news = require('../controllers/admin/news');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateNews} = require('../middleware');
+const {validateNews} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(news.index))

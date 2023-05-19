@@ -4,7 +4,7 @@ const navbarItems = require('../controllers/admin/navbarItems');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateNavbarItem} = require('../middleware');
+const {validateNavbarItem} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(navbarItems.index))

@@ -11,7 +11,7 @@ const {
         staffSchema
     } = require('./schemas');
 
-const ExpressError = require('./utils/ExpressError');
+const ExpressError = require('../utils/ExpressError');
 
 module.exports.validateAnnouncement = (req, res, next) => {
     const { error } = announcementSchema.validate(req.body);

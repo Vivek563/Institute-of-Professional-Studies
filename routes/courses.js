@@ -4,7 +4,7 @@ const courses = require('../controllers/admin/courses');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateCourse} = require('../middleware');
+const {validateCourse} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(courses.index))

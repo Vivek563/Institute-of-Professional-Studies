@@ -4,7 +4,7 @@ const announcements = require('../controllers/admin/announcements');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateAnnouncement} = require('../middleware');
+const {validateAnnouncement} = require('../middleware/middle');
 
 
 router.route('/')

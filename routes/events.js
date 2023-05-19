@@ -4,7 +4,7 @@ const events = require('../controllers/admin/events');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateEvent} = require('../middleware');
+const {validateEvent} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(events.index))

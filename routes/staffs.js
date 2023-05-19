@@ -4,7 +4,7 @@ const staffs = require('../controllers/admin/staffs');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateStaff} = require('../middleware');
+const {validateStaff} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(staffs.index))

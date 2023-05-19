@@ -4,7 +4,7 @@ const students = require('../controllers/admin/students');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateStudent} = require('../middleware');
+const {validateStudent} = require('../middleware/middle');
 
 
 router.route('/')

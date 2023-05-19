@@ -4,7 +4,7 @@ const faculties = require('../controllers/admin/faculties')
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateFaculty} = require('../middleware');
+const {validateFaculty} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(faculties.index))

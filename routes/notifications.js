@@ -4,7 +4,7 @@ const notifications = require('../controllers/admin/notifications');
 
 const catchAsync = require('../utils/catchAsync');
 
-const {validateNotification} = require('../middleware');
+const {validateNotification} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(notifications.index))

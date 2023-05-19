@@ -3,7 +3,7 @@ const router = express.Router();
 const pages = require('../controllers/admin/pages');
 const catchAsync = require('../utils/catchAsync');
 
-const {validatePage} = require('../middleware');
+const {validatePage} = require('../middleware/middle');
 
 router.route('/')
     .get(catchAsync(pages.index))
