@@ -3,6 +3,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 
 
+:root {
+  --fore-color: #2e3440;
+  --secondary-fore-color: #3b4252;
+  --back-color: #eceff4;
+  --secondary-back-color: #e5e9f0;
+  --border-color: #d8dee9;
+  --secondary-border-color: #e5e9f0;
+  --universal-margin: 0.5rem;
+  --universal-padding: 0.5rem;
+  --universal-border-radius: 0.25rem;
+  --accent-color: #5e81ac;
+  --button-fore-color: #2e3440;
+  --button-border-color: transparent;
+  --button-hover-border-color: transparent;
+  --modal-overlay-color: rgba(0, 0, 0, 0.45);
+  --modal-close-color: #A2D5F2;
+  --modal-close-hover-color: #e5e9f0;
+  --modal-back-color: #fff;
+  --color-primary: #07689F;
+  --color-navigation: #333;
+  --color-container: #FFFFFF;
+  --color-text-white: #fff;
+  --color-text-black: #000;
+  --color-headings: #000;
+  --color-body: #F5F5F7;
+  --color-body-darker:  #979797;
+  --color-border: #ccc;
+}
+
+
+
 *{
   padding: 0;
   margin: 0;
@@ -381,34 +412,6 @@ dialog #dialogActions {
   border: 0.0625rem solid #A2D5F2;
 }
 
-:root {
-  --fore-color: #2e3440;
-  --secondary-fore-color: #3b4252;
-  --back-color: #eceff4;
-  --secondary-back-color: #e5e9f0;
-  --border-color: #d8dee9;
-  --secondary-border-color: #e5e9f0;
-  --universal-margin: 0.5rem;
-  --universal-padding: 0.5rem;
-  --universal-border-radius: 0.25rem;
-  --accent-color: #5e81ac;
-  --button-fore-color: #2e3440;
-  --button-border-color: transparent;
-  --button-hover-border-color: transparent;
-  --modal-overlay-color: rgba(0, 0, 0, 0.45);
-  --modal-close-color: #A2D5F2;
-  --modal-close-hover-color: #e5e9f0;
-  --modal-back-color: #fff;
-  --color-primary: #07689F;
-  --color-navigation: #333;
-  --color-container: #FFFFFF;
-  --color-text-white: #fff;
-  --color-text-black: #000;
-  --color-headings: #000;
-  --color-body: #F5F5F7;
-  --color-body-darker:  #979797;
-  --color-border: #ccc;
-}
 
 
 /*................message form director..............*/

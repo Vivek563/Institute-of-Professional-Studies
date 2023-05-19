@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const pageSchema = new mongoose.Schema({
+    name: String,
     title: String,
     favicon: String,
     centreCode: String,
