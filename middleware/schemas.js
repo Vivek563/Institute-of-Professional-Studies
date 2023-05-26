@@ -1,9 +1,32 @@
-const Joi = require('joi');
+const BaseJoi = require('joi');
+const sanitizeHtml = require('sanitize-html');
+
+const extension = (joi) => ({
+    type: 'string',
+    base: joi.string(),
+    messages: {
+        'string.escapeHTML': '{{#label}} must not include other HTML!'
+    },
+    rules: {
+        escapeHTML:{
+            validate(value, helpers) {
+                const clean = sanitizeHtml(value, {
+                    allowedTags: ['p','h1','h2','h3','h4','h5','h6','ul','li','br','&amp'],
+                    allowedAttributes: {},
+                });
+                if(clean !== value) return helpers.error('string.escapeHTML', { value })
+                return clean;
+            }
+        }
+    }
+});
+
+const Joi = BaseJoi.extend(extension);
 
 module.exports.announcementSchema = Joi.object({
     announcement: Joi.object({
         title: Joi.string().required(),
-        description: Joi.string().min(0) ,
+        description: Joi.string().min(0),
         pdfUrl: Joi.string().required()
         
     }).required()
@@ -69,8 +92,8 @@ module.exports.pageSchema = Joi.object({
         title: Joi.string().required(), 
         centreCode: Joi.string().required(), 
         favicon: Joi.string().required(), 
-        shortDescription: Joi.string().required(),
-        about: Joi.string().required()
+        shortDescription: Joi.string().required().escapeHTML(),
+        about: Joi.string().required().escapeHTML()
     }).required()
 });
 

@@ -6,6 +6,13 @@
         <div class="col-6 offset-3"> 
             <form action="/admin/pages" method="POST" novalidate class="validated-form">
                 <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="page[name]" required>
+                    <div class="valid-feedback">
+                       Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
                     <label class="form-label" for="title">Title</label>
                     <input class="form-control" type="text" id="title" name="page[title]" required>
                     <div class="valid-feedback">
