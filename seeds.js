@@ -291,8 +291,8 @@ const seedNavbarItems =[
         "item":  "Student",
         "serialNo": "4",
         "link": "#",   
-        "subItems": ["Syllabus","Library"],
-        "subLinks": ["/home/student","/home/Library"]
+        "subItems": ["Syllabus","Library","Admit Card"],
+        "subLinks": ["/home/student","/home/Library", "https://www.allduniv.ac.in/student/admit-cards"]
     },
     {
         "item":  "Gallery",
