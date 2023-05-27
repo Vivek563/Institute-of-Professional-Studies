@@ -57,6 +57,121 @@ Announcements.insertMany(seedAnnouncements)
         console.log(err)
     })
 
+const seedCourses =  [{
+    name: "M. Sc. Food Technology",
+    courseCode: "ms01",
+    centreCode: "cft",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 24
+  },{
+    name: "M. Sc. Nutritional Sciences",
+    courseCode: "ms02",
+    centreCode: "cft",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 24
+  },{
+    name: "B.Voc in Food Technology (5-Year integrated programme)",
+    courseCode: "bv01",
+    centreCode: "cft",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 36
+  },{
+    name: "Master of Computer Applications (MCA)",
+    courseCode: "mca01",
+    centreCode: "cce",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 24
+  },{
+    name: "Bachelor of Computer Applications (BCA)",
+    courseCode: "bca01",
+    centreCode: "cce",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 36
+  },{
+    name: "Post Graduate Diploma in Computer Applications(PGDCA)",
+    courseCode: "pgdca01",
+    centreCode: "cce",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 12
+  },{
+    name: "Five Year Integrated BCA+MCA (Data Science)",
+    courseCode: "ds01",
+    centreCode: "cce",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 60
+  },{
+    name: "B. A. in Media Studies",
+    courseCode: "ba01",
+    centreCode: "cms",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 36
+  },{
+    name: "B.Voc in Media Studies",
+    courseCode: "bvms01",
+    centreCode: "cms",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 36
+  },{
+    name: "M. voc in Media Studies",
+    courseCode: "mvms01",
+    centreCode: "cms",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 24
+  },{
+    name: "B. A. in Fashion Design & Technology",
+    courseCode: "bafdt01",
+    centreCode: "cfdt",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 36
+  },{
+    name: "B.Voc in Fashion Design & Technology",
+    courseCode: "bvfdt01",
+    centreCode: "cfdt",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 36
+  },{
+    name: "M.Voc in Fashion Design & Technology",
+    courseCode: "mvfdt01",
+    centreCode: "cfdt",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 24
+  },{
+    name: "Two year Advanced Diploma in Fashion Design",
+    courseCode: "adfd01",
+    centreCode: "cfdt",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 12
+  },{
+    name: "Two year Computer Aided Fashion Design",
+    courseCode: "cafd",
+    centreCode: "cfdt",
+    pdfUrl: "pdf-1683245945479.pdf",
+    description: "a",
+    duration: 24
+  }]   
+
+Courses.insertMany(seedCourses)  
+                                 
+    .then(res => {
+    })
+    .catch(err => {
+        console.log(err)
+    })
+
 const seedEvents =[
     {
         title: 'workshop',

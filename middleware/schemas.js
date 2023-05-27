@@ -34,7 +34,7 @@ module.exports.announcementSchema = Joi.object({
 module.exports.courseSchema = Joi.object({
     course: Joi.object({
         name: Joi.string().required(),
-        code: Joi.string().required(),
+        courseCode: Joi.string().required(),
         centreCode: Joi.string().required(),
         pdfUrl: Joi.string().required(),
         duration: Joi.number().required().min(1),

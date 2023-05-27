@@ -48,14 +48,8 @@ function dialogFiller(c){
     let pdfUrl = '';
 
     if(c_object.pdfUrl){
-      pdfUrl = `<embed
-      src='/uploads/documents/${c_object.pdfUrl}'
-      type='application/pdf'
-      frameBorder='0'
-      scrolling='auto'
-      height='100%'
-      width='100%'
-      ></embed>`
+      pdfUrl = `<a href='/uploads/documents/${c_object.pdfUrl}' target='_blank'>Full View</a>`
+      
     }
      let title = `<h2>${c_object.title}</h2>`;
      let description = `<p>${c_object.description}</p>`;

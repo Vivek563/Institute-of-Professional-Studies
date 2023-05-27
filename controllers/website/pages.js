@@ -1,6 +1,7 @@
 const Pages = require('../../models/page');
 const Events = require('../../models/event');
 const Announcements = require('../../models/announcement');
+const Courses = require('../../models/course');
 const News = require('../../models/news');
 const NavbarItems = require('../../models/navbarItem');
 const Notifications = require('../../models/notification');
@@ -32,14 +33,16 @@ module.exports.template = async (req, res) => {
     const {template} = req.params;
     const page = await Pages.findOne({centreCode : `${template}`});
     const navbarItems = await NavbarItems.find({});
-     res.render(`template/${template}`, {page, navbarItems})
+    const courses = await Courses.find({});
+     res.render(`template/${template}`, {page, navbarItems, courses})
 };
 
 module.exports.renderCentre = async (req, res) =>{
     const {centre} = req.params;
 
     const navbarItems = await NavbarItems.find({});
-    
+    const courses = await Courses.findOne({centreCode : `${centre}`});
+
     const page = await Pages.findOne({centreCode : `${centre}`})
         .populate('notifications')
         .populate('faculties')
@@ -55,5 +58,5 @@ module.exports.renderCentre = async (req, res) =>{
     });
     page.notifications = notifications;
     
-    res.render('centre', {page, navbarItems})
+    res.render('centre', {page, navbarItems, courses})
 };
