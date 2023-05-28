@@ -8,8 +8,8 @@ const pages = require('../controllers/website/pages');
 const catchAsync = require('../utils/catchAsync');
 
 
-router.route('/:centre')
-    .get(catchAsync(pages.renderCentre));
+router.route('/:loadmore')
+    .get(catchAsync(pages.renderLoadmore));
 
 
 

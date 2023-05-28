@@ -21,6 +21,7 @@ const morgan = require('morgan');
 const firstPageRoutes = require('./routes/firstPageRoutes');
 const homeRoutes = require('./routes/homeRoutes');
 const centreRoutes = require('./routes/centreRoutes');
+const loadmoreRoutes = require('./routes/loadmoreRoutes');
 
 const announcementsRoutes = require('./routes/announcements');
 const coursesRoutes = require('./routes/courses');
@@ -70,6 +71,10 @@ app.use('/home', homeRoutes)
 // -----------------------------------------cetre page routes starts----------------------------------
 app.use('/home/centre', centreRoutes)
 // -----------------------------------------centre page routes ends------------------------------------
+
+// -----------------------------------------Loadmore page routes starts----------------------------------
+app.use('/home/loadmore', loadmoreRoutes)
+// -----------------------------------------Loadmore page routes ends------------------------------------
 
 //------------------------------------------- Admin / User routes starts----------------------------------------
 app.use('/admin', usersRoutes)

@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+<br><br><br><br><br><br>
+<h1>
+    <% if(fullList[0].centreCode === "cce") { %>
+        Centre of Computer Education
+    <% } else if (fullList[0].centreCode === "cft") {%>
+        Centre of Food Technology
+    <% } else if (fullList[0].centreCode === "cfdt") { %>
+        Centre of Fashion & Design Technology
+    <% } else if (fullList[0].centreCode === "cms") { %>
+        Centre of Media Studies
+    <% } %>
+</h1>
+<br>
+<h1><%= pageHeading %></h1>
+<br>
+
+<% for(el of fullList) { %>
+
+    <% if(el.title) {%>
+        <h3><%= el.title  %></h3>
+    <% } %>
+    <% if(el.description) { %>
+        <p><%= el.description %></p>
+    <% } %>
+    <% if(el.pdfUrl) { %>
+        <a href="/uploads/documents/<%= el.pdfUrl %>" target="_blank">Full View</a>
+    <% } %>
+
+<br><br>
+<% } %>
+
+
+<%- include('partials/footer') %>
+
+
+</body>
+
+</html>

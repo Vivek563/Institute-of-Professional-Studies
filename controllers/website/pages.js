@@ -60,3 +60,39 @@ module.exports.renderCentre = async (req, res) =>{
     
     res.render('centre', {page, navbarItems, courses})
 };
+
+
+module.exports.renderLoadmore = async (req, res) =>{
+    const {loadmore} = req.params;
+
+    const page = await Pages.findOne({centreCode : "loadmore" });
+
+    const navbarItems = await NavbarItems.find({});
+
+    let pageHeading = ""
+    let fullList = []
+
+    if(loadmore === "announcements")
+    {
+        pageHeading = "All Announcements"
+        fullList = await Announcements.find({}).sort({updatedAt: 'desc'});
+    }
+    else if(loadmore === "events")
+    {
+        pageHeading = "All Events"
+        fullList = await Events.find({}).sort({updatedAt: 'desc'});
+    }
+    else if(loadmore === "cce" || loadmore === "cft" ||loadmore === "cfdt" || loadmore === "cms" )
+    {
+        pageHeading = "All Notifications"
+        fullList = await Notifications.find({centreCode : `${loadmore}`}).sort({updatedAt: 'desc'});
+    }
+    else
+    {
+        pageHeading= "All News"
+        fullList = await News.find({}).sort({updatedAt: 'desc'});
+    }
+    
+
+    res.render('loadmore', {page, navbarItems, fullList, pageHeading})
+};

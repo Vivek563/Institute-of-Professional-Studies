@@ -48,7 +48,7 @@
           <div class="about-container">
               <h3>Notice</h3> 
 
-          </div>
+          
           <div class="notice-section">
               <ul class="notice-ul">
                 <% for(c of page.notifications) {%>
@@ -56,8 +56,11 @@
                   <%= c.title  %>
                 </li>
                 <% } %>
-              </ul>   
-          </div>
+              </ul>  
+           </div>
+           <a href="/home/loadmore/<%= page.centreCode %>" target="_blank" rel="noopener noreferrer">Load more</a>
+         </div>
+          
 <!--------------------------------- reusable  Dialog starts --------------------------------------------->
           <dialog id="reusableDialog">
             <form method="dialog">
@@ -70,7 +73,7 @@
               </div>
             </form>
           </dialog>
- <!--------------------------------- reusable  Dialog ends --------------------------------------------->         
+ <!--------------------------------- reusable  Dialog ends --------------------------------------------->    
       </section>
 
   <section id="syllabus" class="auto-height  about-section white-background bordered">
