@@ -53,7 +53,26 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method'));
 app.use(mongoSanitize());
-app.use(helmet({contentSecurityPolicy: false}));
+app.use(helmet());
+
+const scriptSrcUrls = ["https://cdnjs.cloudflare.com/","https://cdn.jsdelivr.net", "https://fonts.googleapis.com"];
+const styleSrcUrls = ["https://cdnjs.cloudflare.com/","https://cdn.jsdelivr.net" ,"https://fonts.googleapis.com","https://rsms.me/inter/inter-ui.css"];
+const fontSrcUrls = ["https://fonts.googleapis.com","https://cdnjs.cloudflare.com/","https://fonts.gstatic.com/", "https://rsms.me/inter/font-files/"];
+
+app.use(helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: [],
+      connectSrc: ["'self'"],
+      scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
+      styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
+      workerSrc: ["'self'", "blob:"],
+      objectSrc: ["'self'","'unsafe-inline'"],
+      "frame-src": "'self'",
+      imgSrc: ["'self'", "blob:", "data:"],
+      fontSrc: [ ...fontSrcUrls],
+      "script-src-attr":["'unsafe-inline'"]
+    }
+}))
 
 const Pages = require('./models/page');
 const NavbarItems = require('./models/navbarItem');
