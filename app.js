@@ -10,7 +10,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
 const cookieParser = require("cookie-parser");
-
+const helmet = require('helmet');
 
 const ExpressError = require('./utils/ExpressError');
 const mongoSanitize = require('express-mongo-sanitize');
@@ -53,7 +53,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method'));
 app.use(mongoSanitize());
-
+app.use(helmet({contentSecurityPolicy: false}));
 
 const Pages = require('./models/page');
 const NavbarItems = require('./models/navbarItem');

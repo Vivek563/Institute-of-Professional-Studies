@@ -418,6 +418,14 @@ Notifications.insertMany(seedNotifications)
     
 const seedPages =[
     {
+        name: "Full List",
+        title: "Full List - IPS",
+        favicon: "favicon.ico",
+        centreCode: "loadmore",
+        shortDescription: "This is a short description.",
+        about: "this is detailed section."
+    },
+    {
         name: "Institute of Professional Studies",
         title: "IPS - University of Allahabad",
         favicon: "favicon.ico",
