@@ -47,12 +47,15 @@
           <div class="notice-section">
               <ul class="notice-ul">
                 <% for(c of page.notifications) {%>
-                <li class="li-notice primary dialogTrigger" onclick="dialogFiller(`<%= JSON.stringify(c) %>`)">
-                  <%= c.title  %>
-                </li>
+                  <% if(n_limit > 0) { %>
+                    <li class="li-notice primary dialogTrigger" onclick="dialogFiller(`<%= JSON.stringify(c) %>`)">
+                      <%= c.title  %>
+                    </li>
+                    <% n_limit = n_limit - 1} %>
                 <% } %>
               </ul>  
            </div>
+           <br><br><br><br>
            <a href="/home/loadmore/<%= page.centreCode %>" target="_blank" rel="noopener noreferrer">Load more</a>
          </div>
           
@@ -121,6 +124,7 @@
           <div class="center-container">
           <div class="profile-container white-background">
             <% for(faculty of page.faculties) {%>
+              <% if(f_limit > 0) { %>
               <div class="card">
                   <img src="/uploads/images/<%= faculty.photo %>" alt="image" style="width:100%">
                   <div class="profile-detail">
@@ -135,6 +139,7 @@
                       <% } %>
                   </div>
                 </div>
+                <% f_limit = f_limit - 1} %>
               <% } %>
                 <div class="card center-text">
                       <a  class="text-btn" href="/home/loadmore/faculty-<%= page.centreCode %>" target="_blank" rel="noopener noreferrer">View More</a>

@@ -58,7 +58,7 @@ module.exports.renderCentre = async (req, res) =>{
     });
     page.notifications = notifications;
     
-    res.render('centre', {page, navbarItems, courses})
+    res.render('centre', {page, navbarItems, courses, n_limit: 8 , f_limit : 4})
 };
 
 
