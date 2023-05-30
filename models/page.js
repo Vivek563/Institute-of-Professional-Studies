@@ -7,6 +7,7 @@ const Schema = mongoose.Schema;
 const pageSchema = new mongoose.Schema({
     name: String,
     title: String,
+    meta: String,
     favicon: String,
     centreCode: String,
     shortDescription: String,

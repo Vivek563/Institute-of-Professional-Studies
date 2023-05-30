@@ -90,6 +90,7 @@ module.exports.pageSchema = Joi.object({
     page: Joi.object({
         name: Joi.string().required(),
         title: Joi.string().required(), 
+        meta: Joi.string().required(), 
         centreCode: Joi.string().required(), 
         favicon: Joi.string().required(), 
         shortDescription: Joi.string().required().escapeHTML(),

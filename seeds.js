@@ -420,6 +420,7 @@ const seedPages =[
     {
         name: "Full List",
         title: "Full List - IPS",
+        meta: "Full List - IPS",
         favicon: "favicon.ico",
         centreCode: "loadmore",
         shortDescription: "This is a short description.",
@@ -428,6 +429,7 @@ const seedPages =[
     {
         name: "Institute of Professional Studies",
         title: "IPS - University of Allahabad",
+        meta: "IPS - University of Allahabad",
         favicon: "favicon.ico",
         centreCode: "home",
         shortDescription: "This is a short description.",
@@ -436,6 +438,7 @@ const seedPages =[
     {
         name: "Library",
         title: "IPS - Library",
+        meta: "IPS - Library",
         favicon: "favicon.ico",
         centreCode: "Library",
         shortDescription: "This is a short description.",
@@ -444,6 +447,7 @@ const seedPages =[
     {
         name: "Syllabus",
         title: "Syllabus - IPS",
+        meta: "Syllabus - IPS",
         favicon: "favicon.ico",
         centreCode: "student",
         shortDescription: "This is a short description.",
@@ -452,6 +456,7 @@ const seedPages =[
     {
         name: "About - University of Allahabad",
         title: "About - UoA",
+        meta: "About - UoA",
         favicon: "favicon.ico",
         centreCode: "aboutUoA",
         shortDescription: "This is a short description.",
@@ -460,6 +465,7 @@ const seedPages =[
     {
         name: "About - Institute of Professional Studies",
         title: "About - IPS",
+        meta: "About - IPS",
         favicon: "favicon.ico",
         centreCode: "about",
         shortDescription: "This is a short description.",
@@ -468,6 +474,7 @@ const seedPages =[
     {
         name: "Gallery",
         title: "Gallery | IPS",
+        meta: "Gallery | IPS",
         favicon: "favicon.ico",
         centreCode: "gallery",
         shortDescription: "This is a short description.",
@@ -476,6 +483,7 @@ const seedPages =[
     {
         name: "Contact Us",
         title: "Contact Us | IPS",
+        meta: "Contact Us | IPS",
         favicon: "favicon.ico",
         centreCode: "contactus",
         shortDescription: "This is a short description.",
@@ -484,6 +492,7 @@ const seedPages =[
     {
         name: "Centre of Computer Education",
         title: "Computer Education - IPS",
+        meta: "Computer Education - IPS",
         favicon: "favicon.ico",
         centreCode: "cce",
         shortDescription: "<p>The Centre of Computer Education &amp; Training was established under Institute of Professional Studies, University of Allahabad in December 2000. Initially it offered to University students short-term courses on Computer Basics, Programming, Hardware &amp; Networking, Web Design and Computer-Aided Financial Management and training for DOEACC 'O' Level examination.</p><p>In 2006 the Centre was granted full accreditation by DOEACC Society (An autonomous body of Dept. of Information Technology, Ministry of Communication &amp; Information Technology, Govt. of India, New Delhi) for a period of 6 years to conduct DOEACC 'O' Level computer courses. Later in the year 2007 the centre also initiated Master of Computer Applications (MCA) and Bachelor of Computer Applications (BCA).</p>",
@@ -492,6 +501,7 @@ const seedPages =[
     {
         name: "Centre of Fashion & Design Technology",
         title: "Fashion & Design Technology - IPS",
+        meta: "Fashion & Design Technology - IPS",
         favicon: "favicon.ico",
         centreCode: "cfdt",
         shortDescription: "<p>Today fashion is seen everywhere. With rising income levels, growing 'Look Good, Feel Good' attitude and development in the retail sector the fashion world indeed holds a good prospect. It has almost become a fashion in the business to be in the business of fashion.</p><p>Fashion can be simple and yet so elegant. It was only in India where unstitched fabrics created fashion for men and women that has been termed as the most innovative invention in the world of fashion. The Indians mastered the art of draping fabrics around the body and taught the world how a few yards of fabric like a sari or a dhoti or a shawl can make a wonderful fashion statement.</p><p>has been worn by Indian women for as long as 5000 years - and has been the most popular style in the history of women's fashion. Fashion creators of our country our master spinners, weavers, knitters and dyers, were known the world over for their exquisite craftsmanship and skill. The blend of Indian and Western cultures have made sarees and salwar kameez an international fashion statement. Ritu Kumar , Ritu Beri, Hemant Trivedi have made their way in the fashion scenario of PARIS - The fashion capital of world.</p>",
@@ -500,6 +510,7 @@ const seedPages =[
     {
         name: "Centre of Food Technology",
         title: "Food Technology - IPS",
+        meta: "Food Technology - IPS",
         favicon: "favicon.ico",
         centreCode: "cft",
         shortDescription: "<p>Food and Nutrition Sciences are the sciences of the 21st century. The need is to have a multi-disciplinary focus on food. This was achieved by the creation of the Centre of Food Technology under the Institute of Professional Studies. Centre of Food Technology (CFT) has taken a holistic view of manpower planning in the food industry. The vision encompasses food science, food production, food processing, food technology, food safety, food management, entrepreneurship development, food processing and rural development; agriculture and industry linkage through food processing, quality assurance for safe food, research and development on functional foods.</p><p>Sound technical training in food industries and research institutes is also provided to the students so as to equip them with meticulous practical knowledge and build a competitive professional interface. We are proud to maintain a good placement record and strong collaboration with other premier food industries, research institutes, lth institutes, and hospitals of the country. It is the only centre of the university to offer the programs- B. Voc. (Bachelor of Vocation) in Food Processing and Technology, M.Sc. Food technology, M. Sc. Nutritional Sciences, D. Phil In Food Technology and Nutritional Sciences.</p>",
@@ -508,6 +519,7 @@ const seedPages =[
     {
         name: "Centre of Media Studies",
         title: "Media Studies - IPS",
+        meta: "Media Studies - IPS",
         favicon: "favicon.ico",
         centreCode: "cms",
         shortDescription: "<p>In 21st Century the media has a wide spectrum to cover e.g.newspaper , television, radio, mobile, and internet and so on and so forth. The Media Industry is going global, becoming digital and converging. In our country Media Industry is growing at the rate of 20 percent per annum. Entertainment and media, together, form the country's sixth biggest industry, with 3.5 million people working in it.</p><p>Within the next 4-5 years, the industry is expected to cross eighty thousand crores annually. Media organization is now looking to optimize its reach across platforms such as newspaper, T.V., IPTV, Radio, Internet and Mobile. As converging media (Cross Media) content involves more than one platform, so it has a high demand of multi-skilled media persons.</p><p>The Centre prepares students for employment in the media industry. The courses has been designed for the real world of contemporary media. Students will work with industry-standard equipment gaining skills in media production (print, broadcast and online), research, communication, reporting and media handling. We believe that a combination of writing and production skills either in print, television or radio; a broad understanding of the media and the ability to think critically are essential for people who are planning careers in the rapidly evolving media industry.</p>",

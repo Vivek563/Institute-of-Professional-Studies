@@ -427,7 +427,7 @@ dialog #dialogActions {
   color: #000000;
   align-items: center;
 }
-.webdesign .webdesign-left h4 {
+.webdesign .webdesign-left h3 {
   font-size: 2.5rem;
   color: #000000;
   padding-bottom: 30px;
@@ -459,7 +459,7 @@ dialog #dialogActions {
 }
 
 @media only screen and (max-width: 1134px) {
-  .webdesign .webdesign-left h4 {
+  .webdesign .webdesign-left h3 {
     font-size: 1.8rem;
   }
   .webdesign .webdesign-left p {
@@ -1201,10 +1201,12 @@ footer {
 
 .office a {
   text-decoration: none;
-  color: #a2d5f2;
+  color: #fafafa;
+
 }
 .office a:hover {
-  color: #fafafa;
+  color: #a2d5f2;
+
 }
 .num {
   font-size: 1rem;

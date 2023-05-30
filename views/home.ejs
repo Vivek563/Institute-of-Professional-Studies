@@ -22,13 +22,13 @@
     <div class="hero-right">
       <div class="slideshowContainer">
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <p class="prev" onclick="plusSlides(-1)">&#10094;</p>
           <div class="imageBackground">
             <% for(let image of sliderImages) { %>
               <div class="mySlides fade-in-image"><img src="/assets/<%= image %>" alt="image"></div>
             <% } %>
           </div>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <p class="next" onclick="plusSlides(1)">&#10095;</p>
       </div>
     </div>
   </section>
@@ -101,10 +101,10 @@
       </h2>
       <div class="webdesign">
         <div class="webdesign-left">
-          <h4 style="text-align: center;">
+          <h3 style="text-align: center;">
             Vice-Chancellor <br>
             Prof. Sangita Srivastava
-          </h4>
+          </h3>
           <p class="messagefromvc">"My first and warm greetings to the entire fraternity of the University of Allahabad. As I assume the
             responsibilities of the Vice Chancellor of this great institution, pride and hope fill my heart. As the
             fourth oldest university of the country, established in the year 1887, the University of Allahabad has
@@ -164,7 +164,7 @@
                     Centre of Computer Education
                   </div>
                   <div class="ag-courses-item_date-box">
-                    <img src="/assets/computer.png" height="80px" width="80px" />
+                    <img src="/assets/computer.png" height="80px" width="80px" alt="image" />
                   </div>
                 </a>
               </div>
@@ -176,7 +176,7 @@
                     Centre of Media Studies
                   </div>
                   <div class="ag-courses-item_date-box">
-                    <img src="/assets/media.png" height="80px" width="80px" />
+                    <img src="/assets/media.png" height="80px" width="80px" alt="image"/>
                   </div>
                 </a>
               </div>
@@ -188,7 +188,7 @@
                     Centre of Food Technology
                   </div>
                   <div class="ag-courses-item_date-box">
-                    <img src="/assets/food.png" height="80px" width="80px" />
+                    <img src="/assets/food.png" height="80px" width="80px" alt="image" />
                   </div>
                 </a>
               </div>
@@ -200,7 +200,7 @@
                     Centre of Fashion & Design Technology
                   </div>
                   <div class="ag-courses-item_date-box">
-                    <img src="/assets/fashion.png" height="80px" width="80px" />
+                    <img src="/assets/fashion.png" height="80px" width="80px" alt="image"/>
                   </div>
                 </a>
               </div>
@@ -214,7 +214,7 @@
       <div class="count">
         
           <div class="counter-container">
-            <img src="/assets/student.png" height="200px" width="200px">
+            <img src="/assets/student.png" height="200px" width="200px" alt="image">
             <i class="counter-student"></i>
             <div class="counter" data-target="<%= count[0].count %>" ></div>
             <span>
@@ -222,7 +222,7 @@
             </span>
           </div>
           <div class="counter-container">
-            <img src="/assets/faculty.png" height="200px" width="200px">
+            <img src="/assets/faculty.png" height="200px" width="200px" alt="image">
             <i class="counter-student"></i>
             <div class="counter" data-target="<%= count[1].count %>" ></div>
             <span>
@@ -230,7 +230,7 @@
             </span>
           </div>
           <div class="counter-container">
-            <img src="/assets/staff.png" height="200px" width="200px">
+            <img src="/assets/staff.png" height="200px" width="200px" alt="image">
             <i class="counter-student"></i>
             <div class="counter" data-target="<%= count[2].count %>" ></div>
             <span>
