@@ -48,8 +48,8 @@ let storage = multer.diskStorage({
 })
 	
 // Define the maximum size for uploading
-// picture i.e. 5MB. it is optional
-const maxSize = 5 * 1000 * 1000;
+// picture i.e. 1MB. it is optional
+const maxSize = 1 * 1000 * 1000;
 
 
 let upload = multer({
@@ -99,7 +99,7 @@ module.exports.createUpload =  (req, res, next) => {
 
 			// ERROR occurred (here it can be occurred due
 			// to uploading image of size greater than
-			// 5MB or uploading different file type)
+			// 1MB or uploading different file type)
 			next({message: err});
 			
 		}
