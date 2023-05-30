@@ -1999,3 +1999,34 @@ section .box {
 .list-item:hover .dropdown-content {
   display: block;
 }
+
+/* --------------------loadmore page------------------------------ */
+
+.flexiable{
+  display: flex;
+  flex-direction: row;
+}
+
+.facultyCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.facultyTitle {
+  color: grey;
+  font-size: 18px;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flexiable {
+    flex-direction: column;
+  }
+  .facultyCard{
+    margin-top: 50px;;
+  }
+}
+
+

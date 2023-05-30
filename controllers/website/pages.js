@@ -41,7 +41,7 @@ module.exports.renderCentre = async (req, res) =>{
     const {centre} = req.params;
 
     const navbarItems = await NavbarItems.find({});
-    const courses = await Courses.findOne({centreCode : `${centre}`});
+    const courses = await Courses.find({centreCode : `${centre}`});
 
     const page = await Pages.findOne({centreCode : `${centre}`})
         .populate('notifications')
@@ -63,7 +63,7 @@ module.exports.renderCentre = async (req, res) =>{
 
 
 module.exports.renderLoadmore = async (req, res) =>{
-    const {loadmore} = req.params;
+    let {loadmore} = req.params;
 
     const page = await Pages.findOne({centreCode : "loadmore" });
 
@@ -87,12 +87,17 @@ module.exports.renderLoadmore = async (req, res) =>{
         pageHeading = "All Notifications"
         fullList = await Notifications.find({centreCode : `${loadmore}`}).sort({updatedAt: 'desc'});
     }
+    else if(loadmore === "faculty-cce" || loadmore === "faculty-cft" ||loadmore === "faculty-cfdt" || loadmore === "faculty-cms" )
+    {
+        pageHeading = "All Faculties"
+        loadmore = loadmore.split("-").pop();
+        fullList = await Faculties.find({centreCode : `${loadmore}`}).sort({updatedAt: 'desc'});
+    }
     else
     {
         pageHeading= "All News"
         fullList = await News.find({}).sort({updatedAt: 'desc'});
     }
     
-
     res.render('loadmore', {page, navbarItems, fullList, pageHeading})
 };

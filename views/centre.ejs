@@ -122,22 +122,22 @@
           <div class="profile-container white-background">
             <% for(faculty of page.faculties) {%>
               <div class="card">
-                  <img src="/assets/director.jpg" alt="<%= faculty.name  %>" style="width:100%">
+                  <img src="/uploads/images/<%= faculty.photo %>" alt="image" style="width:100%">
                   <div class="profile-detail">
-                    
+  
                       <h4><%= faculty.name  %></h4>
                       <p class="title"><%= faculty.designation  %></p>
-                      <p>M.Sc.</p>
-                      <p>Ph.D.</p>
-                      <p class="subTitle">Niche area of research</p>
-                      <p><%- faculty.education  %></p>
+                      <p><%= faculty.education  %></p>
+                      <p><%= faculty.emailId  %></p>
+                      <% if(faculty.researchPaperCount) {%>
                       <p class="subTitle">Total no. of research papers</p>
                       <p><%= faculty.researchPaperCount  %></p>
+                      <% } %>
                   </div>
                 </div>
               <% } %>
                 <div class="card center-text">
-                      <p class="text-btn">View More</p>
+                      <a  class="text-btn" href="/home/loadmore/faculty-<%= page.centreCode %>" target="_blank" rel="noopener noreferrer">View More</a>
                 </div>
           </div>
           </div>

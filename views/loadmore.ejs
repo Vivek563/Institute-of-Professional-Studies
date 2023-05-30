@@ -27,9 +27,35 @@
     <% if(el.pdfUrl) { %>
         <a href="/uploads/documents/<%= el.pdfUrl %>" target="_blank">Full View</a>
     <% } %>
-
-<br><br>
 <% } %>
+    
+    <div class="flexiable">
+        <% for(el of fullList) { %>
+        <div class="facultyCard">
+            <% if(el.photo) {%>
+            <img src="/uploads/images/<%= el.photo %>" alt="image" style="width:100%">
+            <% } %>
+            <% if(el.name) { %>
+            <h3><%= el.name %></h3>
+            <% } %>
+            <% if(el.designation) {%>
+            <p class="facultyTitle"><%= el.designation %></p>
+            <% } %>
+            <% if(el.education) {%>
+            <p><%= el.education %></p>
+            <% } %>
+            <% if(!el.researchPaperCount) {%>
+            <% } else if(el.researchPaperCount) { %>
+            <p><%= el.researchPaperCount %></p>
+            <% } %>
+            <% if(el.emailId) {%>    
+            <p><%= el.emailId %></p>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+<br><br>
+
 
 
 <%- include('partials/footer') %>

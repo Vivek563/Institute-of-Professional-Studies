@@ -225,7 +225,7 @@ const seedFaculties =[
         education: 'this is education of faculty 2',
         researchPaperCount: 2,
         photo: 'img-1683245811549.jpg',
-        centreCode: 'cms'    
+        centreCode: 'cce'    
     },
     {
         name: 'Dummy Faculty name 3',
@@ -234,7 +234,7 @@ const seedFaculties =[
         education: 'this is education of faculty 3',
         researchPaperCount: 2,
         photo: 'img-1683245811549.jpg',
-        centreCode: 'cms'    
+        centreCode: 'cft'    
     },
     {
         name: 'Dummy Faculty name 4',
@@ -243,7 +243,7 @@ const seedFaculties =[
         education: 'this is education of faculty 4',
         researchPaperCount: 2,
         photo: 'img-1683245811549.jpg',
-        centreCode: 'cms'    
+        centreCode: 'cfdt'    
     },
     {
         name: 'Dummy Faculty name 5',
