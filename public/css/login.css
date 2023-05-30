@@ -1,15 +1,5 @@
 /*.....................Login page......................*/
 
-@import url('https://rsms.me/inter/inter-ui.css');
-::selection {
-  background: #2D2F36;
-}
-::-webkit-selection {
-  background: #2D2F36;
-}
-::-moz-selection {
-  background: #2D2F36;
-}
 body {
   background: white;
   font-family: 'Inter UI', sans-serif;
@@ -17,7 +7,7 @@ body {
   padding: 20px;
 }
 .page {
-  background: #cd37b4;
+  background: #07689f;;
   display: flex;
   flex-direction: column;
   height: calc(100% - 40px);
@@ -64,12 +54,6 @@ body {
   font-size: 30px;
   font-weight: 900;
   margin: 50px 40px 40px;
-}
-.eula {
-  color: #999;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 40px;
 }
 .right {
   background: #474A59;

@@ -123,7 +123,7 @@
   }
   .nameips {
     visibility: visible;
-    color: #ff7e67;
+    color:  #07689f;
     z-index: 1;
     font-size: 2rem;
     margin-top: 30px;
@@ -131,7 +131,7 @@
     text-align: center;
   }
   .nameips span {
-    color: #ff7e67;
+    color:  #07689f;
     font-size: 2rem;
     line-height: 60px;
     margin-bottom: 30px;
