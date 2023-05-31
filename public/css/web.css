@@ -2001,6 +2001,9 @@ section .box {
 }
 
 /* --------------------loadmore page------------------------------ */
+.loadmore{
+  padding: 20px;
+}
 
 .flexiable{
   display: flex;
