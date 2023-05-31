@@ -1543,6 +1543,7 @@ section .box {
   font-family: arial;
   border-radius: 30px;
   overflow: hidden;
+  border: 1px solid #07689f;
 }
 
 .card h4 {
@@ -1556,14 +1557,14 @@ section .box {
 }
 
 .card .title {
-  color: grey;
+  color: #07689f;
   text-transform: uppercase;
 }
 
 .card p {
   font-size: 14px;
   margin: 6px 0;
-  border-bottom: 1px solid var(--color-body);
+  border-bottom: 1px solid #dfc6c6;
 }
 
 .card img {
