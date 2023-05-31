@@ -33,7 +33,8 @@ module.exports.template = async (req, res) => {
     const {template} = req.params;
     const page = await Pages.findOne({centreCode : `${template}`});
     const navbarItems = await NavbarItems.find({});
-    const courses = await Courses.find({});
+    const courses = await Courses.find();
+    
      res.render(`template/${template}`, {page, navbarItems, courses})
 };
 
@@ -42,7 +43,7 @@ module.exports.renderCentre = async (req, res) =>{
 
     const navbarItems = await NavbarItems.find({});
     const courses = await Courses.find({centreCode : `${centre}`});
-
+   
     const page = await Pages.findOne({centreCode : `${centre}`})
         .populate('notifications')
         .populate('faculties')

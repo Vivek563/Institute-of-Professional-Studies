@@ -77,25 +77,12 @@
   <section id="syllabus" class="auto-height  about-section white-background bordered">
       <div class="about-container">
           <h3>Syllabus</h3>
+          <% for(course of courses) {%>
           <div class="subject-container flex-horizontal space-between">
-              <p>MCA</p>
-              <button class="btn btn-primary"><a href="#">Download</a></button>
+              <p><%= course.name %></p>
+              <button class="btn btn-primary"><a href="/uploads/documents/<%= course.pdfUrl %>" download="<%= course.courseCode %>" >Download</a></button>
           </div>
-          <div class="subject-container flex-horizontal space-between">
-              <p>BCA</p>
-              <button class="btn btn-primary"><a href="#">Download</a></button>
-          </div>
-          <div class="subject-container flex-horizontal space-between">
-              <p>(PGDCA)</p>
-              <button class="btn btn-primary"><a href="#">Download</a></button>
-          </div>
-          <div class="subject-container flex-horizontal space-between">
-              <p>Data Science</p>
-              <button class="btn btn-primary"><a href="#">Download</a></button>
-          </div>
-          <div class="subject-container flex-horizontal space-between">
-              <p>Pre. Ph.D</p>
-              <button class="btn btn-primary"><a href="#">Download</a></button>
+          <% } %>
           </div>
       </div>
   </section>

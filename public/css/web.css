@@ -377,7 +377,7 @@ dialog #dialogActions {
   color: #07689f;
   border: 0.0625rem solid #07689f;
   border-radius: var(--universal-border-radius);
-  padding: var(--universal-padding) calc(1.5 * var(--universal-padding));
+  /* padding: var(--universal-padding) calc(1.5 * var(--universal-padding)); */
   margin: var(--universal-margin);
   text-decoration: none;
   cursor: pointer;
