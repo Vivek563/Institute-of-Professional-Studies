@@ -1,4 +1,4 @@
-### In this project, a website is going to be built for the Institue of Professional Studies, University of Allahabad, the team working on this project consists of Two members namely, Prakhar Verma, and Vivek Maurya.
+### In this project, a website was designed for the Institute of Professional Studies, University of Allahabad, the team working on this project consists of Two members namely, Prakhar Verma, and Vivek Maurya.
 
 ## Rules
 
@@ -6,9 +6,9 @@
     <li><b>Follow MVC pattern only.</b>
         <p> 
             <b>In short : </b><br/>
-            <b>Model:</b> Model represents the structure of data, the format and the constraints with which it is stored. It maintains the data of the application. Essentially, it is the database part of the application.<br/> 
-            <b>View:</b> View is what is presented to the user. Views utilize the Model and present data in a form in which the user wants. A user can also be allowed to make changes to the data presented to the user. They consist of static and dynamic pages which are rendered or sent to the user when the user requests them.<br/> 
-            <b>Controller:</b> Controller controls the requests of the user and then generates appropriate response which is fed to the viewer. Typically, the user interacts with the View, which in turn generates the appropriate request, this request will be handled by a controller.<br/>
+            <b>Model:</b> Model represents the structure of data, the format, and the constraints with which it is stored. It maintains the data of the application. Essentially, it is the database part of the application.<br/> 
+            <b>View:</b> View is what is presented to the user. Views utilize the Model and present data in a form that the user wants. A user can also be allowed to change the data presented to the user. They consist of static and dynamic pages which are rendered or sent to the user when the user requests them.<br/> 
+            <b>Controller:</b> Controller controls the requests of the user and then generates an appropriate response which is fed to the viewer. Typically, the user interacts with the View, which in turn generates the appropriate request, this request will be handled by a controller.<br/>
             The controller renders the appropriate view with the model data as a response. So, to sum it up:
                 <ul>
                     <li><i>Model</i> is data part.</li>
