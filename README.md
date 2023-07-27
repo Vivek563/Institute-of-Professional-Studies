@@ -10,7 +10,7 @@
 </ul>
 
 ## Glimpses of the website
-<a href="id2"></a>
+<div href="id2"></div>
 
 ### Users' Interface
 
@@ -67,7 +67,7 @@
 <p>Once installing done go to the index.html page to test the application</p>
 
 ### 💚Contributing
-<a href="id4">c</a>
+<div href="id4"></div>
 <p>Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.</p>
 
 <ol>
