@@ -2,12 +2,18 @@
 
 ## Table of Contents
 <ul> 
-<li><a href="#id1">About The Project</a></li>
+<li><a href="#id1">About the Project</a></li>
 <li><a href="#id2">Glimpes of the website</a></li>
 <li><a href="#id3">Usage</a></li>
 <li><a href="#id4">Contributing</a></li>
 <li><a href="#id5">Rules for Contribution</a></li>
 </ul>
+
+<div id="id1"></div>
+
+## About the Project
+
+<div>Remains to write.</div>
 
 <div id="id2"></div>
 
