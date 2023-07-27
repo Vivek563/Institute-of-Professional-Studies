@@ -1,11 +1,33 @@
 ### In this project, a website was designed for the Institute of Professional Studies, University of Allahabad, the team working on this project consists of Two members namely, Prakhar Verma, and Vivek Maurya.
 
-   <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/d07b621e-c159-4edd-836a-a95a551330f8"/>
+**##Glimpses of the website**
+
+#### Users' Interface
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/49131295-0cf2-496f-932a-373d3ce9ccd6"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3db2dfae-896d-4e9c-8187-69ebb0eed717"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3496783a-7070-4223-9c8b-5f2f9b373fa6"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/2be05669-c2f9-4614-b931-81d90d9cd6f8"/>
+
+#### Admin's Interface
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/815d0d39-b1b3-4e6a-aa71-6079adc54673"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/f6d25034-96db-45fe-9538-df44b6ed398c"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/5afb3e43-b2b3-4444-8bc1-06c97eabf1c8"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/97388db2-4cb1-45f9-8f17-55318c5c2e24"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3b8b5bf8-d688-4914-af6d-2b26d0794fe1"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/d07b621e-c159-4edd-836a-a95a551330f8"/>
 
                                           
-            
-
-## Rules
+## Rules for contribution
 
 <ol>
     <li><b>Follow MVC pattern only.</b>
@@ -27,7 +49,7 @@
     <li><b>Avoid Conflicts:</b>
         <ul>
             <li>Only use class names to apply style.</li>
-            <li>Try to use single class name on any element.</li>
+            <li>Try to use the single class name on any element.</li>
             <li>Don't use inline styles.</li>
             <li>Always style for mobile screen first and then style for higher screen sizes.</li>
         </ul>
@@ -40,16 +62,16 @@
 
 <ul>
     <li>Clear institute name on every page( including on footer)</li>
-    <li>Realistic photos and images (e.g., Information-Carrying Images , not portraits or static images )</li>
+    <li>Realistic photos and images (e.g., Information-Carrying Images, not portraits or static images )</li>
     <li>About us page must be informative( plain language ,an easy-to-scan fact list or a short video)</li>
     <li>Avoid long dense paragraphs</li>
-    <li>Rankings, Ratings, etc can be lower down as long as they are easy to see when scanning the page</li>
+    <li>Rankings, Ratings, etc can be lowered as long as they are easy to see when scanning the page</li>
     <li>Make it easy for users to view a list of majors and programs. It would be better to place a link to view the degrees and majors within this main section</li>
-    <li>try to offer the option to view all the majors and programs. </li>
-    <li>Alumni page, Universities should provide data about what graduates are doing after college, with numbers and sources to support those claims. (<i>At the very least, make job placement data available from the university’s About Us, Admissions, and/or Career Center pages, with a link from the Alumni section</i>)</li>
+    <li> Try to offer the option to view all the majors and programs. </li>
+    <li>Alumni page, Universities should provide data about what graduates are doing after college, with numbers and sources to support those claims. (<i>At the very least, make job placement data available from the university About Us, Admissions, and/or Career Center pages, with a link from the Alumni section</i>)</li>
     <li>Clearly show the application deadlines, and offer a step-by-step description of the application process(<b>Depending on the structure of your site, place the dates in the body of the Admissions or Apply (or equivalent) page. If there are multiple or complicated deadlines, consider a dedicated Deadlines page in that section. Either way, make sure it’s clearly labeled and easy to spot.</b>)</li>
     <li>Follow the user journey:user-centered design (UCD)(e.g., personas creation).
     By testing with just 5 users, you can uncover 85% of the issues</li>
     <li>Don't make the website too flashy.</li>
-    <li>Compare with other external websites which offer details handy.(e.g., competitive websites)</li>
+    <li>Compare with other external websites which offer details handy. (e.g., competitive websites)</li>
 </ul>
