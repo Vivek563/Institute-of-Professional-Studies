@@ -1,8 +1,8 @@
 ### In this project, a website was designed for the Institute of Professional Studies, University of Allahabad, the team working on this project consists of Two members namely, Prakhar Verma, and Vivek Maurya.
 
-**##Glimpses of the website**
+## Glimpses of the website
 
-#### Users' Interface
+### Users' Interface
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/49131295-0cf2-496f-932a-373d3ce9ccd6"/>
 
@@ -12,7 +12,7 @@
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/2be05669-c2f9-4614-b931-81d90d9cd6f8"/>
 
-#### Admin's Interface
+### Admin's Interface
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/815d0d39-b1b3-4e6a-aa71-6079adc54673"/>
 
