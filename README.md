@@ -1,4 +1,4 @@
-### In this project, a website was designed for the Institute of Professional Studies, University of Allahabad, the team working on this project consists of Two members namely, Prakhar Verma, and Vivek Maurya.
+### In this project, a website was designed for the 'Institute of Professional Studies, University of Allahabad'. The team consists of two members namely, Prakhar Verma, and Vivek Maurya.
 
 ## Glimpses of the website
 
