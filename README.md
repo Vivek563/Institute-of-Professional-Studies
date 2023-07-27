@@ -4,9 +4,9 @@
 
 ### Users' Interface
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3496783a-7070-4223-9c8b-5f2f9b373fa6"/>
-
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/2be05669-c2f9-4614-b931-81d90d9cd6f8"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3496783a-7070-4223-9c8b-5f2f9b373fa6"/>
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/49131295-0cf2-496f-932a-373d3ce9ccd6"/>
 
