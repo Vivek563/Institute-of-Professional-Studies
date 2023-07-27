@@ -39,19 +39,19 @@
 
 ## Technologies Used
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/4a81fa64-756e-4ca1-a33c-7716ed642029"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/4a81fa64-756e-4ca1-a33c-7716ed642029" style="height: 5%; width:5%;" alt="Icon"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/13e1a2cb-784b-42e0-9da5-78c640389021"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/13e1a2cb-784b-42e0-9da5-78c640389021" style="height: 5%; width:5%;" alt="Icon"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/1b6463c8-874d-4e5a-bd99-cfd7835d42fe"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/1b6463c8-874d-4e5a-bd99-cfd7835d42fe" style="height: 5%; width:5%;" alt="Icon"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/4c1d3c36-53ca-4322-a58c-1ba5cedd9564"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/4c1d3c36-53ca-4322-a58c-1ba5cedd9564" style="height: 5%; width:5%;" alt="Icon"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/b801caa4-85da-4486-a1ee-4bcc2dd32f85"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/b801caa4-85da-4486-a1ee-4bcc2dd32f85" style="height: 5%; width:5%;" alt="Icon"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/c729fbc4-8cb5-41b7-9974-e061d2f0bd14"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/c729fbc4-8cb5-41b7-9974-e061d2f0bd14" style="height: 5%; width:5%;" alt="Icon"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/90b00c0e-9d72-47b5-924e-d6dbe4ca1daf"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/90b00c0e-9d72-47b5-924e-d6dbe4ca1daf" style="height: 5%; width:5%;" alt="Icon"/>
 
 
 ✨ Main Features
