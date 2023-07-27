@@ -6,26 +6,26 @@
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/2be05669-c2f9-4614-b931-81d90d9cd6f8" style="height: 30%; width:40%;" alt="Users' Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3496783a-7070-4223-9c8b-5f2f9b373fa6"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3496783a-7070-4223-9c8b-5f2f9b373fa6" style="height: 30%; width:40%;" alt="Users' Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/49131295-0cf2-496f-932a-373d3ce9ccd6"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/49131295-0cf2-496f-932a-373d3ce9ccd6" style="height: 30%; width:40%;" alt="Users' Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3db2dfae-896d-4e9c-8187-69ebb0eed717"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3db2dfae-896d-4e9c-8187-69ebb0eed717" style="height: 30%; width:40%;" alt="Users' Interface"/>
 
 
 ### Admin's Interface
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/815d0d39-b1b3-4e6a-aa71-6079adc54673"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/815d0d39-b1b3-4e6a-aa71-6079adc54673" style="height: 30%; width:40%;" alt="Admin's Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/f6d25034-96db-45fe-9538-df44b6ed398c"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/f6d25034-96db-45fe-9538-df44b6ed398c" style="height: 30%; width:40%;" alt="Admin's Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/5afb3e43-b2b3-4444-8bc1-06c97eabf1c8"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/5afb3e43-b2b3-4444-8bc1-06c97eabf1c8" style="height: 30%; width:40%;" alt="Admin's Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/97388db2-4cb1-45f9-8f17-55318c5c2e24"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/97388db2-4cb1-45f9-8f17-55318c5c2e24" style="height: 30%; width:40%;" alt="Admin's Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3b8b5bf8-d688-4914-af6d-2b26d0794fe1"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/3b8b5bf8-d688-4914-af6d-2b26d0794fe1" style="height: 30%; width:40%;" alt="Admin's Interface"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/d07b621e-c159-4edd-836a-a95a551330f8"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/d07b621e-c159-4edd-836a-a95a551330f8" style="height: 30%; width:40%;" alt="Admin's Interface"/>
 
 ### Table of Contents
 About The Project
