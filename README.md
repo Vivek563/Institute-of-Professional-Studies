@@ -9,8 +9,9 @@
 <li><a href="#id5">Rules for Contribution</a></li>
 </ul>
 
-## Glimpses of the website
 <div id="id2"></div>
+
+## Glimpses of the website
 
 ### Users' Interface
 
@@ -63,12 +64,16 @@
 ### Getting Started
 <p>This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.</p>
 
-### 📈Usage
 <div id="id3"></div>
+
+### 📈Usage
+
 <p>Once installing done go to the index.html page to test the application</p>
 
-### 💚Contributing
 <div id="id4"></div>
+
+### 💚Contributing
+
 <p>Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.</p>
 
 <ol>
@@ -85,8 +90,10 @@ Open a Pull Request
 </li>
 </ol> 
 
-## Rules for contribution
 <div id="id5"></div>
+
+## Rules for contribution
+
 <ol>
     <li><b>Follow MVC pattern only.</b>
         <p> 
