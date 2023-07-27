@@ -27,7 +27,48 @@
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/d07b621e-c159-4edd-836a-a95a551330f8"/>
 
-                                          
+### Table of Contents
+About The Project
+Usage
+Contributing
+About The Project
+Simple and fast Weather Application, where the weather data is fetched from OpenWeather API.
+
+### Technologies Used
+Vanilla Javascript
+CSS
+Html 5
+API
+✨ Main Features
+🖥️ Responsive
+🌈 Color signal
+
+### Framework Used
+Bootstrap
+
+### Getting Started
+<p>This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.</p>
+
+### 📈Usage
+<p>Once installing done go in the index.html page to test the application</p>
+
+### 💚Contributing
+<p>Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</p>
+
+<ol>
+<li>Fork the Project</li>
+<li>
+Create your Feature Branch (git checkout -b feature)
+</li>
+<li>
+Commit your Changes (git commit -m 'Added some Feature or Tool')
+Push to the Branch (git push origin feature)
+</li>
+<li>
+Open a Pull Request         
+</li>
+</ol> 
+
 ## Rules for contribution
 
 <ol>
