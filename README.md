@@ -10,7 +10,7 @@
 </ul>
 
 ## Glimpses of the website
-<div href="id2"></div>
+<div id="id2"></div>
 
 ### Users' Interface
 
@@ -64,10 +64,11 @@
 <p>This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.</p>
 
 ### 📈Usage
+<div id="id3"></div>
 <p>Once installing done go to the index.html page to test the application</p>
 
 ### 💚Contributing
-<div href="id4"></div>
+<div id="id4"></div>
 <p>Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.</p>
 
 <ol>
@@ -85,7 +86,7 @@ Open a Pull Request
 </ol> 
 
 ## Rules for contribution
-
+<div id="id5"></div>
 <ol>
     <li><b>Follow MVC pattern only.</b>
         <p> 
