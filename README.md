@@ -2,15 +2,16 @@
 
 ## Table of Contents
 <ul> 
-<li><a href="id1">About The Project</a></li>
-<li><a href="id2">Glimpes of the website</a></li>
-<li>Usage</li>
-<li>Contributing</li>
-<li>Rules for Contribution</li>
+<li><a href="#id1">About The Project</a></li>
+<li><a href="#id2">Glimpes of the website</a></li>
+<li><a href="#id3">Usage</a></li>
+<li><a href="#id4">Contributing</a></li>
+<li><a href="#id5">Rules for Contribution</a></li>
 </ul>
 
 ## Glimpses of the website
-<div id="id2"></div>
+<a href="id2"></a>
+
 ### Users' Interface
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/2be05669-c2f9-4614-b931-81d90d9cd6f8" style="height: 30%; width:42%;" alt="Users' Interface"/>
