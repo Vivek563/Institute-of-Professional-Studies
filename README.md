@@ -2,15 +2,15 @@
 
 ## Table of Contents
 <ul> 
-<li>About The Project</li>
+<li><a href="id1">About The Project</a></li>
+<li><a href="id2">Glimpes of the website</a></li>
 <li>Usage</li>
 <li>Contributing</li>
-<li>About The Project</li>
-<li>Simple and fast Weather Application, where the weather data is fetched from OpenWeather API.</li>
+<li>Rules for Contribution</li>
 </ul>
 
 ## Glimpses of the website
-
+<div id="id2"></div>
 ### Users' Interface
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/2be05669-c2f9-4614-b931-81d90d9cd6f8" style="height: 30%; width:42%;" alt="Users' Interface"/>
@@ -41,7 +41,7 @@
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/4a81fa64-756e-4ca1-a33c-7716ed642029" style="height: 10%; width:10%;" alt="Icon"/>
 
-<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/13e1a2cb-784b-42e0-9da5-78c640389021" style="height: 10%; width:10%;" alt="Icon"/>
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/13e1a2cb-784b-42e0-9da5-78c640389021" style="height: 8%; width:8%;" alt="Icon"/>
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/1b6463c8-874d-4e5a-bd99-cfd7835d42fe" style="height: 10%; width:10%;" alt="Icon"/>
 
