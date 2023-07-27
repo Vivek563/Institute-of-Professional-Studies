@@ -54,21 +54,19 @@
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/90b00c0e-9d72-47b5-924e-d6dbe4ca1daf" style="height: 10%; width:10%;" alt="Icon"/>
 
 
-✨ Main Features
-🖥️ Responsive
-🌈 Color signal
+## ✨ Main Features
 
-### Framework Used
-Bootstrap
+<p>🖥️ Responsive</p>
+<p>🌈 Color signal</p>
 
 ### Getting Started
 <p>This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.</p>
 
 ### 📈Usage
-<p>Once installing done go in the index.html page to test the application</p>
+<p>Once installing done go to the index.html page to test the application</p>
 
 ### 💚Contributing
-<p>Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.</p>
+<p>Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.</p>
 
 <ol>
 <li>Fork the Project</li>
@@ -76,7 +74,7 @@ Bootstrap
 Create your Feature Branch (git checkout -b feature)
 </li>
 <li>
-Commit your Changes (git commit -m 'Added some Feature or Tool')
+Commit your changes (git commit -m 'Added some Feature or Tool')
 Push to the Branch (git push origin feature)
 </li>
 <li>
