@@ -1,5 +1,14 @@
 ### In this project, a website was designed for the 'Institute of Professional Studies, University of Allahabad'. The team consists of two members namely, Prakhar Verma, and Vivek Maurya.
 
+## Table of Contents
+<ul> 
+<li>About The Project</li>
+<li>Usage</li>
+<li>Contributing</li>
+<li>About The Project</li>
+<li>Simple and fast Weather Application, where the weather data is fetched from OpenWeather API.</li>
+</ul>
+
 ## Glimpses of the website
 
 ### Users' Interface
@@ -27,18 +36,24 @@
 
 <img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/d07b621e-c159-4edd-836a-a95a551330f8" style="height: 30%; width:40%;" alt="Admin's Interface"/>
 
-### Table of Contents
-About The Project
-Usage
-Contributing
-About The Project
-Simple and fast Weather Application, where the weather data is fetched from OpenWeather API.
 
-### Technologies Used
-Vanilla Javascript
-CSS
-Html 5
-API
+## Technologies Used
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/4a81fa64-756e-4ca1-a33c-7716ed642029"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/13e1a2cb-784b-42e0-9da5-78c640389021"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/1b6463c8-874d-4e5a-bd99-cfd7835d42fe"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/4c1d3c36-53ca-4322-a58c-1ba5cedd9564"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/b801caa4-85da-4486-a1ee-4bcc2dd32f85"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/c729fbc4-8cb5-41b7-9974-e061d2f0bd14"/>
+
+<img src="https://github.com/Prakhar-Verma39/Institute-of-Professional-Studies-forked-/assets/103757447/90b00c0e-9d72-47b5-924e-d6dbe4ca1daf"/>
+
+
 ✨ Main Features
 🖥️ Responsive
 🌈 Color signal
