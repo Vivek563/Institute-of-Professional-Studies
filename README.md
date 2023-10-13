@@ -21,6 +21,8 @@ Contact information is provided together with a contact us form. Courses informa
 Admin has been provided with full control over the contents (Web Application) which are to be displayed on the website. He/She can upload Images, and PDF Documents, create, read, update, and delete news, events, announcements, notifications, faculties, students, staves, courses, and web page data after logging in.   
 </div>
 
+
+
 <div id="id2"></div>
 
 ## Glimpses of the website
